@@ -11,7 +11,7 @@ For those who don't already know the SQL Saturday events: Since 2007, the PASS S
 SQL Saturday Pordenone 2017
 ===========================
 
-![](./sqlsat566/img/SQL%20Saturday%20589%20Pordenone%202017.jpg)
+![](./sqlsat589/img/SQL%20Saturday%20589%20Pordenone%202017.jpg)
 
 - sqlsat589 -  http://www.sqlsaturday.com/589/Speakers/Details.aspx?spid=3149 
 - sqlsat567 - SQL Saturday Ljubljana 2016 http://www.sqlsaturday.com/567/Sessions/Details.aspx?sid=54162 
