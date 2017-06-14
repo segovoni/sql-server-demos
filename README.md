@@ -14,7 +14,9 @@ SQL Saturday Pordenone 2017
 
 ![](./sqlsat589/img/SQL%20Saturday%20589%20Pordenone%202017.jpg)
 
-- sqlsat589 - http://www.sqlsaturday.com/589/Speakers/Details.aspx?spid=3149
+- Exploring SQL Server Plan Cache (DBA) [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat589/Exploring%20SQL%20Server%20Plan%20Cache/Demos), [Session details](http://www.sqlsaturday.com/589/Sessions/Details.aspx?sid=57408)
+
+- DMVs for Performance Tuning (Enterprise Database Administration & Deployment) [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat589/DMVs%20for%20Performance%20Tuning/Demos), [Session details](http://www.sqlsaturday.com/589/Sessions/Details.aspx?sid=57409)
 
 SQL Saturday Ljubljana 2016
 ===========================
