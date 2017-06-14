@@ -10,7 +10,7 @@ For those who don't already know the SQL Saturday events: Since 2007, the PASS S
 
 
 SQL Saturday Pordenone 2017
-===========================
+---------------------------
 
 ![](./sqlsat589/img/SQL%20Saturday%20589%20Pordenone%202017.jpg)
 
@@ -20,7 +20,7 @@ SQL Saturday Pordenone 2017
 
 
 SQL Saturday Ljubljana 2016
-===========================
+---------------------------
 
 ![](./sqlsat567/img/SQL%20Saturday%20567%20Ljubljana%202016.jpg)
 
@@ -28,7 +28,7 @@ SQL Saturday Ljubljana 2016
 
 
 SQL Saturday Parma 2016
-=======================
+-----------------------
 
 ![](./sqlsat566/img/SQL%20Saturday%20566%20Parma%202016.jpg)
 
