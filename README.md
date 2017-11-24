@@ -14,7 +14,7 @@ SQL Saturday Parma 2017
 
 ![](./sqlsat675/img/SQL%20Saturday%20675%20Parma%202017.png)
 
-- SQL Server 2017 Graph Database [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat675/SQL%20Server 2017%20Graph%20Database/Demos), [Session details](http://www.sqlsaturday.com/675/Sessions/Details.aspx?sid=66682)
+- SQL Server 2017 Graph Database [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat675/SQL%20Server%202017%20Graph%20Database/Demos), [Session details](http://www.sqlsaturday.com/675/Sessions/Details.aspx?sid=66682)
 
 
 SQL Saturday Pordenone 2017
