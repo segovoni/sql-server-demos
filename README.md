@@ -14,7 +14,7 @@ SQL Saturday Pordenone 2018
 
 ![](./sqlsat707/img/sql-saturday-707-pordenone-2018.png)
 
-- SQL Server 2017 Graph Database [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat707/sql-server-2017-graph-database\demos), [Session details](http://www.sqlsaturday.com/707/Sessions/Details.aspx?sid=70265)
+- SQL Server 2017 Graph Database [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat707/sql-server-2017-graph-database/demos), [Session details](http://www.sqlsaturday.com/707/Sessions/Details.aspx?sid=70265)
 
 
 SQL Saturday Parma 2017
