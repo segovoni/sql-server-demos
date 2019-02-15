@@ -9,6 +9,14 @@ PASS SQL Saturday
 For those who don't already know the SQL Saturday events: Since 2007, the PASS SQL Saturday program provides to users around the world the opportunity to organize free training sessions on SQL Server and related technologies. SQL Saturday is an event sponsored by PASS and therefore offers excellent opportunities for training, professional exchange and networking. You can find all details in this page [About PASS SQL Saturday](http://www.sqlsaturday.com/about.aspx).
 
 
+SQL Saturday Parma 2018
+---------------------------
+
+![](./sqlsat777/img/sql-saturday-777-parma-2018.png)
+
+- SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat777/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/777/Sessions/Details.aspx?sid=79997)
+
+
 SQL Saturday Pordenone 2018
 ---------------------------
 
