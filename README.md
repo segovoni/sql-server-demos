@@ -3,6 +3,15 @@
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
 
+SQL Start!
+=================
+
+SQL Start 2019
+---------------------------
+
+- SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlstart2019/sql-server-execution-plans-from-zero-to-hero), [Session details](https://www.sqlstart.it/2019/Speakers/Sergio-Govoni)
+
+
 PASS SQL Saturday
 =================
 
