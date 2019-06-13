@@ -12,6 +12,15 @@ SQL Start 2019
 SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlstart2019/sql-server-execution-plans-from-zero-to-hero), [Session details](https://www.sqlstart.it/2019/Speakers/Sergio-Govoni), [Video](https://vimeo.com/329619454)
 
 
+Delphi Day!
+=================
+
+Delphi Day Piacenza 2019
+---------------------------
+
+SQL Server Query Store e Automatic Tuning [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning), [Session details](https://www.delphiday.it/conferenza.html), [Video.. Work in progress]()
+
+
 PASS SQL Saturday
 =================
 
