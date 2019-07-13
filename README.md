@@ -30,7 +30,7 @@ For those who don't already know the SQL Saturday events: Since 2007, the PASS S
 SQL Saturday Athens 2019
 ---------------------------
 
-<![](./sqlsat858/img/sql-saturday-858-athens-2019.png)>
+--![](./sqlsat858/img/sql-saturday-858-athens-2019.png)
 
 SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat858/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/858/Sessions/Details.aspx?sid=90801), [Video](https://vimeo.com/343320799)
 
