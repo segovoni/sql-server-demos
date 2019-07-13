@@ -18,13 +18,21 @@ Delphi Day!
 Delphi Day Piacenza 2019
 ---------------------------
 
-SQL Server Query Store e Automatic Tuning [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning), [Session details](https://www.delphiday.it/conferenza.html), [Video.. Work in progress]()
+SQL Server Query Store e Automatic Tuning [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning), [Session details](https://www.delphiday.it/conferenza.html), [Video](https://vimeo.com/347910945)
 
 
 PASS SQL Saturday
 =================
 
 For those who don't already know the SQL Saturday events: Since 2007, the PASS SQL Saturday program provides to users around the world the opportunity to organize free training sessions on SQL Server and related technologies. SQL Saturday is an event sponsored by PASS and therefore offers excellent opportunities for training, professional exchange and networking. You can find all details in this page [About PASS SQL Saturday](http://www.sqlsaturday.com/about.aspx).
+
+
+SQL Saturday Athens 2019
+---------------------------
+
+![](./sqlsat858/img/sql-saturday-858-athens-2019.png)
+
+SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat858/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/858/Sessions/Details.aspx?sid=90801), [Video](https://vimeo.com/343320799)
 
 
 SQL Saturday Pordenone 2019
