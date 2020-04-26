@@ -1,4 +1,4 @@
-# SQL Server Demos
+# SQL Server Demos: Presentations and Code Samples
 
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
@@ -44,31 +44,25 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkVideoSQLSaturdayPordenone2019]: <https://vimeo.com/showcase/5799022/video/320949129>
 
 
+2018
+=================
+
+| Event | Session | Material | Video |
+| ------ | ------ | ------ | ------ |
+| [SQL Saturday Parma][LinkSQLSaturdayParma2018] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayParma2018] | [Slide and Demo][LinkMaterialSQLSaturdayParma2018] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayParma2018]
+| [SQL Saturday Pordenone][LinkSQLSaturdayPordenone2018] | [SQL Server 2017 Graph Database][LinkSessionSQLSaturdayPordenone2018] | [Slide and Demo][LinkMaterialSQLSaturdayPordenone2018] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayPordenone2018]
+
+  [LinkSQLSaturdayParma2018]: <https://www.sqlsaturday.com/777/EventHome.aspx>
+  [LinkSessionSQLSaturdayParma2018]: <https://www.sqlsaturday.com/777/Sessions/Details.aspx?sid=79997>
+  [LinkMaterialSQLSaturdayParma2018]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2018/sqlsat777-parma/sql-server-query-optimizer-end-to-end>
+  [LinkVideoSQLSaturdayParma2018]: <https://vimeo.com/showcase/5597664/video/304150423>
+  
+  [LinkSQLSaturdayPordenone2018]: <https://www.sqlsaturday.com/707/EventHome.aspx>
+  [LinkSessionSQLSaturdayPordenone2018]: <http://www.sqlsaturday.com/707/Sessions/Details.aspx?sid=70265>
+  [LinkMaterialSQLSaturdayPordenone2018]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2018/sqlsat707-pordenone/sql-server-2017-graph-database>
+  [LinkVideoSQLSaturdayPordenone2018]: <https://vimeo.com/showcase/5010888/video/257668750>
 
 
-
-SQL Saturday Pordenone 2019
----------------------------
-
-![](./sqlsat829/img/sql-saturday-829-pordenone-2019.png)
-
-SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat829/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/829/Sessions/Details.aspx?sid=88183)
-
-
-SQL Saturday Parma 2018
----------------------------
-
-![](./sqlsat777/img/sql-saturday-777-parma-2018.png)
-
-SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat777/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/777/Sessions/Details.aspx?sid=79997)
-
-
-SQL Saturday Pordenone 2018
----------------------------
-
-![](./sqlsat707/img/sql-saturday-707-pordenone-2018.png)
-
-SQL Server 2017 Graph Database [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat707/sql-server-2017-graph-database/demos), [Session details](http://www.sqlsaturday.com/707/Sessions/Details.aspx?sid=70265)
 
 
 SQL Saturday Parma 2017
