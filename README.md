@@ -7,7 +7,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material][LinkMaterialGlobalAzure2020] | |
+| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | |
 
 
   [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
@@ -18,7 +18,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Material][LinkMaterialSQLStart2019] | [Video][LinkVideoSQLStart2019]
+| [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [Vimeo][LinkVideoSQLStart2019]
 
 
   [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
