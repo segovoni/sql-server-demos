@@ -8,10 +8,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material] | |
+| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material][LinkMaterialGlobalAzure2020] | |
 
 
   [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
+  [LinkMaterialGlobalAzure2020]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2020/automating-azure-sql-database-maintenance-tasks>
 
 SQL Start!
 =================
