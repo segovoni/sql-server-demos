@@ -18,11 +18,12 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [SQL Start 2019][LinkSQLStart2019] | SQL Server Execution Plans From Zero to Hero | [Material][LinkMaterialSQLStart2019] | [Video][LinkVideoSQLStart2019]
+| [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Material][LinkMaterialSQLStart2019] | [Video][LinkVideoSQLStart2019]
 
 
   [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
-  [LinkMaterialSQLStart2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart2019/sql-server-execution-plans-from-zero-to-hero>
+  [LinkSessionSQLStart2019]: <https://www.sqlstart.it/2019/Speakers/Sergio-Govoni>
+  [LinkMaterialSQLStart2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2019/sql-server-execution-plans-from-zero-to-hero>
   [LinkVideoSQLStart2019]: <https://vimeo.com/329619454>
   
 
@@ -32,7 +33,7 @@ SQL Start!
 
 ---------------------------
 
-SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](), [Session details](https://www.sqlstart.it/2019/Speakers/Sergio-Govoni), [Video]()
+SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](), [Session details](), [Video]()
 
 
 Delphi Day!
