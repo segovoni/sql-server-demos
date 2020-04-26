@@ -3,7 +3,7 @@
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
 2020
-=================
+---------------------------
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
@@ -14,7 +14,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkMaterialGlobalAzure2020]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2020/automating-azure-sql-database-maintenance-tasks>
 
 2019
-=================
+---------------------------
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
@@ -45,7 +45,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 
 2018
-=================
+---------------------------
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
