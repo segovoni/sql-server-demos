@@ -6,9 +6,9 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 2020
 =================
 
-| Event | Session | Material | Video 
-| ------ | ------ | ------ |
-| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material] | 
+| Event | Session | Material | Video |
+| ------ | ------ | ------ | ------ |
+| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material] | |
 
 
   [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
