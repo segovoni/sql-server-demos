@@ -7,8 +7,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [PASS Global Italian VG][LinkPASSGIVG] | [SQL Server Query Store e Automatic Tuning][LinkMaterialPASSGIVGQueryStore] | [Slide and Demo][LinkMaterialPASSGIVGQueryStore] | 
-| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | [Youtube][LinkMaterialPASSGIVGQueryStore]
+| [PASS Global Italian VG][LinkPASSGIVG] | [SQL Server Query Store e Automatic Tuning][LinkMaterialPASSGIVGQueryStore] | [Slide and Demo][LinkMaterialPASSGIVGQueryStore] | [Youtube][LinkMaterialPASSGIVGQueryStore]
+| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
 
 
   [LinkPASSGIVG]: <https://globalitalian.pass.org/>
