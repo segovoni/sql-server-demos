@@ -2,7 +2,6 @@
 
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
-
 2020
 =================
 
@@ -14,13 +13,26 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
   [LinkMaterialGlobalAzure2020]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2020/automating-azure-sql-database-maintenance-tasks>
 
+2019
+=================
+
+| Event | Session | Material | Video |
+| ------ | ------ | ------ | ------ |
+| [SQL Start 2019][LinkSQLStart2019] | SQL Server Execution Plans From Zero to Hero | [Material][LinkMaterialSQLStart2019] | [Video][LinkVideoSQLStart2019]
+
+
+  [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
+  [LinkMaterialSQLStart2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart2019/sql-server-execution-plans-from-zero-to-hero>
+  [LinkVideoSQLStart2019]: <https://vimeo.com/329619454>
+  
+
 SQL Start!
 =================
 
-SQL Start 2019
+
 ---------------------------
 
-SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlstart2019/sql-server-execution-plans-from-zero-to-hero), [Session details](https://www.sqlstart.it/2019/Speakers/Sergio-Govoni), [Video](https://vimeo.com/329619454)
+SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](), [Session details](https://www.sqlstart.it/2019/Speakers/Sergio-Govoni), [Video]()
 
 
 Delphi Day!
