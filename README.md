@@ -19,7 +19,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
 | [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [UGISS channel on Vimeo][LinkVideoSQLStart2019]
-| [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
+| [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo][LinkMaterialDelphiDayPiacenza2019] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
 
 
   [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
