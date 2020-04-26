@@ -18,7 +18,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [Vimeo][LinkVideoSQLStart2019]
+| [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [UGISS channel on Vimeo][LinkVideoSQLStart2019]
+| [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
 
 
   [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
@@ -26,23 +27,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkMaterialSQLStart2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2019/sql-server-execution-plans-from-zero-to-hero>
   [LinkVideoSQLStart2019]: <https://vimeo.com/329619454>
   
+  [LinkDelphiDayPiacenza2019]: <https://www.delphiday.it/2019/conferenza.html>
+  [LinkMaterialDelphiDayPiacenza2019]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning>
+  [LinkVideoDelphiDayPiacenza2019]: <https://vimeo.com/347910945>
+  
 
-SQL Start!
-=================
-
-
----------------------------
-
-SQL Server Execution Plans "From Zero to Hero" [Slide and demos on GitHub](), [Session details](), [Video]()
-
-
-Delphi Day!
-=================
-
-Delphi Day Piacenza 2019
----------------------------
-
-SQL Server Query Store e Automatic Tuning [Slide and demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning), [Session details](https://www.delphiday.it/conferenza.html), [Video](https://vimeo.com/347910945)
 
 
 PASS SQL Saturday
@@ -51,7 +40,7 @@ PASS SQL Saturday
 For those who don't already know the SQL Saturday events: Since 2007, the PASS SQL Saturday program provides to users around the world the opportunity to organize free training sessions on SQL Server and related technologies. SQL Saturday is an event sponsored by PASS and therefore offers excellent opportunities for training, professional exchange and networking. You can find all details in this page [About PASS SQL Saturday](http://www.sqlsaturday.com/about.aspx).
 
 
-SQL Saturday Athens 2019
+
 ---------------------------
 
 ![](./sqlsat858/img/sql-saturday-858-athens-2019.png)
