@@ -21,7 +21,6 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [SQL Start][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [UGISS channel on Vimeo][LinkVideoSQLStart2019]
 | [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo][LinkMaterialDelphiDayPiacenza2019] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
 | [SQL Saturday Athens][LinkSQLSaturdayAthens2019] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayAthens2019] | [Slide and Demo][LinkMaterialSQLSaturdayAthens2019] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayAthens2019]
-
 | [SQL Saturday Pordenone][LinkSQLSaturdayPordenone2019] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayPordenone2019] | [Slide and Demo][LinkMaterialSQLSaturdayPordenone2019] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayPordenone2019]
 
 
