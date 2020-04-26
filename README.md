@@ -20,6 +20,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | ------ | ------ | ------ | ------ |
 | [SQL Start 2019][LinkSQLStart2019] | [SQL Server Execution Plans From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [UGISS channel on Vimeo][LinkVideoSQLStart2019]
 | [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo][LinkMaterialDelphiDayPiacenza2019] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
+| [SQL Saturday Athens][LinkSQLSaturdayAthens2019] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayAthens2019] | [Slide and Demo][LinkMaterialSQLSaturdayAthens2019] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayAthens2019]
 
 
   [LinkSQLStart2019]: <https://www.sqlstart.it/2019>
@@ -31,6 +32,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkMaterialDelphiDayPiacenza2019]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2019/sql-server-query-store-and-automatic-tuning>
   [LinkVideoDelphiDayPiacenza2019]: <https://vimeo.com/347910945>
   
+  [LinkSQLSaturdayAthens2019]: <https://www.sqlsaturday.com/858/EventHome.aspx>
+  [LinkSessionSQLSaturdayAthens2019]: <https://www.sqlsaturday.com/858/Sessions/Details.aspx?sid=90801>
+  [LinkMaterialSQLSaturdayAthens2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2019/sqlsat858-athens/sql-server-query-optimizer-end-to-end>
+  [LinkVideoSQLSaturdayAthens2019]: <https://vimeo.com/343320799>
+  
 
 
 
@@ -41,11 +47,7 @@ For those who don't already know the SQL Saturday events: Since 2007, the PASS S
 
 
 
----------------------------
-
-![](./sqlsat858/img/sql-saturday-858-athens-2019.png)
-
-SQL Server Query Optimizer end-to-end [Demos on GitHub](https://github.com/segovoni/sql-server-demos/tree/master/sqlsat858/sql-server-query-optimizer-end-to-end/demos), [Session details](https://www.sqlsaturday.com/858/Sessions/Details.aspx?sid=90801), [Video](https://vimeo.com/343320799)
+ 
 
 
 SQL Saturday Pordenone 2019
