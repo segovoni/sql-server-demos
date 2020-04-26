@@ -39,9 +39,9 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkVideoSQLSaturdayAthens2019]: <https://vimeo.com/343320799>
   
   [LinkSQLSaturdayPordenone2019]: <https://www.sqlsaturday.com/829/EventHome.aspx>
-  [LinkSessionSQLSaturdayPordenone2019]: <>
-  [LinkMaterialSQLSaturdayPordenone2019]: <>
-  [LinkVideoSQLSaturdayPordenone2019]: <>
+  [LinkSessionSQLSaturdayPordenone2019]: <https://www.sqlsaturday.com/829/Sessions/Details.aspx?sid=88183>
+  [LinkMaterialSQLSaturdayPordenone2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2019/sqlsat829-pordenone/sql-server-query-optimizer-end-to-end>
+  [LinkVideoSQLSaturdayPordenone2019]: <https://vimeo.com/showcase/5799022/video/320949129>
 
 
 
