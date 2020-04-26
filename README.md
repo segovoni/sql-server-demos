@@ -3,6 +3,16 @@
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
 
+2020
+=================
+
+| Event | Session | Material | Video |
+| ------ | ------ | ------ |
+| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Material] | |
+
+
+  [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
+
 SQL Start!
 =================
 
