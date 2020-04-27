@@ -54,8 +54,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSQLSaturdaySardegna2019]: <https://www.sqlsaturday.com/871/EventHome.aspx>
   [LinkSession1SQLSaturdaySardegna2019]: <https://www.sqlsaturday.com/871/Sessions/Details.aspx?sid=94179>
   [LinkSession2SQLSaturdaySardegna2019]: <https://www.sqlsaturday.com/871/Sessions/Details.aspx?sid=91267>
-  [LinkMaterial1SQLSaturdaySardegna2019]: <>
-  [LinkMaterial2SQLSaturdaySardegna2019]: <>
+  [LinkMaterial1SQLSaturdaySardegna2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2019/sqlsat871-sardegna/set-based-vs-iterative-programming>
+  [LinkMaterial2SQLSaturdaySardegna2019]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlsaturday/2019/sqlsat871-sardegna/sql-server-execution-plans-from-zero-to-hero>
   [LinkVideo1SQLSaturdaySardegna2019]: <https://vimeo.com/showcase/6001801/video/338963236>
   [LinkVideo2SQLSaturdaySardegna2019]: <https://vimeo.com/showcase/6001801/video/338964861>
 
