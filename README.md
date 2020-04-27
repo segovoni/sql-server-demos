@@ -82,4 +82,6 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 Older events
 ---------------------------
 
-Presentations and code samples of my talks, conferences and meetup are available in the subdirectories, organized by year, within the event directory! Enjoy!
+Presentations and code samples of my talks older than 3 years are available in the subdirectories, organized by year, within the event directory!
+
+Enjoy!
