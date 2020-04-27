@@ -56,8 +56,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSession2SQLSaturdaySardegna2019]: <https://www.sqlsaturday.com/871/Sessions/Details.aspx?sid=91267>
   [LinkMaterial1SQLSaturdaySardegna2019]: <>
   [LinkMaterial2SQLSaturdaySardegna2019]: <>
-  [LinkVideo1SQLSaturdaySardegna2019]: <>
-  [LinkVideo2SQLSaturdaySardegna2019]: <>
+  [LinkVideo1SQLSaturdaySardegna2019]: <https://vimeo.com/showcase/6001801/video/338963236>
+  [LinkVideo2SQLSaturdaySardegna2019]: <https://vimeo.com/showcase/6001801/video/338964861>
 
 
 2018
