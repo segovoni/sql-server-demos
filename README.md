@@ -9,6 +9,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | ------ | ------ | ------ | ------ |
 | [PASS Global Italian VG][LinkPASSGIVG] | [SQL Server Query Store e Automatic Tuning][LinkMaterialPASSGIVGQueryStore] | [Slide and Demo][LinkMaterialPASSGIVGQueryStore] | [Youtube][LinkVideoPASSGIVGQueryStore]
 | [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
+| [SQL Start 2020][LinkSQLStart2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialSQLStart2020] | [UGISS channel on Vimeo][LinkVideoSQLStart2020]
 
 
   [LinkPASSGIVG]: <https://globalitalian.pass.org/>
@@ -18,6 +19,10 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
   [LinkGlobalAzure2020]: <https://cloudgen.it/global-azure/>
   [LinkMaterialGlobalAzure2020]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2020/automating-azure-sql-database-maintenance-tasks>
+
+  [LinkSQLStart2020]: <https://www.sqlstart.it/2020/Speakers/Sergio-Govoni>
+  [LinkMaterialSQLStart2020]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2020/automating-azure-sql-database-maintenance-tasks>
+  [LinkVideoSQLStart2020]: <https://vimeo.com/showcase/7315035/video/435479865>
 
 2019
 ---------------------------
