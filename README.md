@@ -6,7 +6,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 ---------------------------
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [Humanitarian technical conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
+| [Humanitarian IT conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
 | [Data Saturday Pordenone][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | Coming soon...
 
   [LinkMVPs4Croatia2021]: <https://mvps4croatia.com/>
