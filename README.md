@@ -20,7 +20,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [PASS Global Italian VG][LinkPASSGIVG] | SQL Server Query Store e Automatic Tuning | | [Youtube][LinkVideoPASSGIVGQueryStore]
 | [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
 | [SQL Start 2020][LinkSQLStart2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialSQLStart2020] | [UGISS channel on Vimeo][LinkVideoSQLStart2020]
-| [Delphi & Dintorni Webinars][LinkDDWebinar2020] | SQL Server Execution Plans: From Zero to Hero | [Slide and Demo][LinkMaterialDDWebinar2020] |
+| [Delphi & Dintorni Webinars][LinkDDWebinar2020] | SQL Server Execution Plans: From Zero to Hero | [Slide and Demo][LinkMaterialDDWebinar2020] | [Youtube][LinkVideoDDWebinar2020]
 | [IT PRO DEV Connections 2020][LinkITPRODEV2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialITPRODEV2020] |
 
   [LinkPASSGIVG]: <https://globalitalian.pass.org/>
@@ -36,6 +36,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
   [LinkDDWebinar2020]: <https://www.delphiedintorni.it/webinars.html?mc_cid=36a51b0113&mc_eid=14d303fa89>
   [LinkMaterialDDWebinar2020]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiedintorni/2020/sql-server-execution-plans-from-zero-to-hero>
+  [LinkVideoDDWebinar2020]: <https://youtu.be/37Oo9BrHGGM>
   
   [LinkITPRODEV2020]: <https://www.itprodevconnections.gr/>
   [LinkMaterialITPRODEV2020]: <https://github.com/segovoni/sql-server-demos/tree/master/itprodevconnections/2020/automating-azure-sql-database-maintenance-tasks>
