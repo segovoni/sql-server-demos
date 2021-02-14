@@ -17,14 +17,13 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [PASS Global Italian VG][LinkPASSGIVG] | [SQL Server Query Store e Automatic Tuning][LinkMaterialPASSGIVGQueryStore] | [Slide and Demo][LinkMaterialPASSGIVGQueryStore] | [Youtube][LinkVideoPASSGIVGQueryStore]
+| [PASS Global Italian VG][LinkPASSGIVG] | SQL Server Query Store e Automatic Tuning | | [Youtube][LinkVideoPASSGIVGQueryStore]
 | [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
 | [SQL Start 2020][LinkSQLStart2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialSQLStart2020] | [UGISS channel on Vimeo][LinkVideoSQLStart2020]
 | [Delphi & Dintorni Webinars][LinkDDWebinar2020] | SQL Server Execution Plans: From Zero to Hero | [Slide and Demo][LinkMaterialDDWebinar2020] |
 | [IT PRO DEV Connections 2020][LinkITPRODEV2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialITPRODEV2020] |
 
   [LinkPASSGIVG]: <https://globalitalian.pass.org/>
-  [LinkMaterialPASSGIVGQueryStore]: <https://globalitalian.pass.org/MeetingDetails.aspx?EventID=14898>
   [LinkVideoPASSGIVGQueryStore]: <https://youtu.be/8O-zociPPfU>
 
 
