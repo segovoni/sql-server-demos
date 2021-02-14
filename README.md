@@ -6,9 +6,10 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 ---------------------------
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [Data Saturday Pordenone][LinkDataSatPordenone2021] | Database development unit test with tSQLt | [Slide and Demo][LinkMaterialDataSatPordenone2021] | Coming soon...
+| [Data Saturday Pordenone][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | Coming soon...
 
   [LinkDataSatPordenone2021]: <https://datasaturdays.com/events/datasaturday0001.html>
+  [LinkSessionDataSatPordenone2021]: <https://datasaturdays.com/events/datasaturday0001.html#schedule>
   [LinkMaterialDataSatPordenone2021]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2021/datasat0001/database-development-unit-test-with-tSQLt/demos>
 
 2020
