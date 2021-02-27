@@ -66,7 +66,8 @@ END;
 GO
 
 
-CREATE OR ALTER TRIGGER Production.TR_Product_SafetyStockLevel ON Production.Product
+CREATE OR ALTER TRIGGER Production.TR_Product_SafetyStockLevel
+  ON Production.Product
 AFTER INSERT AS
 BEGIN
   /* 
@@ -80,8 +81,10 @@ BEGIN
     inserted;
 
   IF (@SafetyStockLevel < 10)
+  BEGIN
     -- Error!!
     EXEC Production.usp_Raiserror_SafetyStockLevel
       @Message = 'Safety stock level cannot be lower than 10!';
+  END;
 END;
 GO

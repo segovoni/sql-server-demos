@@ -9,6 +9,7 @@
 -- Notes:       --                                                      -
 -------------------------------------------------------------------------
 
+
 USE [master];
 GO
 
@@ -32,11 +33,11 @@ GO
 
 
 /*
-  1. Download the tSQLt framework from https://tsqlt.org/
+  1. Download the tSQLt framework from https://tsqlt.org/downloads/
 
   2. Execute tSQLt.class.sql in the database you want to install
      tSQLt framework
 */
 
---SELECT * FROM tSQLt.Info();
---GO
+SELECT * FROM tSQLt.Info();
+GO
