@@ -17,3 +17,9 @@ GO
 -- Run all tests in the class
 EXEC tSQLt.RunTestClass 'UnitTestTRProductSafetyStockLevel';
 GO
+
+SELECT * FROM tSQLt.TestResult;
+GO
+
+SELECT * FROM tSQLt.Run_LastExecution;
+GO
