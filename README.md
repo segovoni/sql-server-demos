@@ -8,6 +8,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | ------ | ------ | ------ | ------ |
 | [Humanitarian IT conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
 | [Data Saturday Pordenone][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
+| [Global Azure 2021][LinkGlobalAzure2021] | [Unit testing in Azure SQL Database with tSQLt][LinkSessionGlobalAzure2021] | [Slide and Demo][LinkMaterialGlobalAzure2021] | [Youtube][LinkVideoGlobalAzure2021]
 
   [LinkMVPs4Croatia2021]: <https://mvps4croatia.com/>
   [LinkSessionMVPs4Croatia2021]: <https://mvps4croatia.com/agenda.html>
@@ -17,6 +18,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSessionDataSatPordenone2021]: <https://datasaturdays.com/events/datasaturday0001.html#schedule>
   [LinkMaterialDataSatPordenone2021]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2021/datasat0001/database-development-unit-test-with-tSQLt/demos>
   [LinkVideoDataSatPordenone2021]: <https://www.youtube.com/watch?v=eMkW4vsFQJI>
+  
+  [LinkGlobalAzure2021]: <https://globalazure.net/sessions/252877>
+  [LinkSessionGlobalAzure2021]: <https://globalazure.net/sessions/252877>
+  [LinkMaterialGlobalAzure2021]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2021>
+  [LinkVideoGlobalAzure2021]: <https://youtu.be/bjgE4i9176s>
 
 
 2020
@@ -25,7 +31,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
 | [PASS Global Italian VG][LinkPASSGIVG] | SQL Server Query Store e Automatic Tuning | | [Youtube][LinkVideoPASSGIVGQueryStore]
-| [Global Azure Virtual][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
+| [Global Azure 2020][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
 | [SQL Start 2020][LinkSQLStart2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialSQLStart2020] | [UGISS channel on Vimeo][LinkVideoSQLStart2020]
 | [Delphi & Dintorni Webinars][LinkDDWebinar2020] | SQL Server Execution Plans: From Zero to Hero | [Slide and Demo][LinkMaterialDDWebinar2020] | [Youtube][LinkVideoDDWebinar2020]
 | [IT PRO DEV Connections 2020][LinkITPRODEV2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialITPRODEV2020] |
