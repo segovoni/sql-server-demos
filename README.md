@@ -9,7 +9,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Humanitarian IT conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
 | [Data Saturday Pordenone][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
 | [Global Azure 2021][LinkGlobalAzure2021] | [Unit testing in Azure SQL Database with tSQLt][LinkSessionGlobalAzure2021] | [Slide and Demo][LinkMaterialGlobalAzure2021] | [Youtube][LinkVideoGlobalAzure2021]
-| [SQL Start 2021][LinkSQLStart2021] | [Database development unit test with tSQLt][LinkSessionSQLStart2021] | [Slide and Demo][LinkMaterialSQLStart2021] | [Coming soon][LinkVideoSQLStart2021]
+| [SQL Start 2021][LinkSQLStart2021] | [Database development unit test with tSQLt][LinkSessionSQLStart2021] | [Slide and Demo][LinkMaterialSQLStart2021] | [Vimeo][LinkVideoSQLStart2021]
 
   [LinkMVPs4Croatia2021]: <https://mvps4croatia.com/>
   [LinkSessionMVPs4Croatia2021]: <https://mvps4croatia.com/agenda.html>
@@ -28,7 +28,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSQLStart2021]: <https://www.sqlstart.it/2021>
   [LinkSessionSQLStart2021]: <https://www.sqlstart.it/2021/Speakers/Sergio-Govoni>
   [LinkMaterialSQLStart2021]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2021/database-development-unit-test-with-tSQLt>
-  [LinkVideoSQLStart2021]: <https://vimeo.com/showcase/8540479>
+  [LinkVideoSQLStart2021]: <https://vimeo.com/showcase/8540479/video/562475700>
   
 2020
 ---------------------------
