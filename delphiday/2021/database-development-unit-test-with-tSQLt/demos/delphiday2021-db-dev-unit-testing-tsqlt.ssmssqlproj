@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<SqlWorkbenchSqlProject xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" Name="delphiday2021-db-dev-unit-testing-tsqlt">
+  <Items>
+    <LogicalFolder Name="Connections" Type="2" Sorted="true">
+      <Items />
+    </LogicalFolder>
+    <LogicalFolder Name="Queries" Type="0" Sorted="true">
+      <Items>
+        <FileNode Name="10-database-setup.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>10-database-setup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="20-tSQLt-setup.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>20-tSQLt-setup.sql</FullPath>
+        </FileNode>
+        <FileNode Name="30-create-new-test-class.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>30-create-new-test-class.sql</FullPath>
+        </FileNode>
+        <FileNode Name="40-create-test-case-try-to-insert-one-wrong-row.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>40-create-test-case-try-to-insert-one-wrong-row.sql</FullPath>
+        </FileNode>
+        <FileNode Name="50-create-test-case-try-to-insert-one-right-row.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>50-create-test-case-try-to-insert-one-right-row.sql</FullPath>
+        </FileNode>
+        <FileNode Name="60-create-test-case-try-to-insert-multiple-rows.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>60-create-test-case-try-to-insert-multiple-rows.sql</FullPath>
+        </FileNode>
+        <FileNode Name="70-create-test-case-try-to-insert-multiple-rows-ordered.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>70-create-test-case-try-to-insert-multiple-rows-ordered.sql</FullPath>
+        </FileNode>
+        <FileNode Name="80-fix-the-issue-in-the-trigger.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>80-fix-the-issue-in-the-trigger.sql</FullPath>
+        </FileNode>
+        <FileNode Name="90-run-tests.sql">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>90-run-tests.sql</FullPath>
+        </FileNode>
+      </Items>
+    </LogicalFolder>
+    <LogicalFolder Name="Miscellaneous" Type="3" Sorted="true">
+      <Items />
+    </LogicalFolder>
+  </Items>
+</SqlWorkbenchSqlProject>
