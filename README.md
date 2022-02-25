@@ -2,6 +2,18 @@
 
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
+2022
+---------------------------
+| Event | Session | Material | Video |
+| ------ | ------ | ------ | ------ |
+| [Data Saturday Pordenone][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | 
+
+  [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
+  [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
+  [LinkMaterialDataSatPordenone2022]: <>
+  [LinkVideoDataSatPordenone2022]: <>
+
+
 2021
 ---------------------------
 | Event | Session | Material | Video |
