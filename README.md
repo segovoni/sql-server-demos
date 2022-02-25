@@ -10,7 +10,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
-  [LinkMaterialDataSatPordenone2022]: <>
+  [LinkMaterialDataSatPordenone2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0020/t-sql-magic-tricks>
   [LinkVideoDataSatPordenone2022]: <>
 
 
