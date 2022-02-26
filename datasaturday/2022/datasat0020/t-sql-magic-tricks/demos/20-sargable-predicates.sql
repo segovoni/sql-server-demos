@@ -31,6 +31,7 @@ ORDER BY
   END;
 GO
 
+
 SELECT
   PurchaseOrderID, ExpectedDeliveryDate, SortOrder = 0
 FROM
@@ -49,7 +50,7 @@ ORDER BY
 GO
 
 
-CREATE PROCEDURE Purchasing.sp_undefined_deliverydate
+CREATE OR ALTER PROCEDURE Purchasing.sp_undefined_deliverydate
 (@DeliveryDate Date)
 AS BEGIN
   SELECT
@@ -57,11 +58,11 @@ AS BEGIN
   FROM
     Purchasing.PurchaseOrders
   WHERE
-    ExpectedDeliveryDate = @DeliveryDate;
+    ExpectedDeliveryDate = @DeliveryDate; -- NULL = NULL ?
 END;
 GO
 
-EXEC Purchasing.sp_undefined_deliverydate @DeliveryDate = NULL;
+EXEC Purchasing.sp_undefined_deliverydate @DeliveryDate = NULL; -- NULL = NULL ?
 GO
 
 ALTER PROCEDURE Purchasing.sp_undefined_deliverydate
