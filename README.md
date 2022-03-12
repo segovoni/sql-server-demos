@@ -6,12 +6,12 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 ---------------------------
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
-| [Data Saturday Pordenone][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | 
+| [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
   [LinkMaterialDataSatPordenone2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0020/t-sql-magic-tricks>
-  [LinkVideoDataSatPordenone2022]: <>
+  [LinkVideoDataSatPordenone2022]: <https://www.youtube.com/watch?v=QOyNVp-lt7M>
 
 
 2021
@@ -19,7 +19,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
 | [Humanitarian IT conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
-| [Data Saturday Pordenone][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
+| [Data Saturday Pordenone 2021][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
 | [Global Azure 2021][LinkGlobalAzure2021] | [Unit testing in Azure SQL Database with tSQLt][LinkSessionGlobalAzure2021] | [Slide and Demo][LinkMaterialGlobalAzure2021] | [Youtube][LinkVideoGlobalAzure2021]
 | [SQL Start 2021][LinkSQLStart2021] | [Database development unit test with tSQLt][LinkSessionSQLStart2021] | [Slide and Demo][LinkMaterialSQLStart2021] | [Vimeo][LinkVideoSQLStart2021]
 | [Delphi Day 2021][LinkDelphiDay2021] | [Database development unit test with tSQLt][LinkSessionDelphiDay2021] | [Slide and Demo][LinkMaterialDelphiDay2021] | [Coming soon][LinkVideoDelphiDay2021]
@@ -142,6 +142,6 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 Older events
 ---------------------------
 
-Presentations and code samples of my talks older than 3 years are available in the subdirectories, organized by year, within the event directory!
+Presentations and code samples of my talks older than 5 years are available in the subdirectories, organized by year, within the event directory!
 
 Enjoy!
