@@ -22,7 +22,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Data Saturday Pordenone 2021][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
 | [Global Azure 2021][LinkGlobalAzure2021] | [Unit testing in Azure SQL Database with tSQLt][LinkSessionGlobalAzure2021] | [Slide and Demo][LinkMaterialGlobalAzure2021] | [Youtube][LinkVideoGlobalAzure2021]
 | [SQL Start 2021][LinkSQLStart2021] | [Database development unit test with tSQLt][LinkSessionSQLStart2021] | [Slide and Demo][LinkMaterialSQLStart2021] | [Vimeo][LinkVideoSQLStart2021]
-| [Delphi Day 2021][LinkDelphiDay2021] | [Database development unit test with tSQLt][LinkSessionDelphiDay2021] | [Slide and Demo][LinkMaterialDelphiDay2021] | [Coming soon][LinkVideoDelphiDay2021]
+| [Delphi Day 2021][LinkDelphiDay2021] | [Database development unit test with tSQLt][LinkSessionDelphiDay2021] | [Slide and Demo][LinkMaterialDelphiDay2021] | [Youtube][LinkVideoDelphiDay2021]
 
   [LinkMVPs4Croatia2021]: <https://mvps4croatia.com/>
   [LinkSessionMVPs4Croatia2021]: <https://mvps4croatia.com/agenda.html>
@@ -46,7 +46,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkDelphiDay2021]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2021]: <https://www.delphiday.it/>
   [LinkMaterialDelphiDay2021]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2021/database-development-unit-test-with-tSQLt>
-  [LinkVideoDelphiDay2021]: <https://www.delphiday.it/>
+  [LinkVideoDelphiDay2021]: <https://www.youtube.com/watch?v=LHEywinPubs>
 
 
 2020
