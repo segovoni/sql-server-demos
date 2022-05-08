@@ -7,12 +7,16 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event | Session | Material | Video |
 | ------ | ------ | ------ | ------ |
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
+| [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
   [LinkMaterialDataSatPordenone2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0020/t-sql-magic-tricks>
   [LinkVideoDataSatPordenone2022]: <https://www.youtube.com/watch?v=QOyNVp-lt7M>
 
+  [LinkDataWeekender2022CU5]: <https://www.dataweekender.com/>
+  [LinkSessionDataWeekender2022CU5]: <https://www.dataweekender.com/schedule>
+  [LinkMaterialDataWeekender2022CU5]: <https://github.com/segovoni/sql-server-demos/tree/master/dataweekender/2022-CU5/t-sql-magic-tricks>
 
 2021
 ---------------------------
