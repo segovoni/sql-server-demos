@@ -28,6 +28,7 @@ GO
 
 
 -- We want to preserve customers who have no orders
+-- with a LEFT OUTER JOIN between the Customers and Orders
 SELECT
   C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
@@ -42,6 +43,9 @@ GO
 
 -- The returned rows are the same of the previous query
 -- No extra Customers?
+
+
+-- Let's see
 SELECT C.CustomerID, C.CustomerName
 FROM Sales.Customers AS C
 WHERE NOT EXISTS
@@ -54,7 +58,7 @@ ORDER BY
 GO
 
 
-
+-- To see extra Customers, all of the JOINs need to be LEFT OUTER JOIN
 SELECT
   C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
@@ -81,7 +85,8 @@ INNER JOIN Warehouse.StockItems AS S
 GO
 
 
-
+-- Use round brackets to increase the readability
+-- of the query
 SELECT
   C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C

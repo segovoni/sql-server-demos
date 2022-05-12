@@ -28,21 +28,28 @@ GO
 SELECT * FROM dbo.DataWeekender;
 GO
 
-
--- In the last line of this query, "DataWeekender.ID" could in theory
--- refers to the table on the outer query, or the table in the subquery.
--- The rule is that SQL Server tries to match within the same scope 
--- and only goes to an outer scope if needed.
--- So here, the NOT EXISTS clause is not correlated; it simply checks
--- if the DataWeekender table has at least one row with ParentID equal to ID
--- and uses that to determine whether or not all rows from the outer
--- query qualify
+-- You want to sum the all leaf levels
+SELECT * FROM dbo.DataWeekender;
+GO
 SELECT SUM(ColData)  -- 233
 FROM dbo.DataWeekender
 WHERE NOT EXISTS (SELECT *
                   FROM dbo.DataWeekender
                   WHERE ParentID = DataWeekender.ID);
 GO
+
+
+
+-- In the last line of the query, DataWeekender.ID could in theory
+-- refers to the table on the outer query, or the table in the subquery
+-- The rule is that SQL Server tries to match within the same scope 
+-- and only goes to an outer scope if needed
+
+-- So here, the NOT EXISTS clause is not correlated; it simply checks
+-- if the DataWeekender table has at least one row with ParentID equal to ID
+-- and uses that to determine whether or not all rows from the outer
+-- query qualify
+
 
 
 -- When you have a query that uses more than one table
