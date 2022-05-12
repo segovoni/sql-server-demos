@@ -14,36 +14,33 @@ GO
 
 
 
--- Supplier-Customer that have join activity
+-- Customers and orders
 SELECT
-  C.CustomerName, PS.SupplierName
+  C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
 INNER JOIN Sales.Orders AS O
   ON O.CustomerID=C.CustomerID
 INNER JOIN Sales.OrderLines AS OL
   ON O.OrderID=OL.OrderID
 INNER JOIN Warehouse.StockItems AS S
-  ON OL.StockItemID=S.StockItemID
-INNER JOIN Purchasing.Suppliers AS PS
-  ON S.SupplierID=PS.SupplierID;
+  ON OL.StockItemID=S.StockItemID;
 GO
 
+
 -- We want to preserve customers who have no orders
-
-
 SELECT
-  C.CustomerName, PS.SupplierName
+  C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
 LEFT OUTER JOIN Sales.Orders AS O
   ON O.CustomerID=C.CustomerID
 INNER JOIN Sales.OrderLines AS OL
   ON O.OrderID=OL.OrderID
 INNER JOIN Warehouse.StockItems AS S
-  ON OL.StockItemID=S.StockItemID
-INNER JOIN Purchasing.Suppliers AS PS
-  ON S.SupplierID=PS.SupplierID;
+  ON OL.StockItemID=S.StockItemID;
 GO
 
+
+-- The returned rows are the same of the previous query
 -- No extra Customers?
 SELECT C.CustomerID, C.CustomerName
 FROM Sales.Customers AS C
@@ -59,46 +56,42 @@ GO
 
 
 SELECT
-  C.CustomerName, PS.SupplierName
+  C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
 LEFT OUTER JOIN Sales.Orders AS O
   ON O.CustomerID=C.CustomerID
 LEFT OUTER JOIN Sales.OrderLines AS OL
   ON O.OrderID=OL.OrderID
 LEFT OUTER JOIN Warehouse.StockItems AS S
-  ON OL.StockItemID=S.StockItemID
-LEFT OUTER JOIN Purchasing.Suppliers AS PS
-  ON S.SupplierID=PS.SupplierID;
+  ON OL.StockItemID=S.StockItemID;
 GO
 
 
 
 -- The logical join ordering is determined by the order of ON clauses
 SELECT
-  C.CustomerName, PS.SupplierName
+  C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
 LEFT OUTER JOIN Sales.Orders AS O
 INNER JOIN Sales.OrderLines AS OL
   ON O.OrderID=OL.OrderID
 INNER JOIN Warehouse.StockItems AS S
   ON OL.StockItemID=S.StockItemID
-INNER JOIN Purchasing.Suppliers AS PS
-  ON S.SupplierID=PS.SupplierID
   ON O.CustomerID=C.CustomerID;
 GO
 
 
+
 SELECT
-  C.CustomerName, PS.SupplierName
+  C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
 LEFT OUTER JOIN
-  ( Sales.Orders AS O
+  (
+    Sales.Orders AS O
     INNER JOIN Sales.OrderLines AS OL
       ON O.OrderID=OL.OrderID
     INNER JOIN Warehouse.StockItems AS S
       ON OL.StockItemID=S.StockItemID
-    INNER JOIN Purchasing.Suppliers AS PS
-      ON S.SupplierID=PS.SupplierID
   )
   ON O.CustomerID=C.CustomerID;
 GO
