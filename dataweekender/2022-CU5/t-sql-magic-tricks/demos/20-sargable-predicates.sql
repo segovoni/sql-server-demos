@@ -97,6 +97,7 @@ FROM
 ORDER BY
   CASE
     -- Is this predicate sargable or not?
+    -- Can we relying on the index on ExpectedDeliveryDate?
     WHEN (ExpectedDeliveryDate IS NOT NULL) THEN 0 ELSE 1
   END;
 GO
@@ -133,12 +134,17 @@ END;
 GO
 
 
+EXEC Purchasing.sp_purchaseorders_deliverydate @DeliveryDate = '20140827';
+GO
+
+
 -- Undefined deliverydate
--- NULL = NULL ?
+-- Does NULL input is supported?
 EXEC Purchasing.sp_purchaseorders_deliverydate @DeliveryDate = NULL;
 GO
 
 
+-- The conventional solution is the use of ISNULL function
 CREATE OR ALTER PROCEDURE Purchasing.sp_purchaseorders_deliverydate
 (@DeliveryDate Date)
 AS BEGIN
