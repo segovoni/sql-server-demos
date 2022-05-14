@@ -86,7 +86,7 @@ GO
 
 
 -- Use round brackets to increase the readability
--- of the query
+-- Remember: the logical join ordering is determined by the order of ON clauses
 SELECT
   C.CustomerName, C.CustomerID, O.OrderID
 FROM Sales.Customers AS C
