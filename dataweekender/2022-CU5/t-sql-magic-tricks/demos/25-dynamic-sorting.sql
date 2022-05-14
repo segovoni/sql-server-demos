@@ -13,6 +13,7 @@ USE [AdventureWorks2017];
 GO
 
 
+-- Let's consider this query
 SELECT
   ProductID, [Name], ProductNumber, ListPrice
 FROM
@@ -20,14 +21,18 @@ FROM
 ORDER BY
   --ProductID;
   --[Name];
-  --[ProductNumber];
-  [ListPrice];
+  [ProductNumber];
+  --[ListPrice];
 GO
 
+
+/*
 DBCC TRACEON(3604);
 DBCC TRACEON(8605);
---DBCC TRACEON(8675);
+DBCC TRACEON(8675);
 GO
+*/
+
 
 CREATE OR ALTER PROCEDURE dbo.GetSortedProducts
 (
@@ -51,7 +56,7 @@ BEGIN
         WHEN N'ProductNumber' THEN ProductNumber
         WHEN N'ListPrice' THEN ListPrice
       END
-      OPTION (RECOMPILE, QUERYTRACEON 8605);
+      OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);
@@ -60,14 +65,26 @@ BEGIN
 END;
 
 -- Check dynamic SQL security
-EXEC dbo.GetSortedProducts N'Class';
+EXEC dbo.GetSortedProducts N'-- DELETE..';
 
+
+-- AncOp_PrjEl COL: Expr1002 
+--   ScaOp_Convert money,Null,ML=8
+--     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].ProductID
 EXEC dbo.GetSortedProducts N'ProductID';
+
+-- AncOp_PrjEl COL: Expr1002 
+--   ScaOp_Convert money,Null,ML=8
+--     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].Name
+-- Cannot convert a char value to money. The char value has incorrect syntax
 EXEC dbo.GetSortedProducts N'Name';
+
 EXEC dbo.GetSortedProducts N'ProductNumber';
 EXEC dbo.GetSortedProducts N'ListPrice';
 GO
 
+-- Have you already faced this problem?
+-- How did you solve it?
 
 
 -- A CASE expression, a T-SQL expression, needs to return a predetermined type
@@ -103,7 +120,7 @@ BEGIN
         WHEN N'ListPrice' THEN ListPrice
       ELSE CAST(NULL AS sql_variant) -- !!! Pay attention to the cast
       END
-      OPTION (RECOMPILE, QUERYTRACEON 8605);
+      OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);
@@ -112,11 +129,22 @@ BEGIN
 END;
 
 
+-- AncOp_PrjEl COL: Expr1002 
+--   ScaOp_Convert sql_variant,Null,Var,ML=8016
+--     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].ProductID
 EXEC dbo.GetSortedProducts N'ProductID';
+
+-- AncOp_PrjEl COL: Expr1002 
+--   ScaOp_Convert sql_variant,Null,Var,ML=8016
+--     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].Name
 EXEC dbo.GetSortedProducts N'Name';
+
 EXEC dbo.GetSortedProducts N'ProductNumber';
 EXEC dbo.GetSortedProducts N'ListPrice';
 GO
+
+
+
 
 -- Credits to Paul White
 CREATE OR ALTER PROCEDURE dbo.GetSortedProducts
@@ -147,7 +175,7 @@ BEGIN
       ,CASE WHEN @SortColumnName = N'Name' THEN [Name] END
       ,CASE WHEN @SortColumnName = N'ProductNumber' THEN ProductNumber END
       ,CASE WHEN @SortColumnName = N'ListPrice' THEN ListPrice END
-    OPTION (RECOMPILE, QUERYTRACEON 8605);
+    OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);
@@ -156,7 +184,17 @@ BEGIN
 END;
 
 
+-- AncOp_PrjList 
+--   AncOp_PrjEl COL: Expr1002 
+--     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].ProductID
+--   AncOp_PrjEl COL: Expr1003 
+--     ScaOp_Const TI(nvarchar collate 872468488,Null,Var,Trim,ML=160) XVAR(nvarchar,Not Owned,Value=NULL)
+--   AncOp_PrjEl COL: Expr1004 
+--     ScaOp_Const TI(nvarchar collate 872468488,Null,Var,Trim,ML=112) XVAR(nvarchar,Not Owned,Value=NULL)
+--   AncOp_PrjEl COL: Expr1005 
+--     ScaOp_Const TI(money,Null,ML=8) XVAR(money,Not Owned,Value=NULL)
 EXEC dbo.GetSortedProducts N'ProductID';
+
 EXEC dbo.GetSortedProducts N'Name';
 EXEC dbo.GetSortedProducts N'ProductNumber';
 EXEC dbo.GetSortedProducts N'ListPrice';
