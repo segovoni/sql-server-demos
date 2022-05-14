@@ -15,8 +15,7 @@ GO
 
 
 
--- Wikipedia (en.wikipedia.org/wiki/Sargable) defines SARGability
--- in this way:
+-- Wikipedia (https://en.wikipedia.org/wiki/Sargable)
 
 -- A condition (or predicate) in a query is said to be sargable
 -- if the DBMS engine can take advantage of an index to speed up the
@@ -79,6 +78,7 @@ GO
 
 
 
+-- Consider this query on PurchaseOrders
 SELECT
   PurchaseOrderID, ExpectedDeliveryDate
 FROM
