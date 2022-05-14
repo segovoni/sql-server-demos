@@ -13,13 +13,15 @@
 USE [AdventureWorks2017];
 GO
 
--- SQL Server 2012 introduced columnstore indexes to accelerate
--- analytical workloads
+-- Row mode execution vs. Batch mode execution
 
+
+
+-- dbo.bigTransactionHistory records of each purchase order, sales order,
+-- or work order transaction
 
 -- The sql script to create dbo.bigTransactionHistory table
 -- is available here: http://dataeducation.com/thinking-big-adventure/
-
 
 SELECT COUNT(*) FROM dbo.bigTransactionHistory;
 SELECT TOP 10 * FROM dbo.bigTransactionHistory;
@@ -27,7 +29,9 @@ GO
 
 
 
--- Running total
+
+-- Running total over Quantity partitioned by ProductID and TransactionID
+
 -- ProductID   TransactionID Quantity    RT_Quantity
 ------------- ------------- ----------- -----------
 -- 1001        1             64          64
@@ -42,6 +46,7 @@ GO
 -- 1001        227969        76          513
 
 -- (1) Row mode execution
+-- 43 seconds with the query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
@@ -59,27 +64,24 @@ ORDER BY
 GO
 
 -- Row mode execution is a query processing method used with traditional
--- RDBMS tables, where data is stored in row format
-
--- The execution tree operators and child operators read each required row,
--- across all the columns specified in the table schema
-
--- From each row that is read, SQL Server then retrieves the columns
--- that are required
+-- tables, where data is stored in row format
 
 
+-- SQL Server 2012 introduced columnstore indexes to accelerate
+-- analytical workloads
 
--- NCC index
-DROP INDEX IF EXISTS dbo.bigTransactionHistory.NCCX_bigTransactionHistory_TransactionID;
-GO
-
--- SQL Server 2016 enables the creation of EMPTY FILTERED columnstore indexes
-
--- Up to SQL Server 2017 batch mode processing requires a columnstore index to be enabled
+-- Up to SQL Server 2017 batch mode processing requires a columnstore index
+-- to be enabled
 
 -- Starting with SQL Server 2019 and in Azure SQL Database,
 -- batch mode execution no longer requires columnstore indexes,
 -- the feature is called Batch mode on rowstore!
+
+-- NCC index
+/*
+DROP INDEX IF EXISTS dbo.bigTransactionHistory.NCCX_bigTransactionHistory_TransactionID;
+GO
+*/
 
 CREATE NONCLUSTERED COLUMNSTORE INDEX NCCX_bigTransactionHistory_TransactionID
   ON dbo.bigTransactionHistory(TransactionID)
@@ -87,6 +89,7 @@ CREATE NONCLUSTERED COLUMNSTORE INDEX NCCX_bigTransactionHistory_TransactionID
 GO
 
 -- (2) Batch mode execution
+-- 29 seconds with the query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
@@ -106,17 +109,13 @@ GO
 -- Batch mode execution is a query processing method used to process
 -- multiple rows together
 
--- Each column within a batch is stored as a vector in a separate memory area
-
--- Batch mode processing operates on compressed data when possible,
--- and eliminates the exchange operator used by row mode execution,
--- better parallelism and faster performance
-
 
 
 -- POC index
+/*
 DROP INDEX IF EXISTS dbo.bigTransactionHistory.IX_bigTransactionHistory_ProductID_TransactionID;
 GO
+*/
 
 CREATE NONCLUSTERED INDEX IX_bigTransactionHistory_ProductID_TransactionID
   ON dbo.bigTransactionHistory(ProductID, TransactionID)
@@ -124,6 +123,7 @@ CREATE NONCLUSTERED INDEX IX_bigTransactionHistory_ProductID_TransactionID
 GO
 
 -- (3) Batch mode execution with POC index
+-- 18 seconds with the query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
