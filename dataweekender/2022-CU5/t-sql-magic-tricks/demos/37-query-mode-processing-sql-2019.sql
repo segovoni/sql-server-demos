@@ -24,11 +24,12 @@ ALTER DATABASE [AdventureWorks2017] SET COMPATIBILITY_LEVEL = 150;
 GO
 
 -- Enabling batch mode on rowstore
-ALTER DATABASE SCOPED CONFIGURATION SET BATCH_MODE_ON_ROWSTORE = ON;
+ALTER DATABASE SCOPED CONFIGURATION SET BATCH_MODE_ON_ROWSTORE = ON; /* OFF */
 GO
 
 
--- Running total
+-- Running total over Quantity partitioned by ProductID and TransactionID
+
 -- ProductID   TransactionID Quantity    RT_Quantity
 -- ----------- ------------- ----------- -----------
 -- 1001        1             64          64
@@ -43,6 +44,7 @@ GO
 -- 1001        227969        76          513
 
 -- Batch mode execution
+-- 12 seconds with CL 150 and query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
@@ -58,11 +60,3 @@ FROM
 ORDER BY
   ProductID, TransactionID;
 GO
-
-
-
--- Disabling batch mode on rowstore
-/*
-ALTER DATABASE SCOPED CONFIGURATION SET BATCH_MODE_ON_ROWSTORE = OFF;
-GO
-*/
