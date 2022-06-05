@@ -8,6 +8,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | ------ | ------ | ------ | ------ |
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
+| [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | 
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
@@ -17,6 +18,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkDataWeekender2022CU5]: <https://www.dataweekender.com/>
   [LinkSessionDataWeekender2022CU5]: <https://www.dataweekender.com/schedule>
   [LinkMaterialDataWeekender2022CU5]: <https://github.com/segovoni/sql-server-demos/tree/master/dataweekender/2022-CU5/t-sql-magic-tricks>
+  
+  [LinkSQLStart2022]: <https://www.sqlstart.it/2022>
+  [LinkSessionSQLStart2022]: <https://www.sqlstart.it/2022/Speakers/Sergio-Govoni>
+  [LinkMaterialSQLStart2022]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2022/sql-server-2022-parameter-sensitive-plan-optimization>
+  [LinkVideoSQLStart2022]: <>
 
 2021
 ---------------------------
