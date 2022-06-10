@@ -23,6 +23,7 @@ DBCC FREEPROCCACHE;
 GO
 
 SELECT * FROM dbo.myTransactionHistory WHERE TransactionID = 666000;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
