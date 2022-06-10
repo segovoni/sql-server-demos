@@ -13,20 +13,6 @@ USE [PSP];
 GO
 
 
-/*
--- Generate the workload
-
--- Download sqlcmdcli from Github https://github.com/segovoni/sqlcmdcli
--- Extract sqlcmdcli to a local folder such as \SQL\Tools\sqlcmdcli
-
--- cd C:\SQL\Tools\sqlcmdcli
-
--- Execute the sample workload
--- sqlcmdcli.exe querystoreworkload -servername:SQL2022 -databasename:PSP -username:sa -password:1Password1 -verbose
-*/
-
-
-
 CREATE OR ALTER PROCEDURE dbo.Tab_A_Search
 (
   @ACol1 INTEGER
@@ -84,6 +70,9 @@ GO
 -- (500001 rows affected)
 -- Table 'Tab_A'. Scan count 1, logical reads 501121, physical reads 0...
 -- Table 'Worktable'. Scan count 0, logical reads 0...
+
+SELECT (501121 * 8)/1000/1000 AS GB;
+GO
 
 
 --  <ParameterList>
@@ -200,6 +189,28 @@ GO 3
 --    <StmtSimple StatementCompId="4" StatementEstRows="1" StatementId="1" StatementOptmLevel="FULL" StatementOptmEarlyAbortReason="GoodEnoughPlanFound" CardinalityEstimationModelVersion="160" StatementSubTreeCost="0.00657038" StatementText="SELECT * FROM dbo.Tab_A WHERE (Col1 = @ACol1) AND (Col2 = @ACol2) option 
 --    (PLAN PER VALUE(QueryVariantID = 1, predicate_range([PSP].[dbo].[Tab_A].[Col1] = @ACol1, 100.0, 100000.0)))" StatementType="SELECT" QueryHash="0x06F4EC29D5E7DA88" QueryPlanHash="0x2D54CD0E9A78A6AB" RetrievedFromCache="true" StatementSqlHandle="0x090054C2647C2659877392796D2C39CC73000000000000000000000000000000000000000000000000000000" DatabaseContextSettingsId="1" ParentObjectId="0" StatementParameterizationType="1" SecurityPolicyApplied="false">
 
+-- <Dispatcher>
+--   <ParameterSensitivePredicate LowBoundary="100" HighBoundary="100000">
+--     <StatisticsInfo Database="[PSP]" Schema="[dbo]" Table="[Tab_A]" Statistics="[IDX_Tab_A_Col1]" ModificationCount="0" SamplingPercent="100" LastUpdate="2022-06-02T15:40:49.72" />
+--     <Predicate>
+--       <ScalarOperator ScalarString="[PSP].[dbo].[Tab_A].[Col1]=[@ACol1]">
+--         <Compare CompareOp="EQ">
+--           <ScalarOperator>
+--             <Identifier>
+--               <ColumnReference Database="[PSP]" Schema="[dbo]" Table="[Tab_A]" Column="Col1" />
+--             </Identifier>
+--           </ScalarOperator>
+--           <ScalarOperator>
+--             <Identifier>
+--               <ColumnReference Column="@ACol1" />
+--             </Identifier>
+--           </ScalarOperator>
+--         </Compare>
+--       </ScalarOperator>
+--     </Predicate>
+--   </ParameterSensitivePredicate>
+-- </Dispatcher>
+
 
 -- Let's search the rows with Col1 equal to 1 and Col2 equal to 2
 EXEC dbo.Tab_A_Search @ACol1 = 1, @ACol2 = 1;
@@ -212,6 +223,8 @@ GO
 -- (500001 rows affected)
 -- Table 'Tab_A'. Scan count 1, logical reads 170006, physical reads 0...
 
+SELECT (170006 * 8)/1000/1000 AS GB;
+GO
 
 SELECT
   qs.execution_count,  
@@ -268,11 +281,12 @@ GO
 
 
 SELECT * FROM sys.query_store_query_variant;
+GO
 
+EXEC sp_helptext 'sys.query_store_query_variant';
+GO
 
-EXEC sp_helptext 'sys.query_store_query_variant'
-
-  
+/*
 CREATE VIEW sys.query_store_query_variant
 AS  
   SELECT  
@@ -300,8 +314,42 @@ AS
 	  sys.plan_persist_query_variant_in_memory) QVM ON  
     QVM.query_variant_query_id = QV.query_variant_query_id;
 GO
+*/
 
-SELECT * FROM sys.plan_persist_query_variant;
+-- Dispatcher plan
+SELECT 
+  p.usecounts
+  ,p.cacheobjtype
+  ,p.objtype
+  ,p.size_in_bytes
+  ,t.[text]
+  ,qp.query_plan
+FROM
+  sys.dm_exec_cached_plans p
+CROSS APPLY
+  sys.dm_exec_sql_text(p.plan_handle) t
+CROSS APPLY
+  sys.dm_exec_query_plan(p.plan_handle) AS qp 
+WHERE
+  t.[text] like '%Tab_A%'
+--AND
+--  p.objtype = 'Prepared'
+ORDER BY
+  p.objtype DESC;
+GO
+
+
+-- There are currently 38 reasons listed in the XE "psp_skipped_reason_enum"
+SELECT
+  [name]
+  ,map_value
+FROM
+  sys.dm_xe_map_values 
+WHERE
+  name = 'psp_skipped_reason_enum' 
+ORDER BY
+  map_key;
+GO
 
 /*
 DBCC TRACEON (11091, 12619, -1);
