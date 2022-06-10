@@ -23,11 +23,13 @@ GO
 
 -- Ad-hoc queries
 SELECT * FROM dbo.myTransactionHistory WHERE Quantity = 29;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
 
 SELECT * FROM dbo.myTransactionHistory WHERE Quantity = 61;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
@@ -54,17 +56,20 @@ GO
 
 -- Ad-hoc queries again
 SELECT * FROM dbo.myTransactionHistory WHERE Quantity = 29;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
 
 SELECT * FROM dbo.myTransactionHistory WHERE Quantity = 61;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
 
 
 SELECT * FROM dbo.myTransactionHistory WHERE TransactionID = 666777;
+GO
 SELECT * FROM sp_cacheobjects WHERE dbid = DB_ID('AdventureWorks2019');
 GO
 
@@ -95,7 +100,7 @@ SELECT * FROM dbo.myTransactionHistory WHERE TransactionID = 666777;
 
 
 SELECT * FROM sys.dm_exec_cached_plans;
-SELECT * FROM sys.dm_exec_plan_attributes(0x060009005A943C1D301681675E00000001000000000000000000000000000000000000000000000000000000);
+SELECT * FROM sys.dm_exec_plan_attributes(0x06000500411A230FB0F01B91C501000001000000000000000000000000000000000000000000000000000000);
 GO
 
 
@@ -141,7 +146,6 @@ GROUP BY
 ORDER BY
   ecp.usecounts ASC;
 GO
-
 
 -- Set "Optimize for ad hoc workloads" to default
 EXEC sp_configure 'optimize for ad hoc workloads', 0;
