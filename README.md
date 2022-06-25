@@ -9,6 +9,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
 | [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | 
+| [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | 
+
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
@@ -23,6 +25,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSessionSQLStart2022]: <https://www.sqlstart.it/2022/Speakers/Sergio-Govoni>
   [LinkMaterialSQLStart2022]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2022/sql-server-2022-parameter-sensitive-plan-optimization>
   [LinkVideoSQLStart2022]: <>
+  
+  [LinkDelphiDay2022]: <https://www.delphiday.it/>
+  [LinkSessionDelphiDay2022]: <https://www.delphiday.it/#Day3>
+  [LinkMaterialDelphiDay2022]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
+  [LinkVideoDelphiDay2022]: <>
 
 2021
 ---------------------------
@@ -53,8 +60,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkMaterialSQLStart2021]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2021/database-development-unit-test-with-tSQLt>
   [LinkVideoSQLStart2021]: <https://vimeo.com/showcase/8540479/video/562475700>
 
-  [LinkDelphiDay2021]: <https://www.delphiday.it/>
-  [LinkSessionDelphiDay2021]: <https://www.delphiday.it/>
+  [LinkDelphiDay2021]: <https://www.delphiday.it/2021/>
+  [LinkSessionDelphiDay2021]: <https://www.delphiday.it/2021/#Day3>
   [LinkMaterialDelphiDay2021]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2021/database-development-unit-test-with-tSQLt>
   [LinkVideoDelphiDay2021]: <https://www.youtube.com/watch?v=LHEywinPubs>
 
