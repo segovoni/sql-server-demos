@@ -11,17 +11,6 @@
 USE [PSP];
 GO
 
-/*
--- Generate the workload
-
--- Download sqlcmdcli from Github https://github.com/segovoni/sqlcmdcli
--- Extract sqlcmdcli to a local folder such as \SQL\Tools\sqlcmdcli
--- Open cmd
--- Move to the folder that contains sqlcmdcli with cd C:\SQL\Tools\sqlcmdcli
-
--- Execute the sample workload
--- sqlcmdcli.exe querystoreworkload -servername:SQL2022 -databasename:PSP -username:sgovoni -password:sgadmin -psp -verbose
-*/
 
 CREATE OR ALTER PROCEDURE dbo.Tab_A_Search
 (
@@ -60,8 +49,8 @@ WHERE
   AND (s.object_id = OBJECT_ID('dbo.Tab_A'));
 GO
 
-SET STATISTICS IO ON
-
+SET STATISTICS IO ON;
+GO
 
 
 EXEC dbo.Tab_A_Search @ACol1 = 33, @ACol2 = 33;
@@ -73,7 +62,7 @@ GO 3
 --  </ParameterList>
 
 
--- Let's search the rows with Col1 equal to 1 and Col2 equal to 2
+-- Let's search the rows with Col1 equal to 1 and Col2 equal to 1
 EXEC dbo.Tab_A_Search @ACol1 = 1, @ACol2 = 1;
 GO
 
@@ -81,7 +70,7 @@ GO
 -- Table 'Tab_A'. Scan count 1, logical reads 501121, physical reads 0...
 -- Table 'Worktable'. Scan count 0, logical reads 0...
 
-SELECT (501121 * 8)/1000/1000 AS GB;
+SELECT (501121 * 8)/1000.0/1000.0 AS GB;
 GO
 
 
@@ -256,7 +245,7 @@ GO
 -- (500001 rows affected)
 -- Table 'Tab_A'. Scan count 1, logical reads 170006, physical reads 0...
 
-SELECT (170006 * 8)/1000/1000 AS GB;
+SELECT (128339 * 8)/1000.0/1000.0 AS GB;
 GO
 
 SELECT
@@ -406,7 +395,15 @@ ORDER BY
   map_key;
 GO
 
+
 /*
-DBCC TRACEON (11091, 12619, -1);
-GO
+-- Generate the workload for testing parameter sensitive plan (PSP) optimization
+
+-- Download sqlcmdcli from Github https://github.com/segovoni/sqlcmdcli
+-- Extract sqlcmdcli to a local folder such as \SQL\Tools\sqlcmdcli
+-- Open cmd
+-- Move to the folder that contains sqlcmdcli with cd C:\SQL\Tools\sqlcmdcli
+
+-- Execute the sample workload with psp flag
+-- sqlcmdcli.exe querystoreworkload -servername:SQL2022 -databasename:PSP -username:sgovoni -password:sgadmin -psp -verbose
 */
