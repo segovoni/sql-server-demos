@@ -9,7 +9,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
 | [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | 
-| [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | 
+| [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | [Youtube][LinkVideoDelphiDay2022]
 
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
@@ -29,7 +29,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkDelphiDay2022]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2022]: <https://www.delphiday.it/#Day3>
   [LinkMaterialDelphiDay2022]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
-  [LinkVideoDelphiDay2022]: <>
+  [LinkVideoDelphiDay2022]: <https://www.youtube.com/watch?v=1fQFon195O8&t=2s>
 
 2021
 ---------------------------
