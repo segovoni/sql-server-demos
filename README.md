@@ -9,8 +9,9 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
 | [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | 
-| [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | [Youtube][LinkVideoDelphiDay2022]
-
+| [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | [Youtube][LinkVideoDelphiDay2022] 
+| [1nn0va Saturday 2022][Link1nn0vaSaturday2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSession1nn0vaSaturday2022] | [Slide and Demo][LinkMaterial1nn0vaSaturday2022] | 
+| [Data Saturday Parma 2022][LinkDataSatParma2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDataSatParma2022] | [Slide and Demo][LinkMaterialDataSatParma2022] | 
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
@@ -30,6 +31,16 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSessionDelphiDay2022]: <https://www.delphiday.it/#Day3>
   [LinkMaterialDelphiDay2022]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
   [LinkVideoDelphiDay2022]: <https://www.youtube.com/watch?v=1fQFon195O8&t=2s>
+
+  [1nn0va Saturday 2022]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2022-371954143857>
+  [LinkSession1nn0vaSaturday2022]: <https://1nn0vasat2022.1nn0va.it/agenda.html>
+  [LinkMaterial1nn0vaSaturday2022]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
+  [LinkVideo1nn0vaSaturday2022]: <>
+
+  [LinkDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/>
+  [LinkSessionDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/#schedule>
+  [LinkMaterialDataSatParma2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0022>
+  [LinkVideoDataSatParma2022]: <>
 
 2021
 ---------------------------
