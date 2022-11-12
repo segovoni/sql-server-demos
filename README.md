@@ -32,7 +32,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkMaterialDelphiDay2022]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
   [LinkVideoDelphiDay2022]: <https://www.youtube.com/watch?v=1fQFon195O8&t=2s>
 
-  [1nn0va Saturday 2022]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2022-371954143857>
+  [Link1nn0vaSaturday2022]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2022-371954143857>
   [LinkSession1nn0vaSaturday2022]: <https://1nn0vasat2022.1nn0va.it/agenda.html>
   [LinkMaterial1nn0vaSaturday2022]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2022/sql-server-2022-parameter-sensitive-plan-optimization>
   [LinkVideo1nn0vaSaturday2022]: <>
