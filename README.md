@@ -40,7 +40,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/>
   [LinkSessionDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/#schedule>
   [LinkMaterialDataSatParma2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0022>
-  [LinkVideoDataSatParma2022]: <https://www.youtube.com/watch?v=r1IgrFjtbvc>
+  [LinkVideoDataSatParma2022]: <https://www.youtube.com/watch?v=r1IgrFjtbvc&list=PLyyDPeQ647Ptk-wnSqYoDSD27QnQWiX9F>
 
 2021
 ---------------------------
