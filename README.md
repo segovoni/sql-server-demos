@@ -11,7 +11,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | [Youtube][LinkVideoSQLStart2022]
 | [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | [Youtube][LinkVideoDelphiDay2022] 
 | [1nn0va Saturday 2022][Link1nn0vaSaturday2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSession1nn0vaSaturday2022] | [Slide and Demo][LinkMaterial1nn0vaSaturday2022] | 
-| [Data Saturday Parma 2022][LinkDataSatParma2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDataSatParma2022] | [Slide and Demo][LinkMaterialDataSatParma2022] | 
+| [Data Saturday Parma 2022][LinkDataSatParma2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDataSatParma2022] | [Slide and Demo][LinkMaterialDataSatParma2022] | [Youtube][LinkVideoDataSatParma2022]
 
   [LinkDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/>
   [LinkSessionDataSatPordenone2022]: <http://datasaturdays.com/2022-02-26-datasaturday0020/#schedule>
@@ -40,7 +40,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/>
   [LinkSessionDataSatParma2022]: <https://datasaturdays.com/2022-11-26-datasaturday0022/#schedule>
   [LinkMaterialDataSatParma2022]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2022/datasat0022>
-  [LinkVideoDataSatParma2022]: <>
+  [LinkVideoDataSatParma2022]: <https://www.youtube.com/watch?v=r1IgrFjtbvc>
 
 2021
 ---------------------------
