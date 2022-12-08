@@ -8,7 +8,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | ------ | ------ | ------ | ------ |
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
-| [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | 
+| [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | [Youtube][LinkVideoSQLStart2022]
 | [Delphi Day 2022][LinkDelphiDay2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDelphiDay2022] | [Slide and Demo][LinkMaterialDelphiDay2022] | [Youtube][LinkVideoDelphiDay2022] 
 | [1nn0va Saturday 2022][Link1nn0vaSaturday2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSession1nn0vaSaturday2022] | [Slide and Demo][LinkMaterial1nn0vaSaturday2022] | 
 | [Data Saturday Parma 2022][LinkDataSatParma2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionDataSatParma2022] | [Slide and Demo][LinkMaterialDataSatParma2022] | 
@@ -25,7 +25,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSQLStart2022]: <https://www.sqlstart.it/2022>
   [LinkSessionSQLStart2022]: <https://www.sqlstart.it/2022/Speakers/Sergio-Govoni>
   [LinkMaterialSQLStart2022]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2022/sql-server-2022-parameter-sensitive-plan-optimization>
-  [LinkVideoSQLStart2022]: <>
+  [LinkVideoSQLStart2022]: <https://www.youtube.com/watch?v=7R_-SKAU5ts&list=PLyyDPeQ647PtWBHYWgLfab08ivLB-7RT_>
   
   [LinkDelphiDay2022]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2022]: <https://www.delphiday.it/#Day3>
