@@ -2,6 +2,17 @@
 
 Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
 
+2023
+---------------------------
+| Event | Session | Material | Video |
+| ------ | ------ | ------ | ------ |
+| [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
+
+  [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
+  [LinkSessionDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/#schedule>
+  [LinkMaterialDataSatPordenone2023]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2023/datasat0031/sql-server-2022-degree-of-parallelism-feedback/>
+  [LinkVideoDataSatPordenone2023]: <>
+
 2022
 ---------------------------
 | Event | Session | Material | Video |
