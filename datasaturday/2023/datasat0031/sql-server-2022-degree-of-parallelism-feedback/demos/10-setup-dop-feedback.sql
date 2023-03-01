@@ -134,20 +134,6 @@ GO
  GO
 
 
-SELECT
-  StockItemID
-  ,SupplierID
-  ,StockItemName
-  ,TaxRate
-  ,LeadTimeDays
-FROM
-  Warehouse.StockItems s
-WHERE
-  SupplierID = 4
-ORDER BY
-  StockItemName;
-GO
-
 -- Create and start an Extended Events (XE) session to monitor the DOP feature
 -- https://github.com/segovoni/bobsql/blob/master/demos/sqlserver2022/IQP/dopfeedback/dopxe.sql
 

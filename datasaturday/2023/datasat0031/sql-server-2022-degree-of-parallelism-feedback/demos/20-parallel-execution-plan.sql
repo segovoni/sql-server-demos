@@ -41,7 +41,7 @@ GROUP BY
 ORDER BY
   T.ProductID
   ,T.TransactionID;
-GO 5
+GO 6
 
 
 -- Parallel region due to TOP
@@ -81,6 +81,7 @@ GO
 
 
 -- Parallel region due to query global aggregate
+/*
 SELECT
   SUM(X.Quantity) AS QuantitySUM
 FROM
@@ -115,3 +116,12 @@ GROUP BY
 OPTION (QUERYTRACEON 8649);
 --OPTION(USE HINT('ENABLE_PARALLEL_PLAN_PREFERENCE'));
 GO
+*/
+
+
+USE [WideWorldImporters];
+GO
+
+-- Waiting task for CXPACKET
+EXEC Warehouse.GetStockItemsbySupplier 4;
+GO 15

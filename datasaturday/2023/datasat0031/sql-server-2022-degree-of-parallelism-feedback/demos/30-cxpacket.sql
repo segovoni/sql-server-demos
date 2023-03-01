@@ -17,6 +17,7 @@ SELECT * FROM sys.dm_os_waiting_tasks WHERE (session_id > 50);
 GO
 */
 
+
 -- Waiting task for CXPACKET
 -- Looking for the underline root cause
 SELECT

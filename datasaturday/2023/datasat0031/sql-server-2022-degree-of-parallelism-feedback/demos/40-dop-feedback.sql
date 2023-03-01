@@ -25,7 +25,7 @@ GO
 -- cd "c:\Program Files\Microsoft Corporation\RMLUtils"
 
 -- Execute
--- ostress.exe -E -Q"EXEC Warehouse.GetStockItemsbySupplier 4;" -n1 -r15 -q -oC:\SQL\ostresslog\workload_wwi_regress -dWideWorldImporters
+-- ostress.exe -E -Q"EXEC Warehouse.GetStockItemsbySupplier 4;" -n1 -r15 -q -oC:\SQL\ostresslog\workload_wwi_regress -dWideWorldImporters -T146
 
 -- -n number of connections processing each input file/query - stress mode
 -- -r number of iterations for each connection to execute its input file/query
@@ -33,7 +33,7 @@ GO
 -- -o output directory to write query results and log file
 -- -d database name
 
--- "c:\Program Files\Microsoft Corporation\RMLUtils\ostress" -E -Q"EXEC Warehouse.GetStockItemsbySupplier 4;" -n1 -r15 -q -oC:\SQL\ostresslog\workload_wwi_regress -dWideWorldImporters
+-- "c:\Program Files\Microsoft Corporation\RMLUtils\ostress" -E -Q"EXEC Warehouse.GetStockItemsbySupplier 4;" -n1 -r15 -q -oC:\SQL\ostresslog\workload_wwi_regress -dWideWorldImporters -T146
 
 
 SELECT
