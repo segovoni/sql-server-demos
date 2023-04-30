@@ -4,19 +4,25 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 2023
 ---------------------------
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
+| [SQL Start 2023][LinkSQLStart2023] | [TBD][LinkSessionSQLStart2023] | [TBD][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
 
   [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
   [LinkSessionDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/#schedule>
   [LinkMaterialDataSatPordenone2023]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2023/datasat0031/sql-server-2022-degree-of-parallelism-feedback/>
   [LinkVideoDataSatPordenone2023]: <>
 
+  [LinkSQLStart2023]: <https://www.sqlstart.it/2023>
+  [LinkSessionSQLStart2023]: <>
+  [LinkMaterialSQLStart2023]: <>
+  [LinkVideoSQLStart2023]: <>
+
 2022
 ---------------------------
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2022][LinkDataSatPordenone2022] | [T-SQL magic tricks][LinkSessionDataSatPordenone2022] | [Slide and Demo][LinkMaterialDataSatPordenone2022] | [Youtube][LinkVideoDataSatPordenone2022]
 | [DataWeekender CU5][LinkDataWeekender2022CU5] | [T-SQL magic tricks][LinkSessionDataWeekender2022CU5] | [Slide and Demo][LinkMaterialDataWeekender2022CU5] | 
 | [SQL Start 2022][LinkSQLStart2022] | [SQL Server 2022 Parameter Sensitive Plan Optimization][LinkSessionSQLStart2022] | [Slide and Demo][LinkMaterialSQLStart2022] | [Youtube][LinkVideoSQLStart2022]
@@ -55,8 +61,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 
 2021
 ---------------------------
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [Humanitarian IT conference for earthquake victims in Croatia][LinkMVPs4Croatia2021] | [Automating Azure SQL Database maintenance tasks][LinkSessionMVPs4Croatia2021] | [Slide and Demo][LinkMaterialMVPs4Croatia2021] |
 | [Data Saturday Pordenone 2021][LinkDataSatPordenone2021] | [Database development unit test with tSQLt][LinkSessionDataSatPordenone2021] | [Slide and Demo][LinkMaterialDataSatPordenone2021] | [Youtube][LinkVideoDataSatPordenone2021]
 | [Global Azure 2021][LinkGlobalAzure2021] | [Unit testing in Azure SQL Database with tSQLt][LinkSessionGlobalAzure2021] | [Slide and Demo][LinkMaterialGlobalAzure2021] | [Youtube][LinkVideoGlobalAzure2021]
@@ -91,8 +97,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 2020
 ---------------------------
 
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [PASS Global Italian VG][LinkPASSGIVG] | SQL Server Query Store e Automatic Tuning | | [Youtube][LinkVideoPASSGIVGQueryStore]
 | [Global Azure 2020][LinkGlobalAzure2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialGlobalAzure2020] | 
 | [SQL Start 2020][LinkSQLStart2020] | Automating Azure SQL Database maintenance tasks | [Slide and Demo][LinkMaterialSQLStart2020] | [UGISS channel on Vimeo][LinkVideoSQLStart2020]
@@ -121,8 +127,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 2019
 ---------------------------
 
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [SQL Start][LinkSQLStart2019] | [SQL Server Execution Plans: From Zero to Hero][LinkSessionSQLStart2019] | [Slide and Demo][LinkMaterialSQLStart2019] | [UGISS channel on Vimeo][LinkVideoSQLStart2019]
 | [Delphi Day Piacenza][LinkDelphiDayPiacenza2019] | SQL Server Query Store e Automatic Tuning | [Slide and Demo][LinkMaterialDelphiDayPiacenza2019] | [UGISS channel on Vimeo][LinkVideoDelphiDayPiacenza2019]
 | [SQL Saturday Athens][LinkSQLSaturdayAthens2019] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayAthens2019] | [Slide and Demo][LinkMaterialSQLSaturdayAthens2019] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayAthens2019]
@@ -162,8 +168,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 2018
 ---------------------------
 
-| Event | Session | Material | Video |
-| ------ | ------ | ------ | ------ |
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
 | [SQL Saturday Parma][LinkSQLSaturdayParma2018] | [SQL Server Query Optimizer end-to-end][LinkSessionSQLSaturdayParma2018] | [Slide and Demo][LinkMaterialSQLSaturdayParma2018] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayParma2018]
 | [SQL Saturday Pordenone][LinkSQLSaturdayPordenone2018] | [SQL Server 2017 Graph Database][LinkSessionSQLSaturdayPordenone2018] | [Slide and Demo][LinkMaterialSQLSaturdayPordenone2018] | [UGISS channel on Vimeo][LinkVideoSQLSaturdayPordenone2018]
 
