@@ -12,7 +12,7 @@
 USE [master];
 GO
 
--- Full backup of AdventureWorks2017
+-- Full backup of AdventureWorks2022
 -- https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
 
 -- Full backup of WideWorldImporters and WideWorldImportersDW sample database
@@ -38,21 +38,21 @@ RECONFIGURE;
 GO
 
 -- Drop Database
-IF (DB_ID('AdventureWorks2017') IS NOT NULL)
+IF (DB_ID('AdventureWorks2022') IS NOT NULL)
 BEGIN
-  ALTER DATABASE [AdventureWorks2017]
+  ALTER DATABASE [AdventureWorks2022]
     SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 
-  DROP DATABASE [AdventureWorks2017];
+  DROP DATABASE [AdventureWorks2022];
 END;
 GO
 
-RESTORE DATABASE [AdventureWorks2017]
-  FROM DISK = N'C:\SQL\DBs\Backup\AdventureWorks2017.bak'
+RESTORE DATABASE [AdventureWorks2022]
+  FROM DISK = N'C:\SQL\DBs\Backup\AdventureWorks2022.bak'
   WITH
     FILE = 1
-    ,MOVE N'AdventureWorks2017' TO N'C:\SQL\DBs\AdventureWorks2017.mdf'
-    ,MOVE N'AdventureWorks2017_log' TO N'C:\SQL\DBs\AdventureWorks2017_log.ldf'
+    ,MOVE N'AdventureWorks2022' TO N'C:\SQL\DBs\AdventureWorks2022.mdf'
+    ,MOVE N'AdventureWorks2022_log' TO N'C:\SQL\DBs\AdventureWorks2022_log.ldf'
     ,NOUNLOAD
     ,STATS = 5;
 GO
@@ -187,7 +187,7 @@ WHERE (CustomerID IN (1, 2, 3, 4, 5));
 GO
 
 
-USE [AdventureWorks2017];
+USE [AdventureWorks2022];
 GO
 
 -- Disabling batch mode on rowstore
