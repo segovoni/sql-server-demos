@@ -9,7 +9,7 @@
 -- Notes:        --                                                    -
 ------------------------------------------------------------------------
 
-USE [AdventureWorks2017];
+USE [AdventureWorks2022];
 GO
 
 SET STATISTICS IO ON;
@@ -71,7 +71,7 @@ GO
 
 
 -- Remove plan
-DBCC FREEPROCCACHE(0x060008001E78B718E059AFA5EC01000001000000000000000000000000000000000000000000000000000000)
+DBCC FREEPROCCACHE(0x06000800DA068F26E08EEF135C01000001000000000000000000000000000000000000000000000000000000)
 EXEC dbo.sp_recompile 'dbo.GetAddress';
 
 

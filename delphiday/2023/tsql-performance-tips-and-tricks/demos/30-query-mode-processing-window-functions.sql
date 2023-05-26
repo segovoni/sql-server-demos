@@ -10,7 +10,7 @@
 -- Notes:        --                                                    -
 ------------------------------------------------------------------------
 
-USE [AdventureWorks2017];
+USE [AdventureWorks2022];
 GO
 
 -- Row mode execution vs. Batch mode execution
@@ -46,7 +46,7 @@ GO
 -- 1001        227969        76          513
 
 -- (1) Row mode execution
--- 43 seconds with the query option discard results after execution
+-- 2m 13s with the query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
@@ -89,7 +89,7 @@ CREATE NONCLUSTERED COLUMNSTORE INDEX NCCX_bigTransactionHistory_TransactionID
 GO
 
 -- (2) Batch mode execution
--- 29 seconds with the query option discard results after execution
+-- 1m 16s with the query option discard results after execution
 SELECT
   ProductID
   ,TransactionID
