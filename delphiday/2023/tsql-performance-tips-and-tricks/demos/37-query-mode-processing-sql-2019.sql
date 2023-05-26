@@ -10,7 +10,7 @@
 -- Notes:        --                                                    -
 ------------------------------------------------------------------------
 
-USE [AdventureWorks2017];
+USE [AdventureWorks2022];
 GO
 
 -- DROP NCC index
@@ -20,7 +20,7 @@ GO
 -- COMPATIBILITY_LEVEL { 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
 -- 140 for SQL Server 2017
 -- 150 for SQL Server 2019
-ALTER DATABASE [AdventureWorks2017] SET COMPATIBILITY_LEVEL = 150;
+ALTER DATABASE [AdventureWorks2022] SET COMPATIBILITY_LEVEL = 150;
 GO
 
 -- Enabling batch mode on rowstore
