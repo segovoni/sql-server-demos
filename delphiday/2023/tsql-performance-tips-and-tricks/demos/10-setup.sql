@@ -9,9 +9,6 @@
 -- Notes:        --                                                    -
 ------------------------------------------------------------------------
 
-USE [master];
-GO
-
 -- Full backup of AdventureWorks2022
 -- https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
 
@@ -23,7 +20,7 @@ GO
 -- and Azure SQL Database
 -- https://github.com/Microsoft/sql-server-samples/tree/master/samples/databases/wide-world-importers
 
--- Run "Thinking Big (Adventure)" script by Adam Machanicon on AdventureWorks
+-- Run "Thinking Big (Adventure)" script by Adam Machanic on AdventureWorks
 -- http://dataeducation.com/thinking-big-adventure/
 
 
@@ -76,6 +73,30 @@ RESTORE DATABASE [WideWorldImporters]
   ,MOVE N'WWI_InMemory_Data_1' TO N'C:\SQL\DBs\WideWorldImporters_InMemory_Data_1'
   ,NOUNLOAD
   ,STATS = 5;
+GO
+
+-- Drop database TestLatchDB 
+IF (DB_ID('TestLatchDB') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [TestLatchDB]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [TestLatchDB];
+END;
+GO
+
+-- Create database TestLatchDB
+CREATE DATABASE [TestLatchDB]
+  ON PRIMARY
+  (
+    NAME = TestLatchDB
+    ,FILENAME = 'C:\SQL\DBs\TestLatchDB_Data.mdf'
+  )
+  LOG ON
+  (
+    NAME = TestLatchDB_Log
+    ,FILENAME = 'C:\SQL\DBs\TestLatchDB_Log.ldf'
+  );
 GO
 
 
@@ -186,10 +207,66 @@ FROM Sales.Customers
 WHERE (CustomerID IN (1, 2, 3, 4, 5));
 GO
 
-
 USE [AdventureWorks2022];
+GO
+
+-- COMPATIBILITY_LEVEL { 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- 130 for SQL Server 2016
+-- 140 for SQL Server 2017
+-- 150 for SQL Server 2019
+ALTER DATABASE [AdventureWorks2022] SET COMPATIBILITY_LEVEL = 140;
 GO
 
 -- Disabling batch mode on rowstore
 ALTER DATABASE SCOPED CONFIGURATION SET BATCH_MODE_ON_ROWSTORE = OFF;
+GO
+
+
+USE [TestLatchDB];
+GO
+
+-- Create stored procedure dbo.usp_stress_tempdb
+CREATE OR ALTER PROCEDURE dbo.usp_stress_tempdb
+AS
+BEGIN
+  -- Create temporary table
+  CREATE TABLE dbo.#TempTable
+  (
+    Col1 INTEGER IDENTITY(1, 1) NOT NULL
+	,Col2 CHAR(4000)
+	,Col3 CHAR(4000)
+  );
+
+  -- Create unique clustered index
+  CREATE UNIQUE CLUSTERED INDEX uq_clidx_temptable_col1 ON dbo.#TempTable
+  (
+    [Col1]
+  );
+
+  -- Insert 10 records into the temporary table
+  DECLARE
+    @i INTEGER = 0;
+  WHILE
+    (@i < 10)
+  BEGIN
+    INSERT INTO dbo.#TempTable VALUES ('Delphi Day 2023', '#DelphiDay23');
+	SET @i = (@i + 1);
+  END;
+END;
+GO
+
+
+-- Create the loop stored procedure
+CREATE OR ALTER PROCEDURE dbo.usp_loop_stress_tempdb
+AS
+BEGIN
+  DECLARE
+    @j INTEGER = 0;
+  WHILE
+    (@j < 100)
+  BEGIN
+    EXECUTE dbo.usp_stress_tempdb;
+	SET @j = (@j + 1);
+  END;
+END;
 GO
