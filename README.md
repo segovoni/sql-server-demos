@@ -7,12 +7,18 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
+| [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | [Coming soon][LinkVideoDelphiDay2023]
 | [SQL Start 2023][LinkSQLStart2023] | [TBD][LinkSessionSQLStart2023] | [TBD][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
 
   [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
   [LinkSessionDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/#schedule>
   [LinkMaterialDataSatPordenone2023]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2023/datasat0031/sql-server-2022-degree-of-parallelism-feedback/>
   [LinkVideoDataSatPordenone2023]: <>
+
+  [LinkDelphiDay2023]: <https://www.delphiday.it/>
+  [LinkSessionDelphiDay2023]: <https://www.delphiday.it/conferenza/>
+  [LinkMaterialDelphiDay2023]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2023/tsql-performance-tips-and-tricks>
+  [LinkVideoDelphiDay2023]: <https://www.delphiday.it/>
 
   [LinkSQLStart2023]: <https://www.sqlstart.it/2023>
   [LinkSessionSQLStart2023]: <>
