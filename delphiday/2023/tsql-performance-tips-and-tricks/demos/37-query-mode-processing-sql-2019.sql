@@ -17,9 +17,10 @@ GO
 DROP INDEX IF EXISTS dbo.bigTransactionHistory.NCCX_bigTransactionHistory_TransactionID;
 GO
 
--- COMPATIBILITY_LEVEL { 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- COMPATIBILITY_LEVEL {160 | 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
 -- 140 for SQL Server 2017
 -- 150 for SQL Server 2019
+-- 160 for SQl Server 2022
 ALTER DATABASE [AdventureWorks2022] SET COMPATIBILITY_LEVEL = 150;
 GO
 
