@@ -44,6 +44,11 @@ ostress.exe -E -SDEV -dTestLatchDB -Q"EXECUTE TestLatchDB.dbo.usp_loop_stress_te
 
 */
 
+SELECT
+  *
+FROM
+  sys.dm_os_waiting_tasks;
+GO
 
 -- Object allocation contention
 -- Contention on wait resource 2:8:1 is tempdb contention
@@ -78,7 +83,9 @@ WHERE
   AND (resource_description LIKE '2:%:%' 
   OR resource_description LIKE '2:%:%' 
   OR resource_description LIKE '2:%:%');
-  GO
+ GO
+
+ EXEC sp_whoisactive
 
 
 -- PAGELATCH_*

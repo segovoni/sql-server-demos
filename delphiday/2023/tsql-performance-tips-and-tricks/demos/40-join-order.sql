@@ -50,7 +50,7 @@ FROM Sales.Customers AS C
 WHERE NOT EXISTS
   ( SELECT C.CustomerID
     FROM Sales.Orders AS O
-    WHERE O.CustomerID=c.CustomerID
+    WHERE O.CustomerID=C.CustomerID
   )
 ORDER BY
   2;
@@ -79,6 +79,7 @@ INNER JOIN Sales.OrderLines AS OL
   ON O.OrderID=OL.OrderID
 INNER JOIN Warehouse.StockItems AS S
   ON OL.StockItemID=S.StockItemID
+  -- Pay attention here!!
   ON O.CustomerID=C.CustomerID;
 GO
 
