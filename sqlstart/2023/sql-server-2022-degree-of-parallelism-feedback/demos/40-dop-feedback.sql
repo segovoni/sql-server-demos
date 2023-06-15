@@ -35,6 +35,16 @@ GO
 
 -- "c:\Program Files\Microsoft Corporation\RMLUtils\ostress" -E -Q"EXEC Warehouse.GetStockItemsbySupplier 4;" -n1 -r15 -q -oC:\SQL\ostresslog\workload_wwi_regress -dWideWorldImporters -T146
 
+SELECT
+  *
+FROM
+  sys.query_store_query_text
+WHERE
+  query_sql_text LIKE '%SELECT StockItemID, SupplierID, StockItemName, TaxRate, LeadTimeDays%';
+GO
+
+SELECT * FROM sys.query_store_plan WHERE query_id = 2;
+GO
 
 SELECT
   qsp.query_plan_hash
@@ -47,7 +57,8 @@ FROM
   sys.query_store_runtime_stats qsrs
 JOIN
   sys.query_store_plan qsp ON qsrs.plan_id = qsp.plan_id
-    and qsp.query_plan_hash = CONVERT(varbinary(8), cast(4128150668158729174 as bigint))
+    and qsp.query_plan_hash = 0xDABB2ADB16CE6645
+    --and qsp.query_plan_hash = CONVERT(varbinary(8), cast(4128150668158729174 as bigint))
 ORDER by
   qsrs.last_execution_time;
 GO

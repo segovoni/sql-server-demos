@@ -11,7 +11,6 @@
 -- The test environment is based on Bob Ward demo test environment
 -- https://github.com/segovoni/bobsql/tree/master/demos/sqlserver2022/IQP/dopfeedback
 
-
 USE [master];
 GO
 
@@ -26,6 +25,28 @@ RECONFIGURE WITH OVERRIDE;
 GO
 EXEC sp_configure 'optimize for ad hoc workloads', 0;
 RECONFIGURE WITH OVERRIDE;
+GO
+
+-- Drop Database
+-- Full backup of AdventureWorks2022
+-- https://github.com/Microsoft/sql-server-samples/releases/tag/adventureworks
+IF (DB_ID('AdventureWorks2022') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [AdventureWorks2022]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [AdventureWorks2022];
+END;
+GO
+
+RESTORE DATABASE [AdventureWorks2022]
+  FROM DISK = N'C:\SQL\DBs\Backup\AdventureWorks2022.bak'
+  WITH
+    FILE = 1
+    ,MOVE N'AdventureWorks2022' TO N'C:\SQL\DBs\AdventureWorks2022.mdf'
+    ,MOVE N'AdventureWorks2022_log' TO N'C:\SQL\DBs\AdventureWorks2022_log.ldf'
+    ,NOUNLOAD
+    ,STATS = 5;
 GO
 
 -- Restore database
