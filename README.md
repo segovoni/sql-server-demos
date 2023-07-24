@@ -9,6 +9,8 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
 | [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | 
 | [SQL Start 2023][LinkSQLStart2023] | [SQL Server 2022 Degree of parallelism feedback][LinkSessionSQLStart2023] | [Slide and Demo][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
+| [1nn0va Saturday 2023][Link1nn0vaSaturday2023] | [TBD][LinkSession1nn0vaSaturday2023] | [TBD][LinkMaterial1nn0vaSaturday2023] | 
+
 
   [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
   [LinkSessionDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/#schedule>
@@ -24,6 +26,11 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
   [LinkSessionSQLStart2023]: <https://www.sqlstart.it/2023/Speakers/Sergio-Govoni>
   [LinkMaterialSQLStart2023]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2023/sql-server-2022-degree-of-parallelism-feedback>
   [LinkVideoSQLStart2023]: <>
+
+  [Link1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
+  [LinkSession1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
+  [LinkMaterial1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
+  [LinkVideo1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
 
 2022
 ---------------------------
