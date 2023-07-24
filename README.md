@@ -7,7 +7,7 @@ Some experiments and demos of my sessions at live/online events like SQL Saturda
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
-| [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | [Coming soon][LinkVideoDelphiDay2023]
+| [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | 
 | [SQL Start 2023][LinkSQLStart2023] | [SQL Server 2022 Degree of parallelism feedback][LinkSessionSQLStart2023] | [Slide and Demo][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
 
   [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
