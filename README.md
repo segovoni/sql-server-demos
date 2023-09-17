@@ -1,6 +1,6 @@
-# SQL Server Demos: Presentations and Code Samples
+# SQL Server demos: presentations and code samples
 
-Some experiments and demos of my sessions at live/online events like SQL Saturday and Microsoft Conference
+This repository contains experiments, slide and demo scripts of my sessions at in-person or online events such as SQL Saturday, Data Saturday, SQL Start, Delphi Day, Microsoft Conferences and so no.
 
 2023
 ---------------------------
