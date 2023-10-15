@@ -8,7 +8,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2023][LinkDataSatPordenone2023] | [SQL Server 2022 Degree of Parallelism Feedback][LinkSessionDataSatPordenone2023] | [Slide and Demo][LinkMaterialDataSatPordenone2023] | 
 | [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | 
-| [SQL Start 2023][LinkSQLStart2023] | [SQL Server 2022 Degree of parallelism feedback][LinkSessionSQLStart2023] | [Slide and Demo][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
+| [SQL Start 2023][LinkSQLStart2023] | [SQL Server 2022 Degree of parallelism feedback][LinkSessionSQLStart2023] | [Slide and Demo][LinkMaterialSQLStart2023] | [Vimeo][LinkVideoSQLStart2023]
 | [1nn0va Saturday 2023][Link1nn0vaSaturday2023] | [SQL Server unit testing con tSQLt, Docker e GitHub Actions][LinkSession1nn0vaSaturday2023] | [Slide and Demo][LinkMaterial1nn0vaSaturday2023] | 
 | [Data Saturday Parma 2023][LinkDataSatParma2023] | [T-SQL performance tips & tricks][LinkSessionDataSatParma2023] | [Slide and Demo][LinkMaterialDataSatParma2023] | [TBD][LinkVideoDataSatParma2023]
 
@@ -25,7 +25,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSQLStart2023]: <https://www.sqlstart.it/2023>
   [LinkSessionSQLStart2023]: <https://www.sqlstart.it/2023/Speakers/Sergio-Govoni>
   [LinkMaterialSQLStart2023]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2023/sql-server-2022-degree-of-parallelism-feedback>
-  [LinkVideoSQLStart2023]: <>
+  [LinkVideoSQLStart2023]: <https://vimeo.com/837319658>
 
   [Link1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
   [LinkSession1nn0vaSaturday2023]: <https://1nn0vasat2023.1nn0va.it/agenda.html>
