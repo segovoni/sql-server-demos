@@ -10,7 +10,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Delphi Day 2023][LinkDelphiDay2023] | [T-SQL performance tips & tricks][LinkSessionDelphiDay2023] | [Slide and Demo][LinkMaterialDelphiDay2023] | 
 | [SQL Start 2023][LinkSQLStart2023] | [SQL Server 2022 Degree of parallelism feedback][LinkSessionSQLStart2023] | [Slide and Demo][LinkMaterialSQLStart2023] | [TBD][LinkVideoSQLStart2023]
 | [1nn0va Saturday 2023][Link1nn0vaSaturday2023] | [SQL Server unit testing con tSQLt, Docker e GitHub Actions][LinkSession1nn0vaSaturday2023] | [Slide and Demo][LinkMaterial1nn0vaSaturday2023] | 
-
+| [Data Saturday Parma 2023][LinkDataSatParma2023] | [T-SQL performance tips & tricks][LinkSessionDataSatParma2023] | [Slide and Demo][LinkMaterialDataSatParma2023] | [TBD][LinkVideoDataSatParma2023]
 
   [LinkDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/>
   [LinkSessionDataSatPordenone2023]: <https://datasaturdays.com/2023-02-25-datasaturday0031/#schedule>
@@ -31,6 +31,11 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSession1nn0vaSaturday2023]: <https://1nn0vasat2023.1nn0va.it/agenda.html>
   [LinkMaterial1nn0vaSaturday2023]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2023/sql-server-unit-testing-with-tsqlt-docker-and-github-actions>
   [LinkVideo1nn0vaSaturday2023]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2023-661308891697>
+
+  [LinkDataSatParma2023]: <https://datasaturdays.com/2023-11-18-datasaturday0037/>
+  [LinkSessionDataSatParma2023]: <https://datasaturdays.com/2023-11-18-datasaturday0037/#schedule>
+  [LinkMaterialDataSatParma2023]: <https://github.com/segovoni/sql-server-demos>
+  [LinkVideoDataSatParma2023]: <https://github.com/segovoni/sql-server-demos>
 
 2022
 ---------------------------
