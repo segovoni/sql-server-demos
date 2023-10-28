@@ -63,8 +63,8 @@ SELECT
 FROM
   sys.dm_os_waiting_tasks 
 WHERE
-  wait_type LIKE 'PAGELATCH_%' 
-  AND (resource_description LIKE '2:%:1' 
+  --wait_type LIKE 'PAGELATCH_%' 
+  /*AND*/ (resource_description LIKE '2:%:1' 
   OR resource_description LIKE '2:%:2' 
   OR resource_description LIKE '2:%:3')
 

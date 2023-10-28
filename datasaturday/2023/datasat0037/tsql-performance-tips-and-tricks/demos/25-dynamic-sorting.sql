@@ -56,7 +56,7 @@ BEGIN
         WHEN N'ProductNumber' THEN ProductNumber
         WHEN N'ListPrice' THEN ListPrice
       END
-      OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
+      OPTION (QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);
@@ -120,7 +120,7 @@ BEGIN
         WHEN N'ListPrice' THEN ListPrice
       ELSE CAST(NULL AS sql_variant) -- !!! Pay attention to the cast
       END
-      OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
+      OPTION (QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);
@@ -175,7 +175,7 @@ BEGIN
       ,CASE WHEN @SortColumnName = N'Name' THEN [Name] END
       ,CASE WHEN @SortColumnName = N'ProductNumber' THEN ProductNumber END
       ,CASE WHEN @SortColumnName = N'ListPrice' THEN ListPrice END
-    OPTION (RECOMPILE, QUERYTRACEON 3604, QUERYTRACEON 8605);
+    OPTION (QUERYTRACEON 3604, QUERYTRACEON 8605);
   END
   ELSE BEGIN
     RAISERROR(N'The column name is unknown', 16, 1);

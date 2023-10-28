@@ -4,7 +4,7 @@
 --                                                                    --
 -- Session:      T-SQL performance tips & tricks!                     --
 --                                                                    --
--- Demo:         Setup databases (reset DB)                           --
+-- Demo:         Setup databases                                      --
 -- Author:       Sergio Govoni                                        --
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
@@ -34,7 +34,7 @@ EXEC sp_configure 'optimize for ad hoc workloads', 0;
 RECONFIGURE;
 GO
 
--- Drop Database
+-- Drop Database AdventureWorks2022
 IF (DB_ID('AdventureWorks2022') IS NOT NULL)
 BEGIN
   ALTER DATABASE [AdventureWorks2022]
