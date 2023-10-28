@@ -34,7 +34,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDataSatParma2023]: <https://datasaturdays.com/2023-11-18-datasaturday0037/>
   [LinkSessionDataSatParma2023]: <https://datasaturdays.com/2023-11-18-datasaturday0037/#schedule>
-  [LinkMaterialDataSatParma2023]: <https://github.com/segovoni/sql-server-demos>
+  [LinkMaterialDataSatParma2023]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2023/datasat0037/tsql-performance-tips-and-tricks>
   [LinkVideoDataSatParma2023]: <https://github.com/segovoni/sql-server-demos>
 
 2022
