@@ -14,7 +14,6 @@ USE [WideWorldImporters];
 GO
 
 
-
 -- Wikipedia (https://en.wikipedia.org/wiki/Sargable)
 
 -- A condition (or predicate) in a query is said to be sargable
@@ -122,14 +121,16 @@ GO
 
 
 CREATE OR ALTER PROCEDURE Purchasing.sp_purchaseorders_deliverydate
-(@DeliveryDate Date)
+  (
+    @DeliveryDate Date
+  )
 AS BEGIN
   SELECT
     PurchaseOrderID, ExpectedDeliveryDate
   FROM
     Purchasing.PurchaseOrders
   WHERE
-    ExpectedDeliveryDate = @DeliveryDate;
+    (ExpectedDeliveryDate = @DeliveryDate);
 END;
 GO
 
@@ -146,7 +147,9 @@ GO
 
 -- The conventional solution is the use of ISNULL function
 CREATE OR ALTER PROCEDURE Purchasing.sp_purchaseorders_deliverydate
-(@DeliveryDate Date)
+  (
+    @DeliveryDate Date
+  )
 AS BEGIN
   SELECT
     PurchaseOrderID, ExpectedDeliveryDate
@@ -163,7 +166,9 @@ GO
 
 
 CREATE OR ALTER PROCEDURE Purchasing.sp_purchaseorders_deliverydate
-(@DeliveryDate Date)
+  (
+    @DeliveryDate Date
+  )
 AS BEGIN
   SELECT
     PurchaseOrderID, ExpectedDeliveryDate
@@ -181,7 +186,9 @@ GO
 
 -- Credits to Itzik Ben-Gan
 CREATE OR ALTER PROCEDURE Purchasing.sp_purchaseorders_deliverydate
-(@DeliveryDate Date)
+  (
+    @DeliveryDate Date
+  )
 AS BEGIN
   SELECT
     PurchaseOrderID, ExpectedDeliveryDate
@@ -277,7 +284,7 @@ WHERE
 GO
 
 
--- Non-SARGable
+-- ?
 SELECT
   COUNT(*)
 FROM
@@ -287,7 +294,7 @@ WHERE
 GO
 
 
--- SARGable
+-- ?
 SELECT
   COUNT(*)
 FROM

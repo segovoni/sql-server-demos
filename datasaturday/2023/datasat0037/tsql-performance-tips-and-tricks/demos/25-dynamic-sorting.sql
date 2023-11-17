@@ -19,9 +19,9 @@ SELECT
 FROM
   dbo.bigProduct
 ORDER BY
-  --ProductID;
+  ProductID;
   --[Name];
-  [ProductNumber];
+  --[ProductNumber];
   --[ListPrice];
 GO
 
@@ -66,7 +66,10 @@ END;
 
 -- Check dynamic SQL security
 EXEC dbo.GetSortedProducts N'-- DELETE..';
+GO
 
+DBCC FREEPROCCACHE;
+GO
 
 -- AncOp_PrjEl COL: Expr1002 
 --   ScaOp_Convert money,Null,ML=8
@@ -129,6 +132,9 @@ BEGIN
 END;
 
 
+DBCC FREEPROCCACHE;
+GO
+
 -- AncOp_PrjEl COL: Expr1002 
 --   ScaOp_Convert sql_variant,Null,Var,ML=8016
 --     ScaOp_Identifier QCOL: [AdventureWorks2017].[dbo].[bigProduct].ProductID
@@ -183,6 +189,9 @@ BEGIN
   END
 END;
 
+
+DBCC FREEPROCCACHE;
+GO
 
 -- AncOp_PrjList 
 --   AncOp_PrjEl COL: Expr1002 
