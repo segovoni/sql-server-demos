@@ -12,6 +12,7 @@
 USE [AdventureWorks2022];
 GO
 
+
 SET STATISTICS IO ON;
 GO
 

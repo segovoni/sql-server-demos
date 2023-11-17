@@ -16,7 +16,6 @@ GO
 -- Row mode execution vs. Batch mode execution
 
 
-
 -- dbo.bigTransactionHistory records of each purchase order, sales order,
 -- or work order transaction
 

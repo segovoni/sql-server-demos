@@ -13,6 +13,7 @@
 USE [AdventureWorks2022];
 GO
 
+
 -- DROP NCC index
 DROP INDEX IF EXISTS dbo.bigTransactionHistory.NCCX_bigTransactionHistory_TransactionID;
 GO

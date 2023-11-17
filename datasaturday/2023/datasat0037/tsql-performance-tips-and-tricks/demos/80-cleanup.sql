@@ -12,6 +12,7 @@
 USE [master];
 GO
 
+
 -- Drop Database
 IF (DB_ID('AdventureWorks2022') IS NOT NULL)
 BEGIN

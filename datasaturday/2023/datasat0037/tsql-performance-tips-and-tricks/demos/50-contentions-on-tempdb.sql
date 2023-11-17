@@ -41,7 +41,6 @@ GO
 ostress.exe -E -SDEV -dTestLatchDB -Q"EXECUTE TestLatchDB.dbo.usp_loop_stress_tempdb;" -n300 -q -T146
 
 1m 46s
-
 */
 
 SELECT
