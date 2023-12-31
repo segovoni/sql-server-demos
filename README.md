@@ -2,6 +2,17 @@
 
 This repository contains experiments, slide and demo scripts of my sessions at in-person or online events such as SQL Saturday, Data Saturday, SQL Start, Delphi Day, Microsoft Conferences and so no.
 
+2024
+---------------------------
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
+| [Data Saturday Pordenone 2024][LinkDataSatPordenone2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionDataSatPordenone2024] | [Slide and Demo][LinkMaterialDataSatPordenone2024] | 
+
+  [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
+  [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
+  [LinkMaterialDataSatPordenone2024]: <>
+  [LinkVideoDataSatPordenone2024]: <>
+
 2023
 ---------------------------
 | Event  | Session | Material | Video  |
