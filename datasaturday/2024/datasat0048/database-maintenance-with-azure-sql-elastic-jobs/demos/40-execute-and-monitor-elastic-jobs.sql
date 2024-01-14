@@ -14,11 +14,9 @@ USE [DBJobsDataSaturdayPordenone2024];
 GO
 
 
-/*
 -- Execute the latest version of a job
 EXEC jobs.sp_start_job 'IndexOptimize';
 GO
-*/
 
 
 -- Execute the latest version of a job and receive the execution ID
@@ -34,7 +32,7 @@ SELECT
 FROM
   jobs.job_executions
 WHERE
-  job_execution_id = 'F8457B55-D287-414D-BD3C-DC2552032C9A';
+  job_execution_id = '7C8D2B04-4E52-4490-9A0A-5B853FE663CE';
 GO
 
 
