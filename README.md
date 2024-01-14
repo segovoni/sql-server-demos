@@ -10,7 +10,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
   [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
-  [LinkMaterialDataSatPordenone2024]: <>
+  [LinkMaterialDataSatPordenone2024]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2024/datasat0048/database-maintenance-with-azure-sql-elastic-jobs>
   [LinkVideoDataSatPordenone2024]: <>
 
 2023
