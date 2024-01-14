@@ -73,6 +73,83 @@ ALTER DATABASE [StackOverflow2010] SET COMPATIBILITY_LEVEL = 160;
 GO
 
 
+USE [StackOverflow2010];
+GO
+
+SET NOCOUNT ON;
+GO
+
+-- Create table dbo.TabA
+CREATE TABLE dbo.TabA
+(
+  ID INT IDENTITY(1, 1)
+  ,ColA CHAR(8000) DEFAULT 'Database maintenance with Azure SQL Elastic Jobs'
+);
+GO
+
+CREATE CLUSTERED INDEX IDX_TabA on dbo.TabA(ID);
+GO
+
+INSERT INTO dbo.TabA DEFAULT VALUES;
+GO 12800
+
+
+-- Create table dbo.TabB
+CREATE TABLE dbo.TabB
+(
+  ID INT IDENTITY(1, 1)
+  ,ColB CHAR(8000) DEFAULT 'SOMETHING ELSE'
+);
+GO
+
+CREATE CLUSTERED INDEX IDX_TabB on dbo.TabB(ID);
+GO
+
+
+INSERT INTO dbo.TabB DEFAULT VALUES;
+GO 12800 
+
+
+
+-- Check fragmentation 
+SELECT
+  avg_fragmentation_in_percent
+  ,[db_name] = DB_NAME(database_id)
+  ,[object_name] = OBJECT_NAME([object_id])
+  ,*
+FROM
+  sys.dm_db_index_physical_stats(DB_ID('StackOverflow2010')
+                                 ,OBJECT_ID('dbo.TabB')
+                                 ,NULL
+                                 ,NULL
+                                 ,'DETAILED');
+GO 
+
+
+-- Drop table dbo.TabA
+DROP TABLE IF EXISTS dbo.TabA;
+GO
+
+
+-- Shrink DB
+DBCC SHRINKDATABASE('ToBeMaintained');
+GO 
+
+
+-- Check fragmentation 
+SELECT
+  avg_fragmentation_in_percent
+  ,[db_name] = DB_NAME(database_id)
+  ,[object_name] = OBJECT_NAME([object_id])
+  ,*
+FROM
+  sys.dm_db_index_physical_stats(DB_ID('StackOverflow2010')
+                                 ,OBJECT_ID('dbo.TabB')
+                                 ,NULL
+                                 ,NULL
+                                 ,'DETAILED');
+
+
 -- Connect to Azure SQL Database
 
 -- DBJobsDataSaturdayPordenone2024
@@ -100,7 +177,7 @@ ALTER DATABASE [DBJobsDataSaturdayPordenone2024]
   MODIFY(EDITION = 'Standard', SERVICE_OBJECTIVE = 'S1');
 GO
 
-
+/*
 -- DBDemo
 IF (DB_ID('DBDemo') IS NOT NULL)
 BEGIN
@@ -116,3 +193,4 @@ GO
 ALTER DATABASE [DBDemo]
   MODIFY(EDITION = 'Basic');
 GO
+*/
