@@ -59,26 +59,6 @@ EXEC jobs.sp_add_target_group_member
   ,@database_name = N'DBJobsDataSaturdayPordenone2024';
 GO
 
-/*
-EXEC jobs.sp_add_target_group_member
-  @target_group_name = N'ServerGroupDemo'
-  ,@membership_type = N'Exclude'
-  ,@target_type = N'SqlDatabase'
-  ,@server_name = N'azure-automation.database.windows.net'
-  ,@database_name = N'sp_alter_column_devtest';
-GO
-*/
-
-/*
-EXEC jobs.sp_add_target_group_member
-  @target_group_name = N'ServerGroupDemo'
-  ,@membership_type = N'Exclude'
-  ,@target_type = N'SqlDatabase'
-  ,@server_name = N'azure-automation.database.windows.net'
-  ,@database_name = N'ToBeMaintained';
-GO
-*/
-
 
 -- View the recently created target group and target group members
 SELECT * FROM jobs.target_groups WHERE target_group_name = 'ServerGroupDemo';
@@ -96,7 +76,7 @@ GO
 -- Add job step for create table
 EXEC jobs.sp_add_jobstep
   @job_name='IndexOptimize'
-  ,@command=N'EXECUTE dbo.IndexOptimize @Databases = ''DBDemo'', @FragmentationLow = NULL, @FragmentationMedium = ''INDEX_REORGANIZE,INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationHigh = ''INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationLevel1 = 5, @FragmentationLevel2 = 30'
+  ,@command=N'EXECUTE dbo.IndexOptimize @Databases = ''StackOverflow2010'', @FragmentationLow = NULL, @FragmentationMedium = ''INDEX_REORGANIZE,INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationHigh = ''INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationLevel1 = 5, @FragmentationLevel2 = 30'
   --,@credential_name='jobcredential'
   ,@target_group_name='ServerGroupDemo';
 GO
@@ -124,6 +104,7 @@ EXEC jobs.sp_delete_job
 GO
 */
 
+-- Authentication
 
 -- There are two options for authentication of an elastic job agent to targets:
 
