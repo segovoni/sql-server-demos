@@ -18,6 +18,6 @@ EXEC jobs.sp_update_job
   @job_name='IndexOptimize'
   ,@enabled=1
   ,@schedule_interval_type='Days'
-  ,@schedule_start_time='2024-01-01 02:00:00.0000000'
+  ,@schedule_start_time='2024-02-24 23:30:00.0000000'
   ,@schedule_end_time='9999-12-31 11:59:59.0000000';
 GO
