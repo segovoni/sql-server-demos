@@ -12,7 +12,7 @@
 -- https://learn.microsoft.com/azure/azure-sql/database/elastic-jobs-tutorial?view=azuresql#create-job-agent-authentication
 
 -- Connect to the job database specified when creating the job agent
-USE [DBJobs];
+USE [DBJobsDataSaturdayPordenone2024];
 GO
 
 SELECT * FROM sys.symmetric_keys;
@@ -61,7 +61,7 @@ GO
 
 
 
-USE [ToBeMaintained];
+USE [StackOverflow2010];
 GO
 
 CREATE USER [sql-job-user] FOR LOGIN [sql-job-user];
@@ -80,7 +80,7 @@ GO
 
 
 -- Connect to the job database specified when creating the job agent
-USE [DBJobs];
+USE [DBJobsDataSaturdayPordenone2024];
 GO
 
 

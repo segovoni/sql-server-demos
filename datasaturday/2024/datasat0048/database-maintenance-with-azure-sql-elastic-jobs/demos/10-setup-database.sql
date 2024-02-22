@@ -165,8 +165,15 @@ CREATE DATABASE [DBJobsDataSaturdayPordenone2024];
 GO
 
 
-SELECT * FROM sys.database_service_objectives;
+SELECT
+  D.[Name]
+  ,S.*
+FROM
+  sys.database_service_objectives AS S
+JOIN
+  sys.databases AS D ON D.database_id = S.database_id
 GO
+
 
 -- Change the pricing tier
 -- The edition is the tier like Basic, Standard, Premium
