@@ -51,6 +51,7 @@ GO
 */
 
 
+-- Exclude DBJobsDataSaturdayPordenone2024 from the server target group
 EXEC jobs.sp_add_target_group_member
   @target_group_name = N'ServerGroupDemo'
   ,@membership_type = N'Exclude'
@@ -126,6 +127,9 @@ GO
 
 -- Connect to the master database of the Azure SQL logical instance of job agent
 -- Use universal with MFA authentication type
+
+USE [master];
+GO
 
 -- Create a login on the master database mapped to a user-assigned managed identity (UMI)
 CREATE LOGIN [umi-data-sat-pn-2024] FROM EXTERNAL PROVIDER;
