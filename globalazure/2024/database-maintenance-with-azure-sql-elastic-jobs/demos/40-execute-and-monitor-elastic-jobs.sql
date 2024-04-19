@@ -33,7 +33,7 @@ SELECT
 FROM
   jobs.job_executions
 WHERE
-  job_execution_id = '3294BE48-D4EF-43EB-8163-602A1FFCABFF';
+  job_execution_id = '0FEF2EE9-BDC7-4B13-BCD1-8935B9F85014';
 GO
 
 
@@ -88,5 +88,5 @@ GO
 
 
 -- Cancel job execution with the specified job execution ID
-EXEC jobs.sp_stop_job '8ABE5163-7E4E-4233-9EE6-6E96CA1CE8A8';
+EXEC jobs.sp_stop_job '0FEF2EE9-BDC7-4B13-BCD1-8935B9F85014';
 GO

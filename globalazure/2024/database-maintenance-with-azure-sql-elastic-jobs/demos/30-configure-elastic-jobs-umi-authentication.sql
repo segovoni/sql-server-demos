@@ -70,7 +70,7 @@ EXEC jobs.sp_add_job
 GO
 
 
--- Add job step for create table
+-- Add job step for rebuild/reorganize indexes
 EXEC jobs.sp_add_jobstep
   @job_name='IndexOptimize'
   ,@command=N'EXECUTE dbo.IndexOptimize @Databases = ''StackOverflow2010'', @FragmentationLow = NULL, @FragmentationMedium = ''INDEX_REORGANIZE,INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationHigh = ''INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE'', @FragmentationLevel1 = 5, @FragmentationLevel2 = 30, @LogToTable = ''Y'''
@@ -78,6 +78,7 @@ EXEC jobs.sp_add_jobstep
 GO
 
 
+-- Update job step for rebuild/reorganize indexes
 EXEC jobs.sp_update_jobstep
   @job_name='IndexOptimize'
   ,@step_id = 1
@@ -154,16 +155,45 @@ CREATE USER [umi-sgovoni] FROM EXTERNAL PROVIDER;
 GO
 
 
--- Grant permissions as necessary to execute your jobs. For example, ALTER and CREATE TABLE:
-GRANT EXECUTE ON OBJECT :: [dbo].[IndexOptimize] TO [umi-sgovoni];
-GRANT EXECUTE ON OBJECT :: [dbo].[CommandExecute] TO [umi-sgovoni];
---GRANT INSERT, SELECT, UPDATE ON OBJECT :: [dbo].[CommandLog] TO [umi-sgovoni];
---GRANT INSERT, SELECT, UPDATE ON OBJECT :: [dbo].[Queue] TO [umi-sgovoni];
---GRANT INSERT, SELECT, UPDATE ON OBJECT :: [dbo].[QueueDatabase] TO [umi-sgovoni];
+-- Grant permissions as necessary to execute index optimize on your job
 
-GRANT ALTER ON SCHEMA :: dbo TO [umi-sgovoni];
+-- https://ola.hallengren.com/frequently-asked-questions.html
+-- To execute the stored procedures dbo.IndexOptimize against specific databases,
+-- these permissions are needed...
+
+GRANT EXECUTE ON OBJECT::[dbo].[IndexOptimize] TO [umi-sgovoni];
+GO
+
+GRANT VIEW DEFINITION ON OBJECT::[dbo].[CommandExecute] TO [umi-sgovoni];
+GRANT VIEW DEFINITION ON OBJECT::[dbo].[CommandLog] TO [umi-sgovoni];
+GO
 
 EXEC sp_addrolemember 'db_owner', 'umi-sgovoni';
+GO
+
+
+/*
+GRANT EXECUTE ON OBJECT::[dbo].[CommandExecute] TO [umi-sgovoni];
+GRANT INSERT, SELECT, UPDATE ON OBJECT::[dbo].[CommandLog] TO [umi-sgovoni];
+GRANT INSERT, SELECT, UPDATE ON OBJECT::[dbo].[Queue] TO [umi-sgovoni];
+GRANT INSERT, SELECT, UPDATE ON OBJECT::[dbo].[QueueDatabase] TO [umi-sgovoni];
+
+GRANT ALTER ON SCHEMA::dbo TO [umi-sgovoni];
+
+EXEC sp_addrolemember 'db_owner', 'umi-sgovoni';
+GO
+*/
+
+SELECT
+  u.name as 'User Name'
+  ,p.[permission_name] as 'Permission'
+  ,o.name as 'Object Name'
+FROM
+  sys.database_permissions AS p
+INNER JOIN
+  sys.objects AS o ON p.major_id=o.object_id
+INNER JOIN
+  sys.database_principals AS u ON p.grantee_principal_id=u.principal_id;
 GO
 
 
