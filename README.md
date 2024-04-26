@@ -7,7 +7,8 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2024][LinkDataSatPordenone2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionDataSatPordenone2024] | [Slide and Demo][LinkMaterialDataSatPordenone2024] | [Vimeo][LinkVideoDataSatPordenone2024]
-| [Global Azure 2024][LinkGlobalAzure2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionGlobalAzure2024] | [Slide and Demo][LinkMaterialGlobalAzure2024] | 
+| [Global Azure 2024][LinkGlobalAzure2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionGlobalAzure2024] | [Slide and Demo][LinkMaterialGlobalAzure2024] | [Vimeo][LinkVideoGlobalAzure2024]
+
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
   [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
@@ -15,9 +16,9 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkVideoDataSatPordenone2024]: <https://vimeo.com/918662058>
 
   [LinkGlobalAzure2024]: <https://globalazure.net/communities/2024/gab2024pn>
-  [LinkSessionGlobalAzure2024]: <https://globalazure.net/communities/2024/gab2024pn>
-  [LinkMaterialGlobalAzure2024]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2024>
-  [LinkVideoGlobalAzure2024]: <https://globalazure.net/>
+  [LinkSessionGlobalAzure2024]: <https://gab2024pn.1nn0va.it/agenda.html>
+  [LinkMaterialGlobalAzure2024]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2024/database-maintenance-with-azure-sql-elastic-jobs>
+  [LinkVideoGlobalAzure2024]: <https://vimeo.com/939668777>
 
 2023
 ---------------------------
