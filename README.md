@@ -8,7 +8,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2024][LinkDataSatPordenone2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionDataSatPordenone2024] | [Slide and Demo][LinkMaterialDataSatPordenone2024] | [Vimeo][LinkVideoDataSatPordenone2024]
 | [Global Azure 2024][LinkGlobalAzure2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionGlobalAzure2024] | [Slide and Demo][LinkMaterialGlobalAzure2024] | [Vimeo][LinkVideoGlobalAzure2024]
-
+| [Delphi Day 2024][LinkDelphiDay2024] | [Crittografia in SQL Server][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2024] |
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
   [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
@@ -19,6 +19,11 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSessionGlobalAzure2024]: <https://gab2024pn.1nn0va.it/agenda.html>
   [LinkMaterialGlobalAzure2024]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2024/database-maintenance-with-azure-sql-elastic-jobs>
   [LinkVideoGlobalAzure2024]: <https://vimeo.com/939668777>
+
+  [LinkDelphiDay2024]: <https://www.delphiday.it/>
+  [LinkSessionDelphiDay2024]: <https://www.delphiday.it/conferenza/>
+  [LinkMaterialDelphiDay2024]: <https://github.com/segovoni/DelphiSecureSQLDatabase>
+  [LinkVideoDelphiDay2024]: <https://www.delphiday.it/>
 
 2023
 ---------------------------
@@ -35,10 +40,10 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkMaterialDataSatPordenone2023]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2023/datasat0031/sql-server-2022-degree-of-parallelism-feedback/>
   [LinkVideoDataSatPordenone2023]: <>
 
-  [LinkDelphiDay2023]: <https://www.delphiday.it/>
-  [LinkSessionDelphiDay2023]: <https://www.delphiday.it/conferenza/>
+  [LinkDelphiDay2023]: <https://www.delphiday.it/2023/>
+  [LinkSessionDelphiDay2023]: <https://www.delphiday.it/2023/conferenza/>
   [LinkMaterialDelphiDay2023]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2023/tsql-performance-tips-and-tricks>
-  [LinkVideoDelphiDay2023]: <https://www.delphiday.it/>
+  [LinkVideoDelphiDay2023]: <https://www.delphiday.it/2023/>
 
   [LinkSQLStart2023]: <https://www.sqlstart.it/2023>
   [LinkSessionSQLStart2023]: <https://www.sqlstart.it/2023/Speakers/Sergio-Govoni>
