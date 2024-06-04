@@ -22,7 +22,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDelphiDay2024]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2024]: <https://www.delphiday.it/conferenza/>
-  [LinkMaterialDelphiDay2024]: <https://github.com/segovoni/DelphiSecureSQLDatabase>
+  [LinkMaterialDelphiDay2024]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2024/sql-server-encryption-protect-sensitive-data-in-delphi-applications/demos/>
   [LinkVideoDelphiDay2024]: <https://www.delphiday.it/>
 
 2023
