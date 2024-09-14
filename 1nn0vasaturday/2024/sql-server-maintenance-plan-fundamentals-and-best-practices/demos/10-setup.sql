@@ -73,6 +73,40 @@ GO
 
 
 /*
+  StackOverflowMini-LiveDemo
+*/
+IF (DB_ID('StackOverflowMini-LiveDemo') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [StackOverflowMini-LiveDemo]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [StackOverflowMini-LiveDemo];
+END;
+GO
+
+RESTORE DATABASE [StackOverflowMini-LiveDemo]
+  FROM DISK = N'C:\SQL\DBs\Backup\StackOverflowMini.bak'
+  WITH
+    FILE = 1
+    ,MOVE N'StackOverflowMini' TO N'C:\SQL\DBs\StackOverflowMini-LiveDemo.mdf'
+    ,MOVE N'StackOverflowMini_log' TO N'C:\SQL\DBs\StackOverflowMini-LiveDemo_log.ldf'
+    ,NOUNLOAD
+    ,STATS = 5;
+GO
+
+-- COMPATIBILITY_LEVEL { 160 | 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- 130 for SQL Server 2016
+-- 140 for SQL Server 2017
+-- 150 for SQL Server 2019
+-- 160 for SQL Server 2022
+ALTER DATABASE [StackOverflowMini-LiveDemo] SET COMPATIBILITY_LEVEL = 160;
+GO
+
+ALTER DATABASE [StackOverflowMini-LiveDemo] SET PAGE_VERIFY NONE WITH NO_WAIT;
+GO
+
+
+/*
   StackOverflowMini-Corrupted
 */
 IF (DB_ID('StackOverflowMini-Corrupted') IS NOT NULL)
@@ -106,7 +140,7 @@ ALTER DATABASE [StackOverflowMini-Corrupted] SET PAGE_VERIFY NONE WITH NO_WAIT;
 GO
 
 
-USE [StackOverflowMini];
+USE [StackOverflowMini-LiveDemo];
 GO
 
 UPDATE
