@@ -12,7 +12,7 @@
 
 
 -- sp_RestoreGene stored procedure is from Paul Brewer
--- It is available here: https://paulbrewer.wordpress.com/sp_restoregene/ 
+-- It is available here: https://paulbrewer.wordpress.com/sp_restoregene/
 
 USE [tempdb];
 GO
@@ -35,14 +35,12 @@ CREATE TABLE #RestoreCommands
 
 INSERT INTO
   #RestoreCommands
-EXEC
-  [master].[dbo].[sp_RestoreGene]
-    @Database = 'StackOverflowMini-LiveDemo',
-    @WithRecovery = 1,
-    @WithCHECKDB = 1,
-    @TargetDatabase = 'StackOverflowMini-LiveDemo-Check-Restore'
+EXEC [master].[dbo].[sp_RestoreGene]
+  @Database = 'StackOverflowMini-LiveDemo',
+  @WithRecovery = 1,
+  @WithCHECKDB = 1,
+  @TargetDatabase = 'StackOverflowMini-LiveDemo-Check-Restore'
 GO
-
 
 DECLARE @RestoreCmd AS VARCHAR(MAX) = ''
 
