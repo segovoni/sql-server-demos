@@ -39,6 +39,18 @@ USE [master];
 GO
 
 /*
+  StackOverflowMini-LiveDemo-Check-Restore
+*/
+IF (DB_ID('StackOverflowMini-LiveDemo-Check-Restore') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [StackOverflowMini-LiveDemo-Check-Restore]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [StackOverflowMini-LiveDemo-Check-Restore];
+END;
+GO
+
+/*
   StackOverflowMini
 */
 IF (DB_ID('StackOverflowMini') IS NOT NULL)
@@ -69,6 +81,9 @@ ALTER DATABASE [StackOverflowMini] SET COMPATIBILITY_LEVEL = 160;
 GO
 
 ALTER DATABASE [StackOverflowMini] SET PAGE_VERIFY NONE WITH NO_WAIT;
+GO
+
+ALTER DATABASE [StackOverflowMini] SET RECOVERY SIMPLE WITH NO_WAIT;
 GO
 
 
@@ -105,10 +120,14 @@ GO
 ALTER DATABASE [StackOverflowMini-LiveDemo] SET PAGE_VERIFY NONE WITH NO_WAIT;
 GO
 
+ALTER DATABASE [StackOverflowMini-LiveDemo] SET RECOVERY SIMPLE WITH NO_WAIT;
+GO
+
 
 /*
   StackOverflowMini-Corrupted
 */
+/*
 IF (DB_ID('StackOverflowMini-Corrupted') IS NOT NULL)
 BEGIN
   ALTER DATABASE [StackOverflowMini-Corrupted]
@@ -138,6 +157,10 @@ GO
 
 ALTER DATABASE [StackOverflowMini-Corrupted] SET PAGE_VERIFY NONE WITH NO_WAIT;
 GO
+
+ALTER DATABASE [StackOverflowMini-Corrupted] SET RECOVERY SIMPLE WITH NO_WAIT;
+GO
+*/
 
 
 USE [StackOverflowMini-LiveDemo];
@@ -176,6 +199,10 @@ GO
 
 CREATE DATABASE [ShrinkDemo];
 GO
+
+ALTER DATABASE [ShrinkDemo] SET RECOVERY SIMPLE WITH NO_WAIT;
+GO
+
 
 USE [ShrinkDemo];
 GO
