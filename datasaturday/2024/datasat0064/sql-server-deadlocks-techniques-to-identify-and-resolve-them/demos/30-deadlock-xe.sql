@@ -82,5 +82,5 @@ SELECT
   ,f.file_offset
   ,CAST(f.event_data AS XML) AS [Event-Data-As-XML]
 FROM
-  sys.fn_xe_file_target_read_file('deadlock_catcher_0_133657057643890000.xel', NULL, NULL, NULL) AS f;
+  sys.fn_xe_file_target_read_file('deadlock_catcher_0_133748868416980000.xel', NULL, NULL, NULL) AS f;
 GO
