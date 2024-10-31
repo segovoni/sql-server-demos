@@ -18,7 +18,7 @@ EXEC sp_readerrorlog;
 GO
 
 
--- Query deadlock from extended events
+-- Query deadlock from extended events system_health session
 SELECT
   deadlock = CAST(event_data AS XML).query('(event/data[@name="xml_report"]/value/deadlock)[1]')
 FROM
