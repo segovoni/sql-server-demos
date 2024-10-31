@@ -5,7 +5,7 @@
 -- Session:      SQL Server Deadlocks: Techniques to identify         --
 --               and resolve them!                                    --
 --                                                                    --
--- Demo:         Trace flags                                          --
+-- Demo:         Trace flags setup                                    --
 -- Author:       Sergio Govoni                                        --
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------

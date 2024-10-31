@@ -5,7 +5,7 @@
 -- Session:      SQL Server Deadlocks: Techniques to identify         --
 --               and resolve them!                                    --
 --                                                                    --
--- Demo:         Setup database                                       --
+-- Demo:         Database setup                                       --
 -- Author:       Sergio Govoni                                        --
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
