@@ -15,12 +15,24 @@ GO
 
 BEGIN TRANSACTION;
 
-EXEC dbo.sp_AddVote @PostId = 2547592, @UserId = 238260, @VoteTypeId = 2;
+-- InvisibleBacon (UserID = 139760) votes the post ID 3712827
+EXEC sp_AddVote @PostId = 3712827, @UserId = 139760, @VoteTypeId = 2;
 
 /*
 ROLLBACK;
 */
 
 /*
-COMMIT;
+SELECT
+  U.Id AS UserID
+  ,U.DisplayName AS UserDisplayName
+  ,U.[Location] AS UserLocation
+  ,P.ID AS PostID
+  ,P.Body AS PostBody
+FROM
+  dbo.Posts AS P
+JOIN
+  dbo.Users AS U ON P.OwnerUserId=U.ID
+WHERE
+  P.ID IN (3712827);
 */
