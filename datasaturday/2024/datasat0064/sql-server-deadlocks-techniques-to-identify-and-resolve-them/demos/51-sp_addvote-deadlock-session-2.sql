@@ -15,12 +15,24 @@ GO
 
 BEGIN TRANSACTION;
 
-EXEC dbo.sp_AddVote @PostId = 3054000, @UserId = 8114, @VoteTypeId = 2;
+-- Reboot (UserID = 392730) votes the post ID 4146171
+EXEC sp_AddVote @PostId = 4146171, @UserId = 392730, @VoteTypeId = 2;
 
 /*
 ROLLBACK;
 */
 
 /*
-COMMIT;
+SELECT
+  U.Id AS UserID
+  ,U.DisplayName AS UserDisplayName
+  ,U.[Location] AS UserLocation
+  ,P.ID AS PostID
+  ,P.Body AS PostBody
+FROM
+  dbo.Posts AS P
+JOIN
+  dbo.Users AS U ON P.OwnerUserId=U.ID
+WHERE
+  P.ID IN (4146171);
 */
