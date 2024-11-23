@@ -7,7 +7,7 @@
 --                                                                    --
 -- Demo:         dbo.sp_AddVote v3                                    --
 -- Author:       Sergio Govoni                                        --
--- Notes:        --                                                   --
+-- Notes:        Credits to Brent Ozar                                --
 ------------------------------------------------------------------------
 
 USE [StackOverflow2010];
