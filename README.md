@@ -38,10 +38,10 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkMaterial1nn0vaSaturday2024]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2024/sql-server-maintenance-plan-fundamentals-and-best-practices>
   [LinkVideo1nn0vaSaturday2024]: <>
 
-  [LinkDataSatParma2023]: <https://datasaturdays.com/Event/20241123-datasaturday0064>
-  [LinkSessionDataSatParma2023]: <https://datasaturdays.com/Event/20241123-datasaturday0064#schedule>
-  [LinkMaterialDataSatParma2023]: <https://bit.ly/DataSatParma2024-sgovoni>
-  [LinkVideoDataSatParma2023]: <>
+  [LinkDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064>
+  [LinkSessionDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064#schedule>
+  [LinkMaterialDataSatParma2024]: <https://bit.ly/DataSatParma2024-sgovoni>
+  [LinkVideoDataSatParma2024]: <>
 
 2023
 ---------------------------
