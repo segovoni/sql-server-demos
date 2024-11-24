@@ -11,6 +11,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Delphi Day 2024][LinkDelphiDay2024] | [Crittografia in SQL Server][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2024] |
 | [SQL Start 2024][LinkSQLStart2024] | [SQL Server unit testing con tSQLt, Docker e GitHub Actions][LinkSessionSQLStart2024] | [Slide and Demo][LinkMaterialSQLStart2024] | [Vimeo][LinkVideoSQLStart2024]
 | [1nn0va Saturday 2024][Link1nn0vaSaturday2024] | [SQL Server Maintenance Plan: Fundamentals and best practices][LinkSession1nn0vaSaturday2024] | [Slide and Demo][LinkMaterial1nn0vaSaturday2024] | 
+| [Data Saturday Parma 2024][LinkDataSatParma2024] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatParma2024] | [Slide and Demo][LinkMaterialDataSatParma2024] | 
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
   [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
@@ -37,6 +38,10 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkMaterial1nn0vaSaturday2024]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2024/sql-server-maintenance-plan-fundamentals-and-best-practices>
   [LinkVideo1nn0vaSaturday2024]: <>
 
+  [LinkDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064>
+  [LinkSessionDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064#schedule>
+  [LinkMaterialDataSatParma2024]: <https://bit.ly/DataSatParma2024-sgovoni>
+  [LinkVideoDataSatParma2024]: <>
 
 2023
 ---------------------------
