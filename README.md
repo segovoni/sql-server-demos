@@ -10,7 +10,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Global Azure 2024][LinkGlobalAzure2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionGlobalAzure2024] | [Slide and Demo][LinkMaterialGlobalAzure2024] | [Vimeo][LinkVideoGlobalAzure2024]
 | [Delphi Day 2024][LinkDelphiDay2024] | [Crittografia in SQL Server][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2024] |
 | [SQL Start 2024][LinkSQLStart2024] | [SQL Server unit testing con tSQLt, Docker e GitHub Actions][LinkSessionSQLStart2024] | [Slide and Demo][LinkMaterialSQLStart2024] | [Vimeo][LinkVideoSQLStart2024]
-| [1nn0va Saturday 2024][Link1nn0vaSaturday2024] | [SQL Server Maintenance Plan: Fundamentals and best practices][LinkSession1nn0vaSaturday2024] | [Slide and Demo][LinkMaterial1nn0vaSaturday2024] | 
+| [1nn0va Saturday 2024][Link1nn0vaSaturday2024] | [SQL Server Maintenance Plan: Fundamentals and best practices][LinkSession1nn0vaSaturday2024] | [Slide and Demo][LinkMaterial1nn0vaSaturday2024] | [Vimeo][LinkVideo1nn0vaSaturday2024] 
 | [Data Saturday Parma 2024][LinkDataSatParma2024] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatParma2024] | [Slide and Demo][LinkMaterialDataSatParma2024] | 
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
@@ -36,7 +36,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [Link1nn0vaSaturday2024]: <https://www.eventbrite.it/e/biglietti-1nn0va-saturday-2024-926203649047>
   [LinkSession1nn0vaSaturday2024]: <https://1nn0vasat2024.1nn0va.it/agenda.html>
   [LinkMaterial1nn0vaSaturday2024]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vasaturday/2024/sql-server-maintenance-plan-fundamentals-and-best-practices>
-  [LinkVideo1nn0vaSaturday2024]: <>
+  [LinkVideo1nn0vaSaturday2024]: <https://vimeo.com/1037091482>
 
   [LinkDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064>
   [LinkSessionDataSatParma2024]: <https://datasaturdays.com/Event/20241123-datasaturday0064#schedule>
