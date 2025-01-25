@@ -39,11 +39,18 @@ WHERE
 
 
 SELECT
-  *
+  resource_type
+  ,resource_database_id
+  ,resource_description
+  ,request_mode
+  ,request_type
+  ,request_status
+  ,request_session_id
+  ,resource_associated_entity_id
 FROM
   sys.dm_tran_locks
 WHERE
-  request_session_id IN (58, @@SPID)
+  request_session_id IN (154, @@SPID)
   AND resource_type IN ('PAGE','RID','KEY','XACT');
 
 ROLLBACK;
