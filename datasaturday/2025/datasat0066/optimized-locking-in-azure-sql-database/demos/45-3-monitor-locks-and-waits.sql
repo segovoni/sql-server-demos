@@ -17,7 +17,7 @@ GO
 */
 
 -- Azure SQL default time zone is UTC
-WAITFOR TIME '23:39';
+WAITFOR TIME '00:44';
 
 DROP TABLE IF EXISTS #LockStatus;
 GO
@@ -73,7 +73,7 @@ CREATE TABLE #SPIDToMonitor
 (
   spid SMALLINT
 );
-INSERT #SPIDToMonitor VALUES (68), (70);
+INSERT #SPIDToMonitor VALUES (78), (80);
 
 
 GO
@@ -173,6 +173,7 @@ GO
 |68  |key/page |31554    |
 |70  |key/page |92202    |
 
+
 |spid|wait_type             |WaitTime|
 |----|----------------------|--------|
 |68  |PAGEIOLATCH_SH        |1267    |
@@ -183,9 +184,28 @@ GO
 |70  |PAGEIOLATCH_EX        |5533    |
 |68  |PAGEIOLATCH_EX        |2248    |
 
+
 |counter_name      |cntr_value|counter_time               |
 |------------------|----------|---------------------------|
 |Lock Memory (KB)  |880       |2025-01-31 22:39:00.0391715|
 |Lock Memory (KB)  |2968      |2025-01-31 22:41:47.2831171|
+
+*/
+
+/*
+  Azure SQL Database
+
+|spid|rt       |LockCount|
+|----|---------|---------|
+|78  |key/page |4500     |
+|80  |key/page |52785    |
+|78  |XACT     |1000     |
+|80  |XACT     |500      |
+
+
+|counter_name      |cntr_value|counter_time               |
+|------------------|----------|---------------------------|
+|Lock Memory (KB)  |3424      |2025-02-01 00:44:00.0131987|
+|Lock Memory (KB)  |3424      |2025-02-01 00:46:32.9684249|
 
 */
