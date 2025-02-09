@@ -14,7 +14,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
   [LinkMaterialDataSatPordenone2025-OL]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0066/optimized-locking-in-azure-sql-database>
   [LinkVideoDataSatPordenone2025-OL]: <>
-  [LinkMaterialDataSatPordenone2025-Deadlock]: <>
+  [LinkMaterialDataSatPordenone2025-Deadlock]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0066/sql-server-deadlocks>
   [LinkVideoDataSatPordenone2025-Deadlock]: <>
   
 2024
