@@ -7,7 +7,6 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [Optimized Locking in Azure SQL Database: Concurrency and performance at the next level][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-OL] |
-
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Tecniche per individuarli e risolverli][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] |
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
