@@ -30,3 +30,14 @@ WHERE
 ORDER BY
   timestamp_utc DESC
 GO
+
+-- Query lock information from sys.dm_tran_locks
+SELECT
+  *
+FROM
+  sys.dm_tran_locks
+WHERE
+--  request_session_id = @@SPID
+--AND
+  resource_type IN ('PAGE','RID','KEY','XACT');
+GO
