@@ -64,7 +64,7 @@ WHERE
 AND
   resource_type IN ('PAGE','RID','KEY','XACT');
 
-COMMIT TRANSACTION;
+COMMIT;
 GO
 
 DROP TABLE IF EXISTS dbo.TableA;

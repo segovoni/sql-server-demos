@@ -10,8 +10,10 @@
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
 
+/*
 USE [master];
 GO
+*/
 
 /*
 ALTER DATABASE CURRENT SET ACCELERATED_DATABASE_RECOVERY = ON;

@@ -70,8 +70,8 @@ GO
 /*
 DBCC PAGE ( {'dbname' | dbid}, filenum, pagenum [, printopt={0|1|2|3} ])
 */
--- (1:2584:2)
-DBCC PAGE ('OptimizedLocking', 1, 2584, 3);
+-- (1:568:0)
+DBCC PAGE ('OptimizedLocking', 1, 568, 3);
 GO
 
 /*
@@ -98,7 +98,7 @@ WHERE
 AND
   resource_type IN ('PAGE','RID','KEY','XACT');
 
-COMMIT TRANSACTION;
+COMMIT;
 GO
 
 DROP TABLE IF EXISTS dbo.TableA;
