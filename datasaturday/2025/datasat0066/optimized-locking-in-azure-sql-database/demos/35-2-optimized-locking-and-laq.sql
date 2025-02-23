@@ -23,6 +23,9 @@ GO
 -- aren't taken, and because in the latest committed version of row 1, 
 -- column ID equals to 1, which doesn't satisfy the predicate of session 2
 
+SELECT @@SPID;
+GO
+
 BEGIN TRANSACTION;
 
 UPDATE
