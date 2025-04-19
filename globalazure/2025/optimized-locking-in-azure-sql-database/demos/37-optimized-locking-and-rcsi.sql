@@ -15,32 +15,32 @@ USE [StackOverflow2010];
 GO
 */
 
-DROP TABLE IF EXISTS dbo.TableD;
+DROP TABLE IF EXISTS dbo.EventCounters;
 
-CREATE TABLE dbo.TableD
+CREATE TABLE dbo.EventCounters
 (
-  ID INTEGER PRIMARY KEY NOT NULL,
-  CounterValue INTEGER NOT NULL
+  EventID INTEGER PRIMARY KEY NOT NULL,
+  CounterValue INTEGER NULL
 );
 
-INSERT INTO dbo.TableD VALUES (1, 1);
+INSERT INTO dbo.EventCounters VALUES (1, 1);
 GO
 
 /* Session 1 */
 BEGIN TRANSACTION T1;
 
 UPDATE
-  dbo.TableD
+  dbo.EventCounters
 SET
   CounterValue = 2
 WHERE
-  ID = 1;
+  EventID = 1;
 
 /* Session 2 */
 BEGIN TRANSACTION T2;
 
 UPDATE
-  dbo.TableD
+  dbo.EventCounters
 SET
   CounterValue = 3
 WHERE
