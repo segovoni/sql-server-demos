@@ -21,10 +21,10 @@ GO
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.TableC
+  dbo.EventCounters
 SET
   CounterValue = CounterValue + 10
 WHERE
-  ID = 1;
+  EventID = 1;
 
 ROLLBACK;
