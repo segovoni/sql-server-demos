@@ -14,15 +14,15 @@ USE [OptimizedLocking];
 GO
 
 
-DROP TABLE IF EXISTS dbo.TableC;
+DROP TABLE IF EXISTS dbo.EventCounters;
 
-CREATE TABLE dbo.TableC
+CREATE TABLE dbo.EventCounters
 (
-  ID INTEGER NOT NULL,
+  EventID INTEGER NOT NULL,
   CounterValue INTEGER NULL
 );
 
-INSERT INTO dbo.TableC VALUES (1, 10), (2, 20), (3, 30);
+INSERT INTO dbo.EventCounters VALUES (1, 10), (2, 20), (3, 30);
 GO
 
 
@@ -30,11 +30,11 @@ GO
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.TableC
+  dbo.EventCounters
 SET
   CounterValue = CounterValue + 10
 WHERE
-  ID = 1;
+  EventID = 1;
 
 SELECT
   *
