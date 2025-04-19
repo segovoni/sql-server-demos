@@ -36,24 +36,24 @@ SELECT
 GO
 
 
-DROP TABLE IF EXISTS dbo.TableA;
+DROP TABLE IF EXISTS dbo.SensorReadings;
 
-CREATE TABLE dbo.TableA
+CREATE TABLE dbo.SensorReadings
 (
-  ColumnA INTEGER PRIMARY KEY NOT NULL,
-  ColumnB INTEGER NOT NULL
+  SensorID INTEGER PRIMARY KEY NOT NULL,
+  ReadingValue INTEGER NOT NULL
 );
 
-INSERT INTO dbo.TableA VALUES (1, 10),(2, 20),(3, 30);
+INSERT INTO dbo.SensorReadings VALUES (1, 10),(2, 20),(3, 30);
 GO
 
 -- Inspect locks with sys.dm_tran_locks on updated rows
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.TableA
+  dbo.SensorReadings
 SET
-  ColumnB = ColumnB + 10;
+  ReadingValue = ReadingValue + 10;
 
 SELECT
   *
@@ -67,5 +67,5 @@ AND
 COMMIT;
 GO
 
-DROP TABLE IF EXISTS dbo.TableA;
+DROP TABLE IF EXISTS dbo.SensorReadings;
 GO
