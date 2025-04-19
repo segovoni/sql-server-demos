@@ -16,26 +16,27 @@ GO
 
 /* Session 1 */
 
-DROP TABLE IF EXISTS dbo.TableB;
+DROP TABLE IF EXISTS dbo.EntityCounters;
 
-CREATE TABLE dbo.TableB
+CREATE TABLE dbo.EntityCounters
 (
-  ID INTEGER NOT NULL,
+  EntityID INTEGER NOT NULL,
   CounterValue INTEGER NULL
 );
 
-INSERT INTO dbo.TableB VALUES (1, 10), (2, 20), (3, 30);
+
+INSERT INTO dbo.EntityCounters VALUES (1, 10), (2, 20), (3, 30);
 GO
 
 
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.TableB
+  dbo.EntityCounters
 SET
   CounterValue = CounterValue + 10
 WHERE
-  ID = 1;
+  EntityID = 1;
 
 
 SELECT
