@@ -21,7 +21,7 @@ GO
 
 -- With optimized locking, session 2 isn't blocked because U locks
 -- aren't taken, and because in the latest committed version of row 1, 
--- column ID equals to 1, which doesn't satisfy the predicate of session 2
+-- column EntityID equals to 1, which doesn't satisfy the predicate of session 2
 
 SELECT @@SPID;
 GO
@@ -29,11 +29,11 @@ GO
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.TableB
+  dbo.EntityCounters
 SET
   CounterValue = CounterValue + 10
 WHERE
-  ID = 2;
+  EntityID = 2;
 
 ROLLBACK;
 GO
