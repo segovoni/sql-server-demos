@@ -8,6 +8,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [Optimized Locking in Azure SQL Database: Concurrency and performance at the next level][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-OL] |
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] |
+| [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | 
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
@@ -15,7 +16,12 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkVideoDataSatPordenone2025-OL]: <>
   [LinkMaterialDataSatPordenone2025-Deadlock]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0066/sql-server-deadlocks>
   [LinkVideoDataSatPordenone2025-Deadlock]: <>
-  
+
+  [LinkGlobalAzure2025]: <https://veneto.globalazure.it/>
+  [LinkSessionGlobalAzure2025]: <https://veneto.globalazure.it/guarda-quali-saranno-le-sessioni-di-global-azure/>
+  [LinkMaterialGlobalAzure2025]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2025/optimized-locking-in-azure-sql-database>
+  [LinkVideoGlobalAzure2025]: <>
+
 2024
 ---------------------------
 | Event  | Session | Material | Video  |
