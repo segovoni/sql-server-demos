@@ -63,23 +63,13 @@ GO
 -- 1. Accelerated database recovery (ADR)
 -- 2. For the most benefit: Read committed snapshot isolation (RCSI) should be enabled for the database
 SELECT
-  name,
-  is_read_committed_snapshot_on,
-  is_accelerated_database_recovery_on
-FROM
-  sys.databases;
-GO
-
--- A complete view
-SELECT
-  IsOptimizedLockingOn = DATABASEPROPERTYEX(DB_NAME(), 'IsOptimizedLockingOn')
+  name
+  ,IsOptimizedLockingOn = DATABASEPROPERTYEX(DB_NAME(), 'IsOptimizedLockingOn')
   ,RCSI = is_read_committed_snapshot_on
   ,ADR  = is_accelerated_database_recovery_on
  FROM
    sys.databases
- WHERE
-   (name = DB_NAME());
-GO
+ GO
 
 -- Read committed snapshot is not a distinct isolation level,
 -- so showing "read committed" is correct.

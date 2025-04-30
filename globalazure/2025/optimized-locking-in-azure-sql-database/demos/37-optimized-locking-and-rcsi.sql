@@ -45,3 +45,6 @@ SET
   CounterValue = 3
 WHERE
   CounterValue = 2;
+
+  ROLLBACK;
+  GO

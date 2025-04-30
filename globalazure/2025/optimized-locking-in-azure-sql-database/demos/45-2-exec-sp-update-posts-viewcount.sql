@@ -21,7 +21,7 @@ GO
 */
 
 -- Azure SQL default time zone is UTC
-WAITFOR TIME '14:56';
+WAITFOR TIME '15:19';
 
 BEGIN TRANSACTION;
 

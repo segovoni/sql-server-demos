@@ -71,8 +71,8 @@ GO
 /*
 DBCC PAGE ( {'dbname' | dbid}, filenum, pagenum [, printopt={0|1|2|3} ])
 */
--- (1:568:0)
-DBCC PAGE ('OptimizedLocking', 1, 568, 3);
+-- (1:2456:0)
+DBCC PAGE ('OptimizedLocking', 1, 2456, 3);
 GO
 
 /*
@@ -99,7 +99,7 @@ WHERE
 AND
   resource_type IN ('PAGE','RID','KEY','XACT');
 
-COMMIT;
+ROLLBACK;
 GO
 
 DROP TABLE IF EXISTS dbo.SensorReadings;

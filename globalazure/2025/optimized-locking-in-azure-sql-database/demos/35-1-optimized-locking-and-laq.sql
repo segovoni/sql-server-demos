@@ -51,7 +51,7 @@ SELECT
 FROM
   sys.dm_tran_locks
 WHERE
-  request_session_id IN (72, @@SPID)
+  request_session_id IN (74, @@SPID)
   AND resource_type IN ('PAGE', 'RID', 'KEY', 'XACT');
 
 

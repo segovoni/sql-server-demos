@@ -15,7 +15,6 @@ USE [StackOverflow2010];
 GO
 */
 
-
 -- Random post ID
 
 CREATE OR ALTER PROCEDURE dbo.sp_update_posts_viewcount

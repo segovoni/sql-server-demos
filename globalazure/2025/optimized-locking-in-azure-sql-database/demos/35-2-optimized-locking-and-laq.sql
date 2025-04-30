@@ -13,7 +13,6 @@
 USE [OptimizedLocking];
 GO
 
-
 /* Session 2 */
 
 -- Without optimized locking, session 2 is blocked because session 1 holds a U lock

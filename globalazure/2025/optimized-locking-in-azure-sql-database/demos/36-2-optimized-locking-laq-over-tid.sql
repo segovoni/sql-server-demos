@@ -28,3 +28,4 @@ WHERE
   EventID = 1;
 
 ROLLBACK;
+GO
