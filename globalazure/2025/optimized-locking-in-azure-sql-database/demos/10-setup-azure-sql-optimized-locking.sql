@@ -88,3 +88,13 @@ FROM
 where
   (session_id = @@SPID);
 GO
+
+-- Change the pricing tier for StackOverflow2010
+-- Demo on S4 pricing tier
+/*
+ALTER DATABASE [StackOverflow2010] MODIFY(EDITION = 'S4');
+GO
+
+ALTER DATABASE [StackOverflow2010] MODIFY(EDITION = 'S0');
+GO
+*/
