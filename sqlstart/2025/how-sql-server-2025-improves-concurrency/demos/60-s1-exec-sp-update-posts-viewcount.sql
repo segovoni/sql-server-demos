@@ -24,12 +24,11 @@ GO
 /* Session 1 */
 
 -- Azure SQL default time zone is UTC
-WAITFOR TIME '17:38';
+WAITFOR TIME '11:53';
 
 BEGIN TRANSACTION;
 
 EXEC dbo.sp_update_posts_viewcount;
 
---COMMIT;
---ROLLBACK
+COMMIT;
 GO
