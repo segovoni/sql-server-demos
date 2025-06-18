@@ -127,9 +127,9 @@ GO
 
 SELECT
   name
-  ,ADR  = is_accelerated_database_recovery_on
-  ,RCSI = is_read_committed_snapshot_on
-  ,OL = is_optimized_locking_on
+  ,is_accelerated_database_recovery_on
+  ,is_read_committed_snapshot_on
+  ,is_optimized_locking_on = DATABASEPROPERTYEX([name], 'IsOptimizedLockingOn')
  FROM
    sys.databases
  GO
