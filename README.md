@@ -10,7 +10,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] |
 | [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | 
 | [SQL Start 2025][LinkSQLStart2025] | [How SQL Server 2025 improves concurrency with TID locking and LAQ][LinkSessionSQLStart2025] | [Slide and Demo][LinkMaterialSQLStart2025] | 
-| [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2024] | 
+| [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
