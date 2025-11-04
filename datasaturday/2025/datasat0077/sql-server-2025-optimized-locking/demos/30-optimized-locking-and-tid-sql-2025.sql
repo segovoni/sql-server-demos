@@ -14,16 +14,21 @@ USE [OptimizedLocking];
 GO
 
 /*
+-- Make sure all requirements are met
+ALTER DATABASE CURRENT SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 ALTER DATABASE CURRENT SET ACCELERATED_DATABASE_RECOVERY = OFF;
 ALTER DATABASE CURRENT SET READ_COMMITTED_SNAPSHOT OFF;
-ALTER DATABASE CURRENT SET OPTIMIZED_LOCKING = OFF WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE CURRENT SET OPTIMIZED_LOCKING = OFF;
+ALTER DATABASE CURRENT SET MULTI_USER;
 GO
 */
 
 /*
+ALTER DATABASE CURRENT SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 ALTER DATABASE CURRENT SET ACCELERATED_DATABASE_RECOVERY = ON;
 ALTER DATABASE CURRENT SET READ_COMMITTED_SNAPSHOT ON;
-ALTER DATABASE CURRENT SET OPTIMIZED_LOCKING = ON WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE CURRENT SET OPTIMIZED_LOCKING = ON;
+ALTER DATABASE CURRENT SET MULTI_USER;
 GO
 */
 
@@ -40,24 +45,69 @@ SELECT
 GO
 
 
-DROP TABLE IF EXISTS dbo.SensorReadings;
-
-CREATE TABLE dbo.SensorReadings
-(
-  SensorID INTEGER PRIMARY KEY NOT NULL,
-  ReadingValue INTEGER NOT NULL
-);
-
-INSERT INTO dbo.SensorReadings VALUES (1, 10),(2, 20),(3, 30);
+-- Trace flag 3604 prints output to the console
+DBCC TRACEON(3604)
+-- Trace flag 1200 prints detailed lock information
+-- DBCC TRACEON(1200, -1);
+-- DBCC TRACEOFF(1200, -1);
+-- DBCC TRACESTATUS;
 GO
+
+
+DROP TABLE IF EXISTS dbo.TelemetryPacket;
+
+CREATE TABLE dbo.TelemetryPacket
+(
+  PacketID INT IDENTITY(1, 1)
+  ,Device CHAR(8000) DEFAULT ('Something')
+);
+GO
+
+BEGIN TRANSACTION
+INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
+INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
+INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
+COMMIT
+GO 
+
+SELECT * FROM dbo.TelemetryPacket
+
+
+-- Inspect page ID with sys.fn_PhysLocFormatter and DBCC PAGE
+SELECT
+  *
+  ,PageId = sys.fn_PhysLocFormatter(%%physloc%%)
+FROM
+  dbo.TelemetryPacket
+GO
+
+/*
+DBCC IND ('OptimizedLocking', 'dbo.TelemetryPacket', -1);
+*/
+
+
+/*
+DBCC PAGE ( {'dbname' | dbid}, filenum, pagenum [, printopt={0|1|2|3} ])
+*/
+-- (1:2648:0)
+DBCC PAGE ('OptimizedLocking', 1, 2650, 3);
+GO
+
+/*
+TID = 2142
+TID new = 
+*/
 
 -- Inspect locks with sys.dm_tran_locks on updated rows
 BEGIN TRANSACTION;
 
 UPDATE
-  dbo.SensorReadings
+  dbo.TelemetryPacket
 SET
-  ReadingValue = ReadingValue + 10;
+  Device = 'Something new'
+WHERE
+  PacketID = 1;
+  
 
 SELECT
   *
@@ -71,5 +121,7 @@ AND
 ROLLBACK;
 GO
 
-DROP TABLE IF EXISTS dbo.SensorReadings;
+/*
+COMMIT;
 GO
+*/
