@@ -4,7 +4,7 @@
 --                                                                    --
 -- Session:      SQL Server 2025: Optimized Locking in action         --
 --                                                                    --
--- Demo:         Optimized locking and transaction ID (TID) locking   --
+-- Demo:         Optimized locking TID internals                      --
 -- Author:       Sergio Govoni                                        --
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
@@ -14,7 +14,6 @@ USE [OptimizedLocking];
 GO
 
 /*
--- Make sure all requirements are met
 ALTER DATABASE CURRENT SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
 ALTER DATABASE CURRENT SET ACCELERATED_DATABASE_RECOVERY = OFF;
 ALTER DATABASE CURRENT SET READ_COMMITTED_SNAPSHOT OFF;
