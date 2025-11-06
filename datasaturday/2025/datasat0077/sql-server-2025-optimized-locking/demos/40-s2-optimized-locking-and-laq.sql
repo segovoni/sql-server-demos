@@ -4,7 +4,7 @@
 --                                                                    --
 -- Session:      SQL Server 2025: Optimized Locking in action         --
 --                                                                    --
--- Demo:         Optimized locking and lock after qualification (LAQ) --
+-- Demo:         Optimized locking and LAQ (Session 2)                --
 -- Author:       Sergio Govoni                                        --
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
@@ -12,7 +12,13 @@
 USE [OptimizedLocking];
 GO
 
-/* Session 2 */
+/*
+SET TRANSACTION ISOLATION LEVEL SNAPSHOT;
+*/
+
+/*
+SET TRANSACTION ISOLATION LEVEL READ COMMITTED;
+*/
 
 -- Without optimized locking, session 2 is blocked because session 1 holds a U lock
 -- on the row session 2 needs to update (qualification)
@@ -24,6 +30,7 @@ GO
 SELECT @@SPID;
 GO
 
+/* Session 2 */
 BEGIN TRANSACTION;
 
 UPDATE
@@ -35,3 +42,7 @@ WHERE
 
 ROLLBACK;
 GO
+
+/*
+COMMIT
+*/
