@@ -31,10 +31,11 @@ ALTER DATABASE CURRENT SET MULTI_USER;
 GO
 */
 
--- A complete view
+-- A complete view on Optimized Locking activation
 SELECT
   [name]
-  ,OL = is_optimized_locking_on
+  --,OL = is_optimized_locking_on
+  ,OL = DATABASEPROPERTYEX(DB_NAME(), 'IsOptimizedLockingOn')
   ,RCSI = is_read_committed_snapshot_on
   ,ADR  = is_accelerated_database_recovery_on
  FROM
