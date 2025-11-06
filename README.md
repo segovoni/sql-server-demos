@@ -11,6 +11,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | 
 | [SQL Start 2025][LinkSQLStart2025] | [How SQL Server 2025 improves concurrency with TID locking and LAQ][LinkSessionSQLStart2025] | [Slide and Demo][LinkMaterialSQLStart2025] | 
 | [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
+| [Data Saturday Parma 2025][LinkDataSatParma2025] | [SQL Server 2025: Optimized Locking in action][LinkSessionDataSatParma2025] | [Slide and Demo][LinkMaterialDataSatParma2025] |  
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
@@ -33,6 +34,11 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSessionDelphiDay2025]: <https://www.delphiday.it/conferenza/>
   [LinkMaterialDelphiDay2025]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2025/sql-server-2025-whats-new-in-the-engine>
   [LinkVideoDelphiDay2025]: <>
+
+  [LinkDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077>
+  [LinkSessionDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077#schedule>
+  [LinkMaterialDataSatParma2025]: <>
+  [LinkVideoDataSatParma2025]: <>
 
 2024
 ---------------------------
