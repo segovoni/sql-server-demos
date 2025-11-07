@@ -12,11 +12,22 @@
 USE [StackOverflow2010];
 GO
 
+/*
+ALTER DATABASE CURRENT SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+ALTER DATABASE CURRENT SET OPTIMIZED_LOCKING = ON/OFF;
+ALTER DATABASE CURRENT SET MULTI_USER;
+GO
+*/
+
 -- Random post ID
 
 CREATE OR ALTER PROCEDURE dbo.sp_update_posts_viewcount
-AS BEGIN
+  (@UpdateEvenIds BIT = 1)
+AS
+BEGIN
   -- Update ViewCount random
+  -- @UpdateEvenIds = 1 -- Update even IDs  
+  -- @UpdateEvenIds = 0 -- Update odd IDs
   
   -- Configure the number of posts to update
   DECLARE @NumLikes INT = 5000;
@@ -34,69 +45,37 @@ AS BEGIN
   BEGIN
     PRINT 'The Posts table is empty or does not exist. Add data before running this script.';
     RETURN;
-  END
+  END;
   
   -- Start a loop to add views
   WHILE @UpdatedCount < @NumLikes
   BEGIN
     -- Generate a random ID
     SET @RandomPostId = ABS(CHECKSUM(NEWID())) % @MaxPostId + 1;
-  
-    -- Attempt to update the selected post
-    UPDATE
-	  dbo.Posts
-    SET
-	  ViewCount = ISNULL(ViewCount, 0) + 1
-    WHERE
-	  ID = @RandomPostId;
-  
-    -- Check if the update was successful
-	-- Update the counter only if a row was modified
-    IF @@ROWCOUNT = 1
-    BEGIN
-      SET @UpdatedCount += 1;
-    END;
-  END;
-  
-  PRINT CONCAT('Script completed: ', @UpdatedCount, ' views successfully added.');
-END;
-GO
 
-/*
--- Sequential post ID
-CREATE OR ALTER PROCEDURE dbo.sp_update_posts_viewcount
-AS BEGIN
-  -- Update ViewCount sequentially
+    -- Adjust ID to match even/odd requirement
+    IF (@UpdateEvenIds = 1 AND @RandomPostId % 2 <> 0)
+      SET @RandomPostId = @RandomPostId + 1; -- ensure even
+    ELSE IF (@UpdateEvenIds = 0 AND @RandomPostId % 2 = 0)
+      SET @RandomPostId = @RandomPostId + 1; -- ensure odd
   
-  -- Configure the number of posts to update
-  DECLARE @NumLikes INT = 5000;
+    -- Ensure we don't exceed max ID
+    IF @RandomPostId > @MaxPostId
+      SET @RandomPostId = @MaxPostId;
   
-  -- Variables for the loop
-  DECLARE @CurrentPostId INT = 1;
-  DECLARE @UpdatedCount INT = 0;
-
-  -- Start a loop to add views
-  WHILE @UpdatedCount < @NumLikes
-  BEGIN
     -- Attempt to update the selected post
     UPDATE
       dbo.Posts
     SET
       ViewCount = ISNULL(ViewCount, 0) + 1
     WHERE
-      ID = @CurrentPostId;
+      ID = @RandomPostId;
   
-    -- Check if the update was successful
+    -- Update the counter only if a row was modified
     IF @@ROWCOUNT = 1
-    BEGIN
-      -- Update the counter only if a row was modified
       SET @UpdatedCount += 1;
-    END;
-
-    SET @CurrentPostId += 1;
   END;
   
   PRINT CONCAT('Script completed: ', @UpdatedCount, ' views successfully added.');
 END;
 GO
-*/
