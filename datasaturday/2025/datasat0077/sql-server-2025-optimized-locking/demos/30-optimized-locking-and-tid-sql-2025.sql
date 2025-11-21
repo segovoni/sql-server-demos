@@ -46,7 +46,7 @@ GO
 
 
 -- Trace flag 3604 prints output to the console
-DBCC TRACEON(3604)
+DBCC TRACEON(3604);
 -- Trace flag 1200 prints detailed lock information
 -- DBCC TRACEON(1200, -1);
 -- DBCC TRACEOFF(1200, -1);
@@ -63,20 +63,21 @@ CREATE TABLE dbo.TelemetryPacket
 );
 GO
 
-BEGIN TRANSACTION
+BEGIN TRANSACTION;
 INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
 INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
 INSERT INTO dbo.TelemetryPacket DEFAULT VALUES;
-COMMIT
+COMMIT;
 GO 
 
-SELECT * FROM dbo.TelemetryPacket
 
 
--- Inspect page ID with sys.fn_PhysLocFormatter and DBCC PAGE
+-- Inspect page ID with sys.fn_PhysLocFormatter that helps us correlate
+-- the rows returned by a SELECT with the physical location of the data
 SELECT
-  *
-  ,PageId = sys.fn_PhysLocFormatter(%%physloc%%)
+  PageId = sys.fn_PhysLocFormatter(%%physloc%%)
+  ,PacketID
+  ,Device
 FROM
   dbo.TelemetryPacket
 GO
@@ -89,8 +90,8 @@ DBCC IND ('OptimizedLocking', 'dbo.TelemetryPacket', -1);
 /*
 DBCC PAGE ( {'dbname' | dbid}, filenum, pagenum [, printopt={0|1|2|3} ])
 */
--- (1:2648:0)
-DBCC PAGE ('OptimizedLocking', 1, 2650, 3);
+-- (1:2456:0)
+DBCC PAGE ('OptimizedLocking', 1, 2457, 3);
 GO
 
 /*
