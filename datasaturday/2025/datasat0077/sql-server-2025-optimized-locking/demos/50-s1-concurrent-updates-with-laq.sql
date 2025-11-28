@@ -67,11 +67,16 @@ SELECT
 FROM
   sys.dm_tran_locks
 WHERE
-  request_session_id IN (166, @@SPID) -- Replace
+  request_session_id IN (100, @@SPID) -- Replace
   AND resource_type IN ('PAGE', 'RID', 'KEY', 'XACT');
 
 
-SELECT %%lockres%% AS [Lockres], * FROM [dbo].[SalesOrder];
+
+SELECT
+  %%lockres%% AS [Lockres]
+  ,*
+FROM
+  [dbo].[SalesOrder];
 
 
 ROLLBACK;
