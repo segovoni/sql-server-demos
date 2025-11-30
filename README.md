@@ -37,7 +37,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077>
   [LinkSessionDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077#schedule>
-  [LinkMaterialDataSatParma2025]: <>
+  [LinkMaterialDataSatParma2025]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0077/sql-server-2025-optimized-locking>
   [LinkVideoDataSatParma2025]: <>
 
 2024

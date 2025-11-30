@@ -125,8 +125,10 @@ GO
 USE [master];
 GO
 
+-- A complete view on Optimized Locking activation
 SELECT
   name
+  ,OL = DATABASEPROPERTYEX(DB_NAME(), 'IsOptimizedLockingOn')
   ,ADR  = is_accelerated_database_recovery_on
   ,RCSI = is_read_committed_snapshot_on
  FROM

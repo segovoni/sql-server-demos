@@ -82,21 +82,21 @@ FROM
   dbo.TelemetryPacket
 GO
 
-/*
+
 DBCC IND ('OptimizedLocking', 'dbo.TelemetryPacket', -1);
-*/
+GO
 
 
 /*
 DBCC PAGE ( {'dbname' | dbid}, filenum, pagenum [, printopt={0|1|2|3} ])
 */
--- (1:2456:0)
-DBCC PAGE ('OptimizedLocking', 1, 2457, 3);
+-- (1:2488:0)
+DBCC PAGE ('OptimizedLocking', 1, 2488, 3);
 GO
 
 /*
-TID = 2142
-TID new = 
+TID = 
+New TID = 
 */
 
 -- Inspect locks with sys.dm_tran_locks on updated rows
@@ -105,7 +105,7 @@ BEGIN TRANSACTION;
 UPDATE
   dbo.TelemetryPacket
 SET
-  Device = 'Something new'
+  Device = 'Something new from Data Saturday Parma 2025'
 WHERE
   PacketID = 1;
   

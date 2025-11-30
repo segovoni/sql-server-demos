@@ -116,7 +116,10 @@ GO
 USE [OptimizedLocking]
 GO
 
-IF NOT EXISTS (SELECT name FROM sys.filegroups WHERE is_default=1 AND name = N'PRIMARY') ALTER DATABASE [OptimizedLocking] MODIFY FILEGROUP [PRIMARY] DEFAULT
+IF NOT EXISTS (SELECT name FROM sys.filegroups
+               WHERE is_default=1 AND name = N'PRIMARY')
+  ALTER DATABASE [OptimizedLocking]
+    MODIFY FILEGROUP [PRIMARY] DEFAULT
 GO
 
 USE [master];
