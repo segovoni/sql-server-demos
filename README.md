@@ -11,7 +11,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | 
 | [SQL Start 2025][LinkSQLStart2025] | [How SQL Server 2025 improves concurrency with TID locking and LAQ][LinkSessionSQLStart2025] | [Slide and Demo][LinkMaterialSQLStart2025] | 
 | [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
-| [Data Saturday Parma 2025][LinkDataSatParma2025] | [SQL Server 2025: Optimized Locking in action][LinkSessionDataSatParma2025] | [Slide and Demo][LinkMaterialDataSatParma2025] |  
+| [Data Saturday Parma 2025][LinkDataSatParma2025] | [SQL Server 2025: Optimized Locking in action][LinkSessionDataSatParma2025] | [Slide and Demo][LinkMaterialDataSatParma2025] | [Vimeo][LinkVideoDataSatParma2025]
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
@@ -38,7 +38,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077>
   [LinkSessionDataSatParma2025]: <https://datasaturdays.com/Event/20251129-datasaturday0077#schedule>
   [LinkMaterialDataSatParma2025]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0077/sql-server-2025-optimized-locking>
-  [LinkVideoDataSatParma2025]: <>
+  [LinkVideoDataSatParma2025]: <https://vimeo.com/1143845764>
 
 2024
 ---------------------------
@@ -48,8 +48,8 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Global Azure 2024][LinkGlobalAzure2024] | [Database maintenance with Azure SQL Elastic Jobs][LinkSessionGlobalAzure2024] | [Slide and Demo][LinkMaterialGlobalAzure2024] | [Vimeo][LinkVideoGlobalAzure2024]
 | [Delphi Day 2024][LinkDelphiDay2024] | [Crittografia in SQL Server][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2024] |
 | [SQL Start 2024][LinkSQLStart2024] | [SQL Server unit testing con tSQLt, Docker e GitHub Actions][LinkSessionSQLStart2024] | [Slide and Demo][LinkMaterialSQLStart2024] | [Vimeo][LinkVideoSQLStart2024]
-| [1nn0va Saturday 2024][Link1nn0vaSaturday2024] | [SQL Server Maintenance Plan: Fundamentals and best practices][LinkSession1nn0vaSaturday2024] | [Slide and Demo][LinkMaterial1nn0vaSaturday2024] | [Vimeo][LinkVideo1nn0vaSaturday2024] 
-| [Data Saturday Parma 2024][LinkDataSatParma2024] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatParma2024] | [Slide and Demo][LinkMaterialDataSatParma2024] | [Vimeo][LinkVideoDataSatParma2024] 
+| [1nn0va Saturday 2024][Link1nn0vaSaturday2024] | [SQL Server Maintenance Plan: Fundamentals and best practices][LinkSession1nn0vaSaturday2024] | [Slide and Demo][LinkMaterial1nn0vaSaturday2024] | [Vimeo][LinkVideo1nn0vaSaturday2024]
+| [Data Saturday Parma 2024][LinkDataSatParma2024] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatParma2024] | [Slide and Demo][LinkMaterialDataSatParma2024] | [Vimeo][LinkVideoDataSatParma2024]
 
   [LinkDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/>
   [LinkSessionDataSatPordenone2024]: <https://datasaturdays.com/2024-02-24-datasaturday0048/#schedule>
