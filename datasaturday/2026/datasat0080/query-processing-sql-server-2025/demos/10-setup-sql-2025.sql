@@ -79,6 +79,28 @@ ALTER DATABASE [StackOverflow2010] SET OPTIMIZED_LOCKING = ON;
 GO
 
 
+
+USE [StackOverflow2010];
+GO
+
+-- Improve query performance for operations filtering/sorting by answer count
+CREATE NONCLUSTERED INDEX IX_Posts_AnswerCount ON dbo.Posts
+(
+  [AnswerCount]
+);
+GO
+
+-- Improve query performance for operations filtering/sorting by comment count
+CREATE NONCLUSTERED INDEX IX_Posts_CommentCount ON dbo.Posts
+(
+  [CommentCount]
+);
+GO
+
+
+USE [master];
+GO
+
 SELECT
   [name]
   ,ADR  = is_accelerated_database_recovery_on
