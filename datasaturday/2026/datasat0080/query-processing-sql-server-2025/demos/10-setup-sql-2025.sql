@@ -9,6 +9,47 @@
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
 
+USE [master];
+GO
+
+/*
+AdventureWorks sample databases
+
+Download AdventureWorks2016_EXT
+https://learn.microsoft.com/sql/samples/adventureworks-install-configure
+*/ 
+
+IF (DB_ID('AdventureWorks2016_EXT') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [AdventureWorks2016_EXT]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [AdventureWorks2016_EXT];
+END;
+GO
+
+RESTORE DATABASE [AdventureWorks2016_EXT]
+  FROM DISK = N'C:\SQL\DBs\Backup\AdventureWorks2016_EXT.bak'
+  WITH
+    FILE = 1
+    ,MOVE N'AdventureWorks2016_EXT_data' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_Data.mdf'
+    ,MOVE N'AdventureWorks2016_EXT_log' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_Log.ldf'
+    ,MOVE N'AdventureWorks2016_EXT_mod' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_mod'
+    ,NOUNLOAD
+    ,STATS = 5;
+GO
+
+-- COMPATIBILITY_LEVEL { 170 | 160 | 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- 160 for SQL Server 2022
+-- 170 for SQL Server 2025
+ALTER DATABASE [AdventureWorks2016_EXT] SET COMPATIBILITY_LEVEL = 160 
+GO
+ALTER DATABASE [AdventureWorks2016_EXT] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [AdventureWorks2016_EXT] SET PAGE_VERIFY CHECKSUM 
+GO
+
+
 /*
 Stack Overflow SQL Server Database - Mini 2010 Version
 
@@ -77,7 +118,6 @@ ALTER DATABASE [StackOverflow2010] SET READ_COMMITTED_SNAPSHOT ON;
 GO
 ALTER DATABASE [StackOverflow2010] SET OPTIMIZED_LOCKING = ON;
 GO
-
 
 
 USE [StackOverflow2010];
