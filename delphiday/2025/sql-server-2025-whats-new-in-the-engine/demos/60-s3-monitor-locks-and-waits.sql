@@ -15,7 +15,7 @@ GO
 
 
 -- Azure SQL default time zone is UTC
-WAITFOR TIME '14:57';
+WAITFOR TIME '17:42';
 
 DROP TABLE IF EXISTS #LockStatus;
 GO
@@ -71,7 +71,7 @@ CREATE TABLE #SPIDToMonitor
 (
   spid SMALLINT
 );
-INSERT #SPIDToMonitor VALUES (62), (65);
+INSERT #SPIDToMonitor VALUES (188), (190);
 
 
 GO
