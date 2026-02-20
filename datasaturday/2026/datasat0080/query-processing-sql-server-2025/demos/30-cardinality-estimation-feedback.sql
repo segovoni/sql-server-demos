@@ -172,6 +172,8 @@ USE [AdventureWorks2016_EXT];
 GO
 
 
+-- CE feedback is only triggered for queries that are considered "ad-hoc"
+-- and that are executed more than once
 SELECT
   AddressID
   ,AddressLine1
@@ -203,6 +205,18 @@ GO
 
 -- Repeat the query again
 -- query_feedback_analysis
+SELECT
+  AddressID
+  ,AddressLine1
+  ,AddressLine2
+FROM Person.Address
+WHERE
+  StateProvinceID = 79
+  AND City = 'Redmond';
+GO
+
+
+-- Repeat the query again
 -- query_feedback_validation
 SELECT
   AddressID
