@@ -82,13 +82,18 @@ INNER JOIN
   Sales.SalesOrderHeader AS O ON C.CustomerID = O.CustomerID
 WHERE
   O.TotalDue > 10000;
-GO
+GO 15
 
 
 SELECT
-  *
+  q.query_id
+  ,qt.query_text_id
+  ,qt.query_sql_text
+  ,qt.statement_sql_handle
 FROM
-  sys.query_store_query_text
+  sys.query_store_query_text AS qt
+join
+  sys.query_store_query AS q on qt.query_text_id = q.query_text_id
 WHERE
   query_sql_text LIKE '%O.TotalDue >%'
   AND query_sql_text NOT LIKE '%sys.query_store_query_text%';
@@ -106,8 +111,8 @@ SELECT
 FROM
   sys.dm_exec_ce_feedback_cache
 WHERE
-  fingerprint = 0x55E5FFF3C54D81DA AND
-  database_id = DB_ID('AdventureWorks2016_EXT');
+  fingerprint = 0xF8BC125727A0C58A
+  AND database_id = DB_ID('AdventureWorks2016_EXT');
 GO
 
 
