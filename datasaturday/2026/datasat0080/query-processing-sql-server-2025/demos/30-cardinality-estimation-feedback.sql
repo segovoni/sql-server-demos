@@ -13,12 +13,20 @@ USE [AdventureWorks2016_EXT];
 GO
 
 
--- Correlation assumption for multiple predicates
+-- There are 3 model assumptions to determine the selectivity of multiple
+-- predicates with an AND clause:
+-- 1. Full correlation
+-- 2. Partial correlation
+-- 3. Full independence
+
+-- Full independence is the default behavior of the cardinality estimation
+-- model of SQL Server 2012 and earlier versions
 
 -- Query Optimizer assumed that the combination of filter predicates
 -- would result in a much higher selectivity. This assumption implied
 -- that there were fewer rows in the query result than what was actually
 -- the case
+
 SELECT
   AddressID
   ,AddressLine1
@@ -28,6 +36,7 @@ WHERE
   StateProvinceID = 79
   AND City = 'Redmond'
 OPTION (QUERYTRACEON 9481); -- CardinalityEstimationModelVersion 70 (legacy)
+--OPTION(USE HINT('ASSUME_FULL_INDEPENDENCE_FOR_FILTER_ESTIMATES'), RECOMPILE)
 GO
 
 
@@ -43,7 +52,7 @@ FROM
   sys.stats AS s
 INNER JOIN
   sys.stats_columns AS sc ON s.stats_id = sc.stats_id
-                             AND s.[object_id] = sc.[object_id]
+                         AND s.[object_id] = sc.[object_id]
 WHERE
   s.[object_id] = OBJECT_ID('Person.Address');
 GO
@@ -51,12 +60,30 @@ GO
 
 -- We can derive selectivities for each predicate from the associated
 -- statistics objects by using the histogram or density vector information
+/*
+SELECT
+  h.step_number
+  ,h.range_high_key
+  ,h.range_rows
+  ,h.equal_rows
+  ,h.average_range_rows
+  ,h.equal_rows/19614 AS predicate_selectivity
+FROM
+  sys.stats AS s
+CROSS APPLY
+  sys.dm_db_stats_histogram(s.[object_id], s.stats_id) AS h
+WHERE
+  s.[name] = 'IX_Address_City'
+  AND range_high_key = 'Redmond'
+*/
 
 DBCC SHOW_STATISTICS ('Person.Address', _WA_Sys_00000004_29572725); -- City Redmond
 GO
 -- City with a value of "Redmond" has the following histogram step:
 -- Redmond 2 121 2 1
 -- Dividing 121 by 19614 gives us a selectivity of 0.0061690
+SELECT
+  121.0 / 19614; -- City predicate selectivity
 
 
 DBCC SHOW_STATISTICS ('Person.Address', IX_Address_StateProvinceID); -- StateProvinceID 79
@@ -64,6 +91,9 @@ GO
 -- StateProvinceID with a value of "79" has the following histogram step:
 -- 79 0 2636 0 1
 -- Dividing 2636 by 19614 gives us a selectivity of 0.13439380
+SELECT
+  2636.0 / 19614; -- StateProvinceID predicate selectivity
+
 
 
 -- City is more selective than StateProvinceID
@@ -81,7 +111,11 @@ SELECT
 GO
 
 
--- New CE lessens the independence assumption slightly for conjunctions of predicates
+-- NEW CE
+
+-- Partial correlation is the default behavior of the cardinality estimation
+-- model of SQL Server 2014 or higher
+
 -- Re-executing the query shows the following increased row estimate
 -- (44.3583 rows)
 SELECT
@@ -95,6 +129,7 @@ WHERE
 GO
 
 
+-- Partial correlation model is based on an exponential backoff
 -- 44.3578571648016
 SELECT
   0.0061690 *        -- City predicate selectivity
