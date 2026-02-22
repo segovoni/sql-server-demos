@@ -1,0 +1,151 @@
+------------------------------------------------------------------------
+-- Event:        Data Saturday Pordenone 2026, February 28            --
+--               https://bit.ly/4qgoS6D                               --
+--                                                                    --
+-- Session:      Query Processing improvements in SQL Server 2025     --
+--                                                                    --
+-- Demo:         Setup databases on SQL Server 2025                   --
+-- Author:       Sergio Govoni                                        --
+-- Notes:        --                                                   --
+------------------------------------------------------------------------
+
+USE [master];
+GO
+
+/*
+AdventureWorks sample databases
+
+Download AdventureWorks2016_EXT
+https://learn.microsoft.com/sql/samples/adventureworks-install-configure
+*/ 
+
+IF (DB_ID('AdventureWorks2016_EXT') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [AdventureWorks2016_EXT]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [AdventureWorks2016_EXT];
+END;
+GO
+
+RESTORE DATABASE [AdventureWorks2016_EXT]
+  FROM DISK = N'C:\SQL\DBs\Backup\AdventureWorks2016_EXT.bak'
+  WITH
+    FILE = 1
+    ,MOVE N'AdventureWorks2016_EXT_data' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_Data.mdf'
+    ,MOVE N'AdventureWorks2016_EXT_log' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_Log.ldf'
+    ,MOVE N'AdventureWorks2016_EXT_mod' TO N'C:\SQL\DBs\AdventureWorks2016_EXT_mod'
+    ,NOUNLOAD
+    ,STATS = 5;
+GO
+
+-- COMPATIBILITY_LEVEL { 170 | 160 | 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- 160 for SQL Server 2022
+-- 170 for SQL Server 2025
+ALTER DATABASE [AdventureWorks2016_EXT] SET COMPATIBILITY_LEVEL = 160 
+GO
+ALTER DATABASE [AdventureWorks2016_EXT] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [AdventureWorks2016_EXT] SET PAGE_VERIFY CHECKSUM 
+GO
+
+
+/*
+Stack Overflow SQL Server Database - Mini 2010 Version
+
+For more information and the latest release:
+http://www.brentozar.com/go/querystack
+
+Imported from the Stack Exchange Data Dump about 2010
+https://archive.org/details/stackexchange
+
+Imported using the Stack Overflow Data Dump Importer:
+https://github.com/BrentOzarULTD/soddi
+
+This database is in Microsoft SQL Server 2008 format, which means you can
+attach it to any SQL Server 2008 or newer instance.
+
+To keep the size small but let you get started fast:
+
+* All tables have a clustered index
+* No nonclustered or full text indexes are included
+* The log file is small, and you should grow it out if you plan to modify data
+* It's distributed as an mdf/ldf so you don't need space to restore it
+* It only includes StackOverflow.com data, not data for other Stack sites
+
+As with the original data dump, this is provided under cc-by-sa 3.0 license:
+http://creativecommons.org/licenses/by-sa/3.0/
+
+You are free to share this database and adapt it for any purpose, even
+commercially, but you must attribute it to the original authors:
+https://archive.org/details/stackexchange
+*/
+
+USE [master];
+GO
+
+-- StackOverflow2010
+IF (DB_ID('StackOverflow2010') IS NOT NULL)
+BEGIN
+  ALTER DATABASE [StackOverflow2010]
+    SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+
+  DROP DATABASE [StackOverflow2010];
+END;
+GO
+
+RESTORE DATABASE [StackOverflow2010]
+  FROM DISK = N'C:\SQL\DBs\Backup\StackOverflow2010.bak'
+  WITH
+    FILE = 1
+    ,MOVE N'StackOverflow2010' TO N'C:\SQL\DBs\StackOverflow2010.mdf'
+    ,MOVE N'StackOverflow2010_log' TO N'C:\SQL\DBs\StackOverflow2010_log.ldf'
+    ,NOUNLOAD
+    ,STATS = 5;
+GO
+-- COMPATIBILITY_LEVEL { 170 | 160 | 150 | 140 | 130 | 120 | 110 | 100 | 90 | 80 }
+-- 160 for SQL Server 2022
+-- 170 for SQL Server 2025
+ALTER DATABASE [StackOverflow2010] SET COMPATIBILITY_LEVEL = 170 
+GO
+ALTER DATABASE [StackOverflow2010] SET RECOVERY SIMPLE 
+GO
+ALTER DATABASE [StackOverflow2010] SET PAGE_VERIFY CHECKSUM 
+GO
+ALTER DATABASE [StackOverflow2010] SET ACCELERATED_DATABASE_RECOVERY = ON;
+GO
+ALTER DATABASE [StackOverflow2010] SET READ_COMMITTED_SNAPSHOT ON;
+GO
+ALTER DATABASE [StackOverflow2010] SET OPTIMIZED_LOCKING = ON;
+GO
+
+
+USE [StackOverflow2010];
+GO
+
+-- Improve query performance for operations filtering/sorting by answer count
+CREATE NONCLUSTERED INDEX IX_Posts_AnswerCount ON dbo.Posts
+(
+  [AnswerCount]
+);
+GO
+
+-- Improve query performance for operations filtering/sorting by comment count
+CREATE NONCLUSTERED INDEX IX_Posts_CommentCount ON dbo.Posts
+(
+  [CommentCount]
+);
+GO
+
+
+USE [master];
+GO
+
+SELECT
+  [name]
+  ,ADR  = is_accelerated_database_recovery_on
+  ,RCSI = is_read_committed_snapshot_on
+  ,OL = is_optimized_locking_on
+ FROM
+   sys.databases
+ GO

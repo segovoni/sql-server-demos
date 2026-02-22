@@ -2,6 +2,17 @@
 
 This repository contains experiments, slide and demo scripts of my sessions at in-person or online events such as SQL Saturday, Data Saturday, SQL Start, Delphi Day, Microsoft Conferences and so no.
 
+2026
+---------------------------
+| Event  | Session | Material | Video  |
+| ------ | ------- | -------- | ------ |
+| [Data Saturday Pordenone 2026][LinkDataSatPordenone2026] | [Query Processing improvements in SQL Server 2025][LinkSessionDataSatPordenone2026] | [Slide and Demo][LinkMaterialDataSatPordenone2026] | 
+
+  [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
+  [LinkSessionDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080#schedule>
+  [LinkMaterialDataSatPordenone2026]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2026/datasat0080/query-processing-sql-server-2025>
+  [LinkVideoDataSatPordenone2026]: <>
+
 2025
 ---------------------------
 | Event  | Session | Material | Video  |
