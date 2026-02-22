@@ -13,7 +13,6 @@
 USE [AdventureWorks2016_EXT];
 GO
 
-
 -- There are 3 model assumptions to determine the selectivity of multiple
 -- predicates with an AND clause:
 -- 1. Full correlation
@@ -224,7 +223,7 @@ GO 15
 EXEC sp_query_store_flush_db;
 GO
 
-
+-- Plan
 SELECT
   *
 FROM
@@ -235,7 +234,24 @@ CROSS APPLY
   sys.dm_exec_query_plan_stats(cplans.plan_handle) AS qplansstats
 WHERE
   stext.[text] LIKE '%FROM Person.Address%'
-  AND stext.[text] NOT LIKE '%sys.dm_exec_cached_plans%';
+  AND stext.[text] NOT LIKE '%sys.dm_exec_cached_plans%'
+  AND stext.[text] NOT LIKE '%sys.query_store_query_text%';
+GO
+
+-- Query
+SELECT
+  q.query_id
+  ,qt.query_text_id
+  ,qt.query_sql_text
+  ,qt.statement_sql_handle
+FROM
+  sys.query_store_query_text AS qt
+join
+  sys.query_store_query AS q on qt.query_text_id = q.query_text_id
+WHERE
+  query_sql_text LIKE '%FROM Person.Address%'
+  AND query_sql_text NOT LIKE '%sys.query_store_query_text%'
+  AND query_sql_text NOT LIKE '%sys.dm_exec_query_plan_stats%';
 GO
 
 
