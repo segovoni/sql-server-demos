@@ -6,7 +6,8 @@
 --                                                                    --
 -- Demo:         Cardinality estimation (CE) feedback                 --
 -- Author:       Sergio Govoni                                        --
--- Notes:        --                                                   --
+-- Notes:        Credits to Bob Ward                                  --
+--               https://bit.ly/ms-ce-feedback                        --
 ------------------------------------------------------------------------
 
 USE [AdventureWorks2016_EXT];
