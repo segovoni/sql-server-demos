@@ -99,7 +99,7 @@ SELECT
 -- City is more selective than StateProvinceID
 
 -- Even though these individual columns all describe a shared location and are correlated,
--- the Query Optimizer before SQL Server 2014 assumes independence across the columns  
+-- the Query Optimizer before SQL Server 2014 assumes full independence across the columns
 
 -- By assuming independence, the system computes the selectivity of conjunctive predicates 
 -- by multiplying individual selectivities

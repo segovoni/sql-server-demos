@@ -199,8 +199,8 @@ EXECUTE dbo.SearchPostsCounts
 GO
 
 
--- OPPO currently works best with single optional parameters.
--- Multi-parameter scenarios need further optimization in future SQL Server versions.
+-- OPPO currently works best with single optional parameters
+-- Multi-parameter scenarios need further optimization in future SQL Server versions
 
 
 SELECT

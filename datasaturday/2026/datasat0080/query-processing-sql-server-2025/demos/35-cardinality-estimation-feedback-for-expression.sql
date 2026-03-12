@@ -111,7 +111,7 @@ SELECT
 FROM
   sys.dm_exec_ce_feedback_cache
 WHERE
-  fingerprint = 0xF8BC125727A0C58A
+  fingerprint = 0x55E5FFF3C54D81DA
   AND database_id = DB_ID('AdventureWorks2016_EXT');
 GO
 
