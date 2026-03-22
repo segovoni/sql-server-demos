@@ -17,8 +17,8 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 ---------------------------
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
-| [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [Optimized Locking in Azure SQL Database: Concurrency and performance at the next level][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-OL] |
-| [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] |
+| [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [Optimized Locking in Azure SQL Database: Concurrency and performance at the next level][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-OL] | [Vimeo][LinkVideoDataSatPordenone2025-OL]
+| [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] | [Vimeo][LinkVideoDataSatPordenone2025-Deadlock]
 | [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | [Vimeo][LinkVideoGlobalAzure2025]
 | [SQL Start 2025][LinkSQLStart2025] | [How SQL Server 2025 improves concurrency with TID locking and LAQ][LinkSessionSQLStart2025] | [Slide and Demo][LinkMaterialSQLStart2025] | [Vimeo][LinkVideoSQLStart2025]
 | [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
@@ -27,9 +27,9 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
   [LinkSessionDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066#schedule>
   [LinkMaterialDataSatPordenone2025-OL]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0066/optimized-locking-in-azure-sql-database>
-  [LinkVideoDataSatPordenone2025-OL]: <>
+  [LinkVideoDataSatPordenone2025-OL]: <https://vimeo.com/1175986499>
   [LinkMaterialDataSatPordenone2025-Deadlock]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2025/datasat0066/sql-server-deadlocks>
-  [LinkVideoDataSatPordenone2025-Deadlock]: <>
+  [LinkVideoDataSatPordenone2025-Deadlock]: <https://vimeo.com/1175990577>
 
   [LinkGlobalAzure2025]: <https://veneto.globalazure.it/>
   [LinkSessionGlobalAzure2025]: <https://veneto.globalazure.it/guarda-quali-saranno-le-sessioni-di-global-azure/>
