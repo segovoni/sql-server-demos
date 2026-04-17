@@ -7,11 +7,18 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2026][LinkDataSatPordenone2026] | [Query Processing improvements in SQL Server 2025][LinkSessionDataSatPordenone2026] | [Slide and Demo][LinkMaterialDataSatPordenone2026] | 
+| [Global Azure 2026][LinkGlobalAzure2026] | [][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | 
+
 
   [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
   [LinkSessionDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080#schedule>
   [LinkMaterialDataSatPordenone2026]: <https://github.com/segovoni/sql-server-demos/tree/master/datasaturday/2026/datasat0080/query-processing-sql-server-2025>
   [LinkVideoDataSatPordenone2026]: <>
+
+  [LinkGlobalAzure2026]: <https://globalazure.net/>
+  [LinkSessionGlobalAzure2026]: <https://globalazure2026pn.1nn0va.it/#schedule>
+  [LinkMaterialGlobalAzure2026]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2026>
+  [LinkVideoGlobalAzure2026]: <>
 
 2025
 ---------------------------
