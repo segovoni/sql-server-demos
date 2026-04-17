@@ -9,6 +9,28 @@
 -- Notes:        --                                                   --
 ------------------------------------------------------------------------
 
+-- 1. Create Azure Resource Group: rg-sqlops-dev-itn-02
+
+-- 2. Create Azure User Assigned Managed Identity: umi-sqlops-maint-dev-itn-02
+
+-- 3. Create Azure SQL logical instance for job management: azure-sql-sqlops-dev-itn-02
+
+-- 4. Create Azure SQL Database for job management: jobdb-dev-itn-02 (S1 service tier)
+
+-- 5. Create Azure SQL Elastic Job Agent: eja-dev-itn-02
+
+-- 6. Create target group and add targets for the jobs: tg-devtest-itn-02
+
+-- 7. Create a job with T-SQL steps to run against the target group: tg-devtest-itn-02
+
+-- 8. Configure authentication for the job agent
+
+-- 9. Execute the job and monitor the execution
+
+-- 10. Schedule the job to run periodically
+
+
+
 -- Automate management tasks in Azure SQL
 -- https://learn.microsoft.com/azure/azure-sql/database/job-automation-overview?view=azuresql#elastic-database-jobs-preview
 

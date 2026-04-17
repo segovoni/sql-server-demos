@@ -11,6 +11,12 @@
 
 -- Connect to Azure SQL Database logical instance for maintenance database
 
+/*
+USE [AdventureWorksLT2025];
+GO
+*/
+
+
 -- Generate some fragmentation on AdventureWorksLT2025
 SET NOCOUNT ON;
 GO

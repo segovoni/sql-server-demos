@@ -17,6 +17,7 @@
 
 -- Connect to the job database specified when creating the job agent
 
+
 USE [jobdb-dev-itn-01];
 GO
 
@@ -91,7 +92,7 @@ DECLARE @lcommand NVARCHAR(MAX) =
      '@LogToTable = ''Y''';
 
 /*
-EXECUTE dbo.IndexOptimize @Databases = 'AdventureWorksLT2025', @FragmentationLow = NULL, @FragmentationMedium = 'INDEX_REORGANIZE,INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE', @FragmentationHigh = 'INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE', @FragmentationLevel1 = 5, @FragmentationLevel2 = 30, @LogToTable = 'Y';
+EXECUTE dbo.IndexOptimize @Databases = 'AdventureWorksLT2025', @FragmentationLow = 'INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE', @FragmentationMedium = 'INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE', @FragmentationHigh = 'INDEX_REBUILD_ONLINE,INDEX_REBUILD_OFFLINE', @FragmentationLevel1 = 5, @FragmentationLevel2 = 30, @UpdateStatistics = 'COLUMNS', @OnlyModifiedStatistics = 'Y', @LogToTable = 'Y';
 */
 
 -- Add job step for rebuild/reorganize indexes
