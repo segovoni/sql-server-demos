@@ -21,7 +21,7 @@
 
 -- 6. Create target group and add targets for the jobs: tg-devtest-itn-02
 
--- 7. Create a job with T-SQL steps to run against the target group: tg-devtest-itn-02
+-- 7. Create a job with T-SQL steps to run against the target group: JobMaintenanceIndex
 
 -- 8. Configure authentication for the job agent
 
