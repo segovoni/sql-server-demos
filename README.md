@@ -8,9 +8,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2026][LinkDataSatPordenone2026] | [Query Processing improvements in SQL Server 2025][LinkSessionDataSatPordenone2026] | [Slide and Demo][LinkMaterialDataSatPordenone2026] | [Vimeo][LinkVideoVimeoDataSatPordenone2026], [Youtube][LinkVideoYoutubeDataSatPordenone2026]
 | [Global Azure 2026][LinkGlobalAzure2026] | [Azure SQL Database Maintenance Essentials][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | [Vimeo][LinkVideoGlobalAzure2026] 
-| [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] 
-
-# | [Slide and Demo][LinkMaterialDelphiDay2026] |
+| [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] | [Slide and Demo][LinkMaterialDelphiDay2026] |
 
 
   [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
@@ -27,7 +25,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDelphiDay2026]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2026]: <https://www.delphiday.it/seminari/>
-  [LinkMaterialDelphiDay2026]: <>
+  [LinkMaterialDelphiDay2026]: <https://github.com/segovoni/sql-server-demos>
   [LinkVideoDelphiDay2026]: <>
 
 
