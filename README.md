@@ -25,7 +25,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 
   [LinkDelphiDay2026]: <https://www.delphiday.it/>
   [LinkSessionDelphiDay2026]: <https://www.delphiday.it/seminari/>
-  [LinkMaterialDelphiDay2026]: <https://github.com/segovoni/sql-server-demos>
+  [LinkMaterialDelphiDay2026]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2026/azure-sql-database-essentials>
   [LinkVideoDelphiDay2026]: <>
 
 
