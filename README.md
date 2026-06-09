@@ -3,11 +3,12 @@
 This repository contains experiments, slide and demo scripts of my sessions at in-person or online events such as SQL Saturday, Data Saturday, SQL Start, Delphi Day, Microsoft Conferences and so no.
 
 2026
----------------------------
+----------------------------------------
 | Event  | Session | Material | Video  |
 | ------ | ------- | -------- | ------ |
 | [Data Saturday Pordenone 2026][LinkDataSatPordenone2026] | [Query Processing improvements in SQL Server 2025][LinkSessionDataSatPordenone2026] | [Slide and Demo][LinkMaterialDataSatPordenone2026] | [Vimeo][LinkVideoVimeoDataSatPordenone2026], [Youtube][LinkVideoYoutubeDataSatPordenone2026]
-| [Global Azure 2026][LinkGlobalAzure2026] | [Azure SQL Database Maintenance Essentials][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | [Vimeo][LinkVideoGlobalAzure2026]
+| [Global Azure 2026][LinkGlobalAzure2026] | [Azure SQL Database Maintenance Essentials][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | [Vimeo][LinkVideoGlobalAzure2026] 
+| [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] | [Slide and Demo][LinkMaterialDelphiDay2026] |
 
 
   [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
@@ -22,6 +23,12 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkMaterialGlobalAzure2026]: <https://github.com/segovoni/sql-server-demos/tree/master/globalazure/2026>
   [LinkVideoGlobalAzure2026]: <https://vimeo.com/1184516960>
 
+  [LinkDelphiDay2026]: <https://www.delphiday.it/>
+  [LinkSessionDelphiDay2026]: <https://www.delphiday.it/seminari/>
+  [LinkMaterialDelphiDay2026]: <https://github.com/segovoni/sql-server-demos>
+  [LinkVideoDelphiDay2026]: <>
+
+
 2025
 ---------------------------
 | Event  | Session | Material | Video  |
@@ -30,7 +37,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Data Saturday Pordenone 2025][LinkDataSatPordenone2025] | [SQL Server Deadlocks: Techniques to identify and resolve them][LinkSessionDataSatPordenone2025] | [Slide and Demo][LinkMaterialDataSatPordenone2025-Deadlock] | [Vimeo][LinkVideoDataSatPordenone2025-Deadlock]
 | [Global Azure 2025][LinkGlobalAzure2025] | [Optimized Locking in Azure SQL][LinkSessionGlobalAzure2025] | [Slide and Demo][LinkMaterialGlobalAzure2025] | [Vimeo][LinkVideoGlobalAzure2025]
 | [SQL Start 2025][LinkSQLStart2025] | [How SQL Server 2025 improves concurrency with TID locking and LAQ][LinkSessionSQLStart2025] | [Slide and Demo][LinkMaterialSQLStart2025] | [Vimeo][LinkVideoSQLStart2025]
-| [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2024] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
+| [Delphi Day 2025][LinkDelphiDay2025] | [SQL Server 2025: What's new in the engine][LinkSessionDelphiDay2025] | [Slide and Demo][LinkMaterialDelphiDay2025] | 
 | [Data Saturday Parma 2025][LinkDataSatParma2025] | [SQL Server 2025: Optimized Locking in action][LinkSessionDataSatParma2025] | [Slide and Demo][LinkMaterialDataSatParma2025] | [Vimeo][LinkVideoDataSatParma2025]
 
   [LinkDataSatPordenone2025]: <https://datasaturdays.com/Event/20250222-datasaturday0066>
@@ -50,8 +57,8 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkMaterialSQLStart2025]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2025/how-sql-server-2025-improves-concurrency>
   [LinkVideoSQLStart2025]: <https://vimeo.com/1096946517>
 
-  [LinkDelphiDay2025]: <https://www.delphiday.it/>
-  [LinkSessionDelphiDay2025]: <https://www.delphiday.it/conferenza/>
+  [LinkDelphiDay2025]: <https://www.delphiday.it/2025/>
+  [LinkSessionDelphiDay2025]: <https://www.delphiday.it/2025/conferenza/>
   [LinkMaterialDelphiDay2025]: <https://github.com/segovoni/sql-server-demos/tree/master/delphiday/2025/sql-server-2025-whats-new-in-the-engine>
   [LinkVideoDelphiDay2025]: <>
 
