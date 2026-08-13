@@ -84,8 +84,8 @@ GO
 
 CREATE LOGIN [AIModelAppUser]
   WITH
-    PASSWORD=N'P@ssw0rd!'
-    ,DEFAULT_DATABASE=[StackOverflowMini];
+    PASSWORD = N'P@ssw0rd!'
+    ,DEFAULT_DATABASE = [StackOverflowMini];
 GO
 
 
@@ -106,7 +106,7 @@ GO
 
 CREATE USER [AIModelAppUser] FOR LOGIN [AIModelAppUser]
   WITH
-    DEFAULT_SCHEMA=[ai_demo];
+    DEFAULT_SCHEMA = [ai_demo];
 GO
 
 
