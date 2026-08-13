@@ -82,8 +82,16 @@ GO
 ALTER DATABASE [StackOverflowMini] SET PAGE_VERIFY CHECKSUM WITH NO_WAIT;
 GO
 
+CREATE LOGIN [AIModelAppUser]
+  WITH
+    PASSWORD=N'P@ssw0rd!'
+    ,DEFAULT_DATABASE=[StackOverflowMini];
+GO
+
+
 USE [StackOverflowMini];
 GO
+
 
 -- In order to use CREATE VECTOR INDEX statement,
 -- we must enable the PREVIEW_FEATURES database scoped configuration option
@@ -94,6 +102,11 @@ IF SCHEMA_ID(N'ai_demo') IS NULL
 BEGIN
   EXEC(N'CREATE SCHEMA [ai_demo];');
 END;
+GO
+
+CREATE USER [AIModelAppUser] FOR LOGIN [AIModelAppUser]
+  WITH
+    DEFAULT_SCHEMA=[ai_demo];
 GO
 
 
