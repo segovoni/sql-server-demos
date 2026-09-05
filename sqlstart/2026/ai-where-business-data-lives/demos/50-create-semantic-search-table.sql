@@ -58,7 +58,7 @@ INSERT INTO [ai_demo].[PostSearchDocuments]
 )
 -- Keep the corpus small enough for live embedding generation
 SELECT
-  TOP (5000)
+  TOP (1000)
   Q.Id AS QuestionId
   ,Q.AcceptedAnswerId
   ,Q.Title
