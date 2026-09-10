@@ -86,6 +86,10 @@ GO
 -- Limitations and considerations
 -- https://learn.microsoft.com/sql/t-sql/statements/create-vector-index-transact-sql#limitations-and-considerations
 
+/*
+DROP INDEX IF EXISTS IDX_VECTOR_PostSearchDocuments_Embedding ON [ai_demo].[PostSearchDocuments];
+*/
+
 CREATE VECTOR INDEX IDX_VECTOR_PostSearchDocuments_Embedding ON [ai_demo].[PostSearchDocuments]
 (
   [Embedding]
