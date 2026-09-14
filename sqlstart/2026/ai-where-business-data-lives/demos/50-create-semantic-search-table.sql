@@ -41,6 +41,64 @@ CREATE TABLE [ai_demo].[PostSearchDocuments]
 GO
 
 
+DROP VIEW IF EXISTS [ai_demo].[vw_PostSearchDocumentSource];
+GO
+
+
+CREATE VIEW [ai_demo].[vw_PostSearchDocumentSource]
+AS
+SELECT
+  Q.Id AS QuestionId
+  ,Q.AcceptedAnswerId
+  ,Q.Title
+  ,Q.Tags
+  ,Q.Score AS QuestionScore
+  ,A.Score AS AcceptedAnswerScore
+  ,Q.ViewCount
+  ,Q.AnswerCount
+  ,Q.CreationDate AS QuestionCreationDate
+  ,LEFT(Q.Body, 4000) AS QuestionBody
+  ,LEFT(A.Body, 4000) AS AcceptedAnswerBody
+  ,CONCAT(
+    N'Title: '
+    ,Q.Title
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Tags: '
+    ,Q.Tags
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Question score: '
+    ,CONVERT(NVARCHAR(20), Q.Score)
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Accepted answer score: '
+    ,CONVERT(NVARCHAR(20), A.Score)
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Views: '
+    ,CONVERT(NVARCHAR(20), Q.ViewCount)
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Question: '
+    ,LEFT(Q.Body, 3000)
+    ,CHAR(13)
+    ,CHAR(10)
+    ,N'Accepted answer: '
+    ,LEFT(A.Body, 3000)
+  ) AS DocumentText
+FROM
+  dbo.Posts AS Q
+JOIN
+  dbo.Posts AS A ON A.Id = Q.AcceptedAnswerId
+WHERE
+  Q.PostTypeId = 1
+  AND Q.AcceptedAnswerId IS NOT NULL
+  AND Q.Tags LIKE N'%<sql-server>%'
+  AND Q.Title IS NOT NULL;
+GO
+
+
 INSERT INTO [ai_demo].[PostSearchDocuments]
 (
   QuestionId
