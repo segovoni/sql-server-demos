@@ -1,6 +1,6 @@
 ------------------------------------------------------------------------
--- Event:        1nn0vAI 2026 - Pordenone, September  26              --
---               https://www.1nn0vai.it/                              --
+-- Event:        SQL Start 2026 - Ancona, September  18               --
+--               https://www.sqlstart.it/                             --
 --                                                                    --
 -- Session:      SQL Server 2025 and Azure SQL: AI comes where        --
 --               business data lives                                  --
