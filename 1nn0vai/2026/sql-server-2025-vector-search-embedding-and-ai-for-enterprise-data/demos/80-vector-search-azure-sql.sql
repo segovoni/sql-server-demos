@@ -10,8 +10,10 @@
 -- Notes:        Requires Azure SQL vector index latest version       --
 ------------------------------------------------------------------------
 
-USE [];
+/*
+USE [StackOverflowMini];
 GO
+*/
 
 
 SET NOCOUNT ON;
@@ -52,10 +54,10 @@ END;
 GO
 
 
--- REFRESH DATABASE SCOPED CREDENTIAL
+-- Refresh database scoped credential
 
 
--- 01 - Create the DiskANN vector index with the latest Azure SQL implementation
+-- Create the DiskANN vector index with the latest Azure SQL implementation
 /*
 IF NOT EXISTS
 (
@@ -82,7 +84,7 @@ END;
 GO
 
 
--- 02 - Verify vector index version. Version 3 is the latest format
+-- Verify vector index version. Version 3 is the latest format
 SELECT
   I.[name] AS IndexName
   ,T.[name] AS TableName
@@ -99,9 +101,7 @@ WHERE
 GO
 
 
--- 03 - DML test. Latest Azure SQL vector indexes support DML
-BEGIN TRANSACTION;
-
+-- Latest Azure SQL vector indexes support DML
 UPDATE
   TOP (1) D
 SET
@@ -109,50 +109,11 @@ SET
 FROM
   [ai_demo].[PostSearchDocuments] AS D
 WHERE
-  D.Embedding IS NOT NULL;
-
-ROLLBACK TRANSACTION;
-
-SELECT
-  N'DML test completed successfully.' AS DmlTestResult;
+  (D.Embedding IS NOT NULL);
 GO
 
 
--- 04 - Approximate semantic search with SELECT TOP (...) WITH APPROXIMATE
-DECLARE
-  @SearchText NVARCHAR(MAX) =
-  N'SQL Server error log file is full';
-DECLARE
-  @qv VECTOR(1536) = AI_GENERATE_EMBEDDINGS
-                     (
-                       @SearchText 
-                       USE MODEL [AzureOpenAI_text_embedding_ada_002]
-                     );
-
-SELECT
-  TOP (10) WITH APPROXIMATE
-  S.distance
-  ,T.QuestionId
-  ,T.AcceptedAnswerId
-  ,T.QuestionScore
-  ,T.AcceptedAnswerScore
-  ,T.ViewCount
-  ,T.Tags
-  ,T.Title
-FROM
-  VECTOR_SEARCH
-  (
-    TABLE = [ai_demo].[PostSearchDocuments] AS T
-    ,COLUMN = Embedding
-    ,SIMILAR_TO = @qv
-    ,METRIC = 'cosine'
-  ) AS S
-ORDER BY
-  S.distance;
-GO
-
-
--- 05 - Approximate semantic search with iterative relational filtering
+-- Approximate semantic search with iterative relational filtering
 DECLARE
   @SearchText NVARCHAR(MAX) =
   N'Find questions about SQL Server date and datetime conversion.';

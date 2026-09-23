@@ -86,6 +86,10 @@ GO
 -- Limitations and considerations
 -- https://learn.microsoft.com/sql/t-sql/statements/create-vector-index-transact-sql#limitations-and-considerations
 
+/*
+DROP INDEX IF EXISTS IDX_VECTOR_PostSearchDocuments_Embedding ON [ai_demo].[PostSearchDocuments];
+*/
+
 CREATE VECTOR INDEX IDX_VECTOR_PostSearchDocuments_Embedding ON [ai_demo].[PostSearchDocuments]
 (
   [Embedding]
@@ -114,40 +118,17 @@ WHERE
 GO
 
 
-/*
--- DML smoke test. Earlier SQL Server vector indexes can make the table read-only
-BEGIN TRY
-  BEGIN TRANSACTION;
-
-  UPDATE
-    TOP (1) D
-  SET
-    EmbeddedAt = EmbeddedAt
-  FROM
-    [ai_demo].[PostSearchDocuments] AS D
-  WHERE
-    D.Embedding IS NOT NULL;
-
-  ROLLBACK TRANSACTION;
-
-  SELECT
-    N'DML test completed successfully.' AS DmlTestResult;
-END TRY
-BEGIN CATCH
-  IF @@TRANCOUNT > 0
-  BEGIN
-    ROLLBACK TRANSACTION;
-  END;
-
-  /*
-  SELECT
-    ERROR_NUMBER() AS ErrorNumber
-    ,ERROR_MESSAGE() AS ErrorMessage
-    ,N'This behavior is expected with earlier SQL Server vector index implementations that make the table read-only.' AS Explanation;
-  */
-END CATCH;
+-- Earlier SQL Server vector indexes can make the table read-only
+UPDATE
+  TOP (1) D
+SET
+  EmbeddedAt = EmbeddedAt
+FROM
+  [ai_demo].[PostSearchDocuments] AS D
+WHERE
+  (D.Embedding IS NOT NULL);
 GO
-*/
+
 
 -- Approximate semantic search with VECTOR_SEARCH
 -- This SQL Server build uses TOP_N inside VECTOR_SEARCH

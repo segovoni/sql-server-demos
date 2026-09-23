@@ -116,7 +116,7 @@ BEGIN
 
   SET @PercentComplete = CASE
     WHEN @TotalDocuments = 0 THEN 100.00
-    ELSE CONVERT(DECIMAL(5,2), @EmbeddedDocuments * 100.0 / @TotalDocuments)
+    ELSE CONVERT(DECIMAL(5, 2), @EmbeddedDocuments * 100.0 / @TotalDocuments)
   END;
 
   SET @ProgressBar = CONCAT(
