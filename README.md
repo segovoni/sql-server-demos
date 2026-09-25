@@ -10,7 +10,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Global Azure 2026][LinkGlobalAzure2026] | [Azure SQL Database Maintenance Essentials][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | [Vimeo][LinkVideoGlobalAzure2026] 
 | [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] | [Slide and Demo][LinkMaterialDelphiDay2026] |
 | [SQL Start 2026][LinkSQLStart2026] | [AI where business data lives][LinkSessionSQLStart2026] | [Slide and Demo][LinkMaterialSQLStart2026] | 
-
+| [1nn0vAI 2026][Link1nn0vAI2026] | [SQL Server 2025 and Azure SQL: AI where business data lives][LinkSession1nn0vAI2026] | [Slide and Demo][LinkMaterial1nn0vAI2026] | 
 
   [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
   [LinkSessionDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080#schedule>
@@ -31,7 +31,12 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSQLStart2026]: <https://www.sqlstart.it/>
   [LinkSessionSQLStart2026]: <https://www.sqlstart.it/sessions/>
   [LinkMaterialSQLStart2026]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2026/ai-where-business-data-lives>
-  [LinkVideoSQLStart2025]: <>
+  [LinkVideoSQLStart2026]: <>
+
+  [Link1nn0vAI2026]: <https://www.1nn0vai.it/>
+  [LinkSession1nn0vAI2026]: <https://www.1nn0vai.it/>
+  [LinkMaterial1nn0vAI2026]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vai/2026>
+  [LinkVideo1nn0vAI2026]: <>
 
 2025
 ---------------------------
