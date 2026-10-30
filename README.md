@@ -11,6 +11,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] | [Slide and Demo][LinkMaterialDelphiDay2026] |
 | [SQL Start 2026][LinkSQLStart2026] | [AI where business data lives][LinkSessionSQLStart2026] | [Slide and Demo][LinkMaterialSQLStart2026] | 
 | [1nn0vAI 2026][Link1nn0vAI2026] | [SQL Server 2025 and Azure SQL: AI where business data lives][LinkSession1nn0vAI2026] | [Slide and Demo][LinkMaterial1nn0vAI2026] | 
+| [DAB Conference 2026][LinkDAB2026] | [SQL Server 2025 and Azure SQL: AI where business data lives][LinkSessionDAB2026] | [Slide and Demo][LinkMaterialDAB2026] | 
 
   [LinkDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080>
   [LinkSessionDataSatPordenone2026]: <https://datasaturdays.com/Event/20260228-datasaturday0080#schedule>
@@ -37,6 +38,11 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSession1nn0vAI2026]: <https://www.1nn0vai.it/>
   [LinkMaterial1nn0vAI2026]: <https://github.com/segovoni/sql-server-demos/tree/master/1nn0vai/2026>
   [LinkVideo1nn0vAI2026]: <>
+
+  [LinkDAB2026]: <https://dataaibuildersconf.it/>
+  [LinkSessionDAB2026]: <https://dataaibuildersconf.it/sessions/sql-server-2025-e-azure-sql-lai-arriva-dove-vivono-i-dati-aziendali-1282718/>
+  [LinkMaterialDAB2026]: <https://github.com/segovoni/sql-server-demos/tree/master/dataaibuilders/2026>
+  [LinkVideoDAB2026]: <>
 
 2025
 ---------------------------
