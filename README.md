@@ -9,7 +9,7 @@ This repository contains experiments, slide and demo scripts of my sessions at i
 | [Data Saturday Pordenone 2026][LinkDataSatPordenone2026] | [Query Processing improvements in SQL Server 2025][LinkSessionDataSatPordenone2026] | [Slide and Demo][LinkMaterialDataSatPordenone2026] | [Vimeo][LinkVideoVimeoDataSatPordenone2026], [Youtube][LinkVideoYoutubeDataSatPordenone2026]
 | [Global Azure 2026][LinkGlobalAzure2026] | [Azure SQL Database Maintenance Essentials][LinkSessionGlobalAzure2026] | [Slide and Demo][LinkMaterialGlobalAzure2026] | [Vimeo][LinkVideoGlobalAzure2026] 
 | [Delphi Day 2026][LinkDelphiDay2026] | [Azure SQL Database Essentials][LinkSessionDelphiDay2026] | [Slide and Demo][LinkMaterialDelphiDay2026] |
-| [SQL Start 2026][LinkSQLStart2026] | [AI where business data lives][LinkSessionSQLStart2026] | [Slide and Demo][LinkMaterialSQLStart2026] | 
+| [SQL Start 2026][LinkSQLStart2026] | [AI where business data lives][LinkSessionSQLStart2026] | [Slide and Demo][LinkMaterialSQLStart2026] | [Vimeo][LinkVideoVimeoSQLStart2026], [Youtube][LinkVideoYouTubeSQLStart2026]
 | [1nn0vAI 2026][Link1nn0vAI2026] | [SQL Server 2025 and Azure SQL: AI where business data lives][LinkSession1nn0vAI2026] | [Slide and Demo][LinkMaterial1nn0vAI2026] | 
 | [DAB Conference 2026][LinkDAB2026] | [SQL Server 2025 and Azure SQL: AI where business data lives][LinkSessionDAB2026] | [Slide and Demo][LinkMaterialDAB2026] | 
 
@@ -32,7 +32,8 @@ This repository contains experiments, slide and demo scripts of my sessions at i
   [LinkSQLStart2026]: <https://www.sqlstart.it/>
   [LinkSessionSQLStart2026]: <https://www.sqlstart.it/sessions/>
   [LinkMaterialSQLStart2026]: <https://github.com/segovoni/sql-server-demos/tree/master/sqlstart/2026/ai-where-business-data-lives>
-  [LinkVideoSQLStart2026]: <>
+  [LinkVideoVimeoSQLStart2026]: <https://vimeo.com/1233523060?fl=pl&fe=sh>
+  [LinkVideoYouTubeSQLStart2026]: <https://www.youtube.com/watch?v=5_CkArMWFhg>
 
   [Link1nn0vAI2026]: <https://www.1nn0vai.it/>
   [LinkSession1nn0vAI2026]: <https://www.1nn0vai.it/>
